@@ -39,7 +39,8 @@ export WORKER_NODE_IP=<IP do nó worker>
 Com as variáveis de ambiente definidas, foi executado o seguinte comando:
 
 ```sh
-./Distributed-DCGAN/experiments/ativ-6-exp-1/bin/run-node --main
+cd Distributed-DCGAN
+./experiments/ativ-6-exp-1/bin/run-node --main
 ```
 > Você precisa executar o comando acima no mesmo shell que você definiu as variáveis de ambiente
 
@@ -60,7 +61,8 @@ export WORKER_NODE_IP=<IP do nó worker>
 Com as variáveis de ambiente definidas, foi executado o seguinte comando:
 
 ```sh
-./Distributed-DCGAN/experiments/ativ-6-exp-1/bin/run-node
+cd Distributed-DCGAN
+./experiments/ativ-6-exp-1/bin/run-node
 ```
 > Você precisa executar o comando acima no mesmo shell que você definiu as variáveis de ambiente
 
