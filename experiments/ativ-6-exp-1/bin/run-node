@@ -46,6 +46,8 @@ function log_experiment_settings {
 }
 
 function launch_instance {
+  node_rank=$(if [ "${MAIN}" == true ]; then echo "0"; else echo "1"; fi)
+
   mpirun \
     -np 2 \
     --host "${MAIN_NODE_IP}","${WORKER_NODE_IP}" \
@@ -60,7 +62,7 @@ function launch_instance {
           torch.distributed.launch \
             --nproc_per_node=1 \
             --nnodes=2 \
-            --node_rank=$(if [ "${MAIN}" -eq true ]; then echo "0"; else echo "1"; fi) \
+            --node_rank="${node_rank}" \
             --master_addr="${MAIN_NODE_IP}" \
             --master_port=1234 \
             dist_dcgan.py \
