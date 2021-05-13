@@ -20,7 +20,7 @@ Seguindo os passos do documento que utilizamos como base, foi criado um security
 
 Com a imagem criada e registrada na AWS, foi criado 2 instâncias *m5.large*, utilizando a imagem construída no passo 1. Ambas instâncias foram colocadas em um mesmo *placement group*, e configuradas para utilizar o security group que foi criado no passo 2.
 
-### 4. Inicialização da instância Main
+### 4. Inicialização do nó Main
 
 Uma das instâncias foi escolhida como principal. Foi efetuado o acesso SSH nessa instância e os seguintes passos foram executados:
 
@@ -42,6 +42,31 @@ Com as variáveis de ambiente definidas, foi executado o seguinte comando:
 ./Distributed-DCGAN/experiments/ativ-6-exp-1/bin/run-node --main
 ```
 > Você precisa executar o comando acima no mesmo shell que você definiu as variáveis de ambiente
+
+### 5. Inicialização do nó Worker
+
+#### 5.1 Configurar variáveis de ambiente
+
+Para executar o experimento, precisamos dos IPs privados dos nós. Você pode definí-los com o seguinte comando:
+
+```sh
+export MAIN_NODE_IP=<IP do nó main>
+export WORKER_NODE_IP=<IP do nó worker>
+```
+> Você pode encontrar os IPs de cada nó nos detalhes da instância na AWS
+
+#### 5.2 Executar o script do experimento
+
+Com as variáveis de ambiente definidas, foi executado o seguinte comando:
+
+```sh
+./Distributed-DCGAN/experiments/ativ-6-exp-1/bin/run-node
+```
+> Você precisa executar o comando acima no mesmo shell que você definiu as variáveis de ambiente
+
+### 6. Analise os resultados
+
+Agora o experimento foi finalizado e você pode avaliar os resultados de tempo de iteração e tempo total de execução.
 
 [distributed-dcgan-github-repository]: https://github.com/eborin/Distributed-DCGAN
 [aws-site]: https://aws.amazon.com
