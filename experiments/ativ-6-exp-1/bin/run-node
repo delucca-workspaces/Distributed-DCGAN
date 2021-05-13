@@ -81,4 +81,11 @@ usage: $0 [OPTIONS]
 EOF
 }
 
+function log_in_category {
+  category=$1
+  text=$2
+
+  echo "$(highlight "${category}:") ${text}"
+}
+
 main "${@}"
