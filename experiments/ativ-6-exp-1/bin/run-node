@@ -1,0 +1,84 @@
+#!/bin/bash
+
+MAIN=false
+BIN_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find bin dir" ; pwd -P)
+EXPERIMENT_DIR_PATH=$(dirname "${BIN_DIR_PATH}")
+
+# Dependencies
+# -------------------------------------------------------------------------------------------------
+source <(curl -s "https://raw.githubusercontent.com/delucca/shell-functions/1.0.1/modules/feedback.sh")
+source "${EXPERIMENT_DIR_PATH}/scripts/log-settings.sh"
+
+# Entrypoint
+# -------------------------------------------------------------------------------------------------
+
+function main {
+  parse_args $@
+
+  log_title "DCGAN DISTRIBUTED EXPERIMENT"
+  log_experiment_settings
+  launch_instance
+}
+
+# Steps
+# -------------------------------------------------------------------------------------------------
+
+function parse_args {
+  for opt in "$@"; do
+    case $opt in
+      --help)
+        help
+        exit 0
+        ;;
+      --main) MAIN=true ;;
+      *)
+        echo "unknown option: $opt"
+        help
+        exit 1
+        ;;
+    esac
+  done
+}
+
+function log_experiment_settings {
+  log_in_category "Experiment settings" "Parsing experiment settings"
+  log_basic_settings
+}
+
+function launch_instance {
+  mpirun \
+    -np 2 \
+    --host "${MAIN_NODE_IP}","${WORKER_NODE_IP}" \
+      docker run \
+      --env OMP_NUM_THREADS=1 \
+      --rm \
+      --network=host \
+      -v=$(pwd):/root \
+      -p 1234:1234 \
+        dist_dcgan:latest \
+        python -m \
+          torch.distributed.launch \
+            --nproc_per_node=1 \
+            --nnodes=2 \
+            --node_rank=$(if [ "${MAIN}" -eq true ]; then echo "0"; else echo "1"; fi) \
+            --master_addr="${MAIN_NODE_IP}" \
+            --master_port=1234 \
+            dist_dcgan.py \
+              --dataset cifar10 \
+              --dataroot ./experiments/ativ-6-exp-1/data \
+              --num_epochs=1
+}
+
+# Helpers
+# -------------------------------------------------------------------------------------------------
+
+function help {
+  cat << EOF
+Launches a Distributed DCGAN experiment
+usage: $0 [OPTIONS]
+    --help    Show this message
+    --main    Uses this process as the main node
+EOF
+}
+
+main "${@}"
