@@ -4,6 +4,9 @@ set -o nounset
 set -o pipefail
 
 GIT_HEAD_REVISION=$(git rev-parse HEAD)
+TEXT_BOLD=$(tput bold)
+TEXT_COLORIZED=$(tput setaf 6) # Cyan
+TEXT_RESET=$(tput sgr0)
 
 function log_basic_settings {
   log_hardware_details
