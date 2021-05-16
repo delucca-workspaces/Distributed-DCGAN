@@ -1,12 +1,13 @@
 # HPC - Atividade 7 - Experimento 1
 
-* Data: 16 de maio de 2021
-* Autor: Daniel De Lucca <delucca@pm.me>
+- Data: 16 de maio de 2021
+- Autor: Daniel De Lucca <delucca@pm.me>
 
-* [Objetivo](#objetivo)
-* [Metodologia](#metodologia)
-* [Resultados obtidos](#resultados-obtidos)
-* [Conclusão](#conclusao)
+* [HPC - Atividade 7 - Experimento 1](#)
+  * [Objetivo](#objetivo)
+  * [Metodologia](#metodologia)
+  * [Resultados obtidos](#resultados-obtidos)
+  * [Conclusão](#conclusao)
 
 ## Objetivo
 
