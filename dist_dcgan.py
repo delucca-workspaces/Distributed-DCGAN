@@ -115,6 +115,9 @@ def weights_init(m):
         torch.nn.init.zeros_(m.bias)
 
 def main():
+    # Defines a global start time to calculate elapsed time
+    initialization_start_time = time.time() 
+
     # Each process runs on 1 GPU device specified by the local_rank argument.
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--dataset', required=True, choices=['cifar10', 'lsun', 'mnist', \
@@ -184,6 +187,11 @@ def main():
 
     # Lets start all together. Optimizers all have barrier also
     torch.distributed.barrier()
+
+    # Prints the initialization time
+    initialization_end_time = time.time()
+    initialization_time = initialization_end_time - initialization_start_time
+    print(f"Rank,{rank},Initialization Time: {initialization_time}")
 
     for epoch in range(argv.num_epochs):
         epoch_start_time = time.time()
