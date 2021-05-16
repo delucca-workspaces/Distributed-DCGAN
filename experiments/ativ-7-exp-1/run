@@ -4,14 +4,7 @@
 # -------------------------------------------------------------------------------------------------
 source <(curl -s "https://raw.githubusercontent.com/delucca/shell-functions/1.0.1/modules/feedback.sh")
 
-BIN_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find bin dir" ; pwd -P)
-EXPERIMENT_DIR_PATH=$(dirname "${BIN_DIR_PATH}")
-
-source "${EXPERIMENT_DIR_PATH}/scripts/log-settings.sh"
-
-# Global variables
-# -------------------------------------------------------------------------------------------------
-
+EXPERIMENT_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find bin dir" ; pwd -P)
 INSTANCE_TYPE=$(curl -s http://169.254.169.254/latest/meta-data/instance-type || throw_error "Cannot fetch instance type")
 INSTANCE_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 || throw_error "Cannot fetch instance IP")
 MAIN_NODE_IP="${INSTANCE_IP}"
@@ -26,11 +19,7 @@ TEXT_RESET=$(tput sgr0)
 
 function main() {
   parse_args $@
-
-  log_title "DCGAN DISTRIBUTED EXPERIMENT"
-  log_experiment_settings
-
-  launch_node
+  launch_experiment
 }
 
 # Steps
@@ -58,43 +47,19 @@ function parse_args {
   done
 }
 
-function log_experiment_settings {
-  log_in_category "Experiment settings" "Parsing experiment settings"
-  log_basic_settings
-}
+function launch_experiment {
+  logs_folder_path="${EXPERIMENT_DIR_PATH}/logs"
+  instance_folder_path="${logs_folder_path}/${INSTANCE_TYPE}"
+  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.log"
 
-function launch_node {
-  node_rank=$(if [ "${INSTANCE_IP}" == "${MAIN_NODE_IP}" ]; then echo "0"; else echo "1"; fi)
-  results_folder_path="${EXPERIMENT_DIR_PATH}/results"
-  instance_folder_path="${results_folder_path}/${INSTANCE_TYPE}"
-  result_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.out"
+  mkdir -p "${logs_folder_path}"
+  mkdir -p "${log_instance_folder_path}"
 
-  mpirun \
-    -np 2 \
-    --host "${NODE_IPS}" \
-      docker run \
-      --env OMP_NUM_THREADS=1 \
-      --rm \
-      --network=host \
-      -v=$(pwd):/root \
-      -p 1234:1234 \
-        dist_dcgan:latest \
-        python -m \
-          torch.distributed.launch \
-            --nproc_per_node=1 \
-            --nnodes=2 \
-            --node_rank="${node_rank}" \
-            --master_addr="${MAIN_NODE_IP}" \
-            --master_port=1234 \
-            dist_dcgan.py \
-              --dataset cifar10 \
-              --dataroot ./cifar10 \
-              --num_epochs=1 &> "${result_file_path}"
-
+  "${EXPERIMENT_DIR_PATH}/bin/launch-experiment" "-m=${MAIN_NODE_IP}" "-n=${NODE_IPS}" &> "${log_file_path}"
   pid=$(echo "$!")
 
-  log_in_category "Node" "Launched node. Results are being saved in ${result_file_path}"
-  log_in_category "Node" "Process ID of node: ${pid}"
+  log_in_category "Experiment" "Launched experiment. Logs are being saved in ${log_file_path}"
+  log_in_category "Experiment" "Process ID of experiment: ${pid}"
 }
 
 # Helpers
@@ -118,7 +83,6 @@ function log_in_category {
 
   echo "$(highlight "${category}:") ${text}"
 }
-
 
 function highlight {
   text=$1
