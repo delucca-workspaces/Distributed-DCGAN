@@ -37,11 +37,14 @@ function main() {
 function parse_args {
   for opt in "$@"; do
     case $opt in
-      --help)
+      -n=*|--nodes=*)
+        NODE_IPS="${opt#*=}"
+        shift ;;
+      -m|--main-node) MAIN_NODE=true ;;
+      -h|--help)
         help
         exit 0
         ;;
-      --main-node) MAIN_NODE=true ;;
       *)
         echo "unknown option: $opt"
         help
@@ -89,8 +92,9 @@ function help {
   cat << EOF
 Launches a Distributed DCGAN experiment
 usage: $0 [OPTIONS]
-    --help         Show this message
-    --main-node    Uses this process as the main node
+    -h --help         Show this message
+    -m --main-node    Uses this process as the main node
+    -n --node-ips     A comma-separated list of node IPs
 EOF
 }
 
