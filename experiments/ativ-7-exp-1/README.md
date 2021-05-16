@@ -37,6 +37,11 @@ ativ-7-exp-1
 
 Sendo `c4.large` o nome da instância que você está utilizando e os arquivos `.out` os logs de execução daquele nó.
 
+Para replicar o experimento, basta executar o script [*bin/launch-experiment*](./bin/launch-experiment) passando os argumentos:
+
+* `-n=<ip-main>,<ip-worker>`
+* `-m` (apenas para o nó principal
+
 ## Resultados obtidos
 
 Caso você queira avaliar os resultados de cada uma das instâncias, clique no tipo de instância desejado abaixo:
