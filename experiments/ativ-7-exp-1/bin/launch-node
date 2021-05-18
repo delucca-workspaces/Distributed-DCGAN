@@ -8,7 +8,8 @@ BIN_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was no
 EXPERIMENT_DIR_PATH=$(dirname "${BIN_DIR_PATH}")
 ROOT_DIR_PATH=$(git rev-parse --show-toplevel)
 
-source "${EXPERIMENT_DIR_PATH}/scripts/log-settings.sh"
+source "${EXPERIMENT_DIR_PATH}/scripts/log.sh"
+source "${EXPERIMENT_DIR_PATH}/scripts/node.sh"
 
 # Global variables
 # -------------------------------------------------------------------------------------------------
@@ -16,22 +17,13 @@ source "${EXPERIMENT_DIR_PATH}/scripts/log-settings.sh"
 INSTANCE_TYPE=$(curl -s http://169.254.169.254/latest/meta-data/instance-type || throw_error "Cannot fetch instance type")
 INSTANCE_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 || throw_error "Cannot fetch instance IP")
 MAIN_NODE_IP="${INSTANCE_IP}"
-NODE_IPS="${INSTANCE_IP}"
-
-TEXT_BOLD=$(tput bold)
-TEXT_COLORIZED=$(tput setaf 6) # Cyan
-TEXT_RESET=$(tput sgr0)
 
 # Entrypoint
 # -------------------------------------------------------------------------------------------------
 
 function main() {
   parse_args $@
-
-  log_title "DCGAN DISTRIBUTED EXPERIMENT"
-  log_experiment_settings
-
-  launch_node
+  launch
 }
 
 # Steps
@@ -40,9 +32,6 @@ function main() {
 function parse_args {
   for opt in "$@"; do
     case $opt in
-      -n=*|--nodes=*)
-        NODE_IPS="${opt#*=}"
-        shift ;;
       -m=*|--main-node-ip=*)
         MAIN_NODE_IP="${opt#*=}"
         shift ;;
@@ -59,47 +48,16 @@ function parse_args {
   done
 }
 
-function log_experiment_settings {
-  log_in_category "Experiment settings" "Parsing experiment settings"
-  log_basic_settings
-}
-
-function launch_node {
+function launch {
   node_rank=$(if [ "${INSTANCE_IP}" == "${MAIN_NODE_IP}" ]; then echo "0"; else echo "1"; fi)
-  results_folder_path="${EXPERIMENT_DIR_PATH}/results"
-  instance_folder_path="${results_folder_path}/${INSTANCE_TYPE}"
-  result_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.out"
+  logs_folder_path="${EXPERIMENT_DIR_PATH}/logs"
+  instance_folder_path="${logs_folder_path}/${INSTANCE_TYPE}"
+  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.log"
 
-  mkdir -p "${results_folder_path}"
+  mkdir -p "${logs_folder_path}"
   mkdir -p "${instance_folder_path}"
 
-  cd "${ROOT_DIR_PATH}"
-
-  log_in_category "Node" "Launching node. Results will being saved in ${result_file_path}"
-
-  mpirun \
-    -np 2 \
-    --host "${NODE_IPS}" \
-      docker run \
-      --env OMP_NUM_THREADS=1 \
-      --rm \
-      --network=host \
-      -v=$(pwd):/root \
-      -p 1234:1234 \
-        dist_dcgan:latest \
-        python -m \
-          torch.distributed.launch \
-            --nproc_per_node=1 \
-            --nnodes=2 \
-            --node_rank="${node_rank}" \
-            --master_addr="${MAIN_NODE_IP}" \
-            --master_port=1234 \
-            dist_dcgan.py \
-              --dataset cifar10 \
-              --dataroot ./cifar10 \
-              --num_epochs=1 &> "${result_file_path}"
-
-  log_in_category "Node" "Finished executing node"
+  launch_node "${MAIN_NODE_IP}" &> "${log_file_path}"
 }
 
 # Helpers
@@ -111,24 +69,7 @@ Run a Distributed DCGAN experiment
 usage: $0 [OPTIONS]
     -h --help            Show this message
     -m --main-node-ip    Defines the main-node IP address
-    -n --node-ips        A comma-separated list of node IPs
 EOF
-}
-
-
-
-function log_in_category {
-  category=$1
-  text=$2
-
-  echo "$(highlight "${category}:") ${text}"
-}
-
-
-function highlight {
-  text=$1
-
-  echo "${TEXT_BOLD}${TEXT_COLORIZED}${text}${TEXT_RESET}"
 }
 
 # Launch

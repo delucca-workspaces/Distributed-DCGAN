@@ -36,3 +36,18 @@ function log_setting {
 
   echo "> ${TEXT_BOLD}${label}:${TEXT_RESET} ${setting}"
 }
+
+function log_in_category {
+  category=$1
+  text=$2
+
+  echo "$(highlight "${category}:") ${text}"
+}
+
+function highlight {
+  text=$1
+
+  echo "${TEXT_BOLD}${TEXT_COLORIZED}${text}${TEXT_RESET}"
+}
+
+

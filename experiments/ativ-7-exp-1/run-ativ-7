@@ -4,15 +4,14 @@
 # -------------------------------------------------------------------------------------------------
 source <(curl -s "https://raw.githubusercontent.com/delucca/shell-functions/1.0.1/modules/feedback.sh")
 
-EXPERIMENT_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find bin dir" ; pwd -P)
-INSTANCE_TYPE=$(curl -s http://169.254.169.254/latest/meta-data/instance-type || throw_error "Cannot fetch instance type")
-INSTANCE_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 || throw_error "Cannot fetch instance IP")
-MAIN_NODE_IP="${INSTANCE_IP}"
-NODE_IPS="${INSTANCE_IP}"
+EXPERIMENT_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find experiment dir" ; pwd -P)
 
-TEXT_BOLD=$(tput bold)
-TEXT_COLORIZED=$(tput setaf 6) # Cyan
-TEXT_RESET=$(tput sgr0)
+source "${EXPERIMENT_DIR_PATH}/scripts/log.sh"
+
+# Global arguments
+# -------------------------------------------------------------------------------------------------
+MAIN_NODE_IP=""
+NODE_IPS=""
 
 # Entrypoint
 # -------------------------------------------------------------------------------------------------
@@ -48,17 +47,14 @@ function parse_args {
 }
 
 function launch_experiment {
-  node_rank=$(if [ "${INSTANCE_IP}" == "${MAIN_NODE_IP}" ]; then echo "0"; else echo "1"; fi)
-  logs_folder_path="${EXPERIMENT_DIR_PATH}/logs"
-  instance_folder_path="${logs_folder_path}/${INSTANCE_TYPE}"
-  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.log"
+  log_in_category "Experiment" "Launching experiment"
 
-  mkdir -p "${logs_folder_path}"
-  mkdir -p "${instance_folder_path}"
-
-  log_in_category "Experiment" "Launching experiment. Logs will be saved in ${log_file_path}"
-
-  "${EXPERIMENT_DIR_PATH}/bin/launch-experiment" "-m=${MAIN_NODE_IP}" "-n=${NODE_IPS}" &> "${log_file_path}"
+  mpirun \
+    -np 2 \
+    --host "${NODE_IPS}" \
+    "${EXPERIMENT_DIR_PATH}/bin/launch-node" \
+      "-m=${MAIN_NODE_IP}" \
+      "-n=${NODE_IPS}"
 
   log_in_category "Experiment" "Finished experiment execution"
 }
@@ -74,21 +70,6 @@ usage: $0 [OPTIONS]
     -m --main-node-ip    Defines the main-node IP address
     -n --node-ips        A comma-separated list of node IPs
 EOF
-}
-
-
-
-function log_in_category {
-  category=$1
-  text=$2
-
-  echo "$(highlight "${category}:") ${text}"
-}
-
-function highlight {
-  text=$1
-
-  echo "${TEXT_BOLD}${TEXT_COLORIZED}${text}${TEXT_RESET}"
 }
 
 # Launch
