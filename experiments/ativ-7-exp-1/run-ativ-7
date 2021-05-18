@@ -53,8 +53,7 @@ function launch_experiment {
     -np 2 \
     --host "${NODE_IPS}" \
     "${EXPERIMENT_DIR_PATH}/bin/launch-node" \
-      "-m=${MAIN_NODE_IP}" \
-      "-n=${NODE_IPS}"
+      "-m=${MAIN_NODE_IP}"
 
   log_in_category "Experiment" "Finished experiment execution"
 }
