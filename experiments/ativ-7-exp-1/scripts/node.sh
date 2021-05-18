@@ -26,10 +26,6 @@ function start_dcgan {
 
   log_in_category "DCGAN" "Launching DCGAN. Results will being saved in ${result_file_path}"
 
-  echo $main_node_ip
-  echo $OMPI_COMM_WORLD_RANK
-  exit 1
-
   docker run \
     --env OMP_NUM_THREADS=1 \
     --rm \

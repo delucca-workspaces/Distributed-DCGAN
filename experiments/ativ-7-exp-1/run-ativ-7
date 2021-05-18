@@ -50,6 +50,7 @@ function launch_experiment {
   log_in_category "Experiment" "Launching experiment"
 
   mpirun \
+    -v \
     -np 2 \
     --host "${NODE_IPS}" \
     "${EXPERIMENT_DIR_PATH}/bin/launch-node" \
