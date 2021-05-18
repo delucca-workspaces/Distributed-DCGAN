@@ -49,10 +49,9 @@ function parse_args {
 }
 
 function launch {
-  node_rank=$(if [ "${INSTANCE_IP}" == "${MAIN_NODE_IP}" ]; then echo "0"; else echo "1"; fi)
   logs_folder_path="${EXPERIMENT_DIR_PATH}/logs"
   instance_folder_path="${logs_folder_path}/${INSTANCE_TYPE}"
-  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.log"
+  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${OMPI_COMM_WORLD_RANK}.log"
 
   mkdir -p "${logs_folder_path}"
   mkdir -p "${instance_folder_path}"

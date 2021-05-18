@@ -14,11 +14,10 @@ function log_experiment_settings {
 
 function start_dcgan {
   main_node_ip="${1}"
-  node_rank=$(if [ "${INSTANCE_IP}" == "${MAIN_NODE_IP}" ]; then echo "0"; else echo "1"; fi)
 
   results_folder_path="${EXPERIMENT_DIR_PATH}/results"
   instance_folder_path="${results_folder_path}/${INSTANCE_TYPE}"
-  result_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${node_rank}.out"
+  result_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${OMPI_COMM_WORLD_RANK}.out"
 
   mkdir -p "${results_folder_path}"
   mkdir -p "${instance_folder_path}"
@@ -28,7 +27,7 @@ function start_dcgan {
   log_in_category "DCGAN" "Launching DCGAN. Results will being saved in ${result_file_path}"
 
   echo $main_node_ip
-  echo $node_rank
+  echo $OMPI_COMM_WORLD_RANK
   exit 1
 
   docker run \
@@ -42,7 +41,7 @@ function start_dcgan {
         torch.distributed.launch \
           --nproc_per_node=1 \
           --nnodes=2 \
-          --node_rank="${node_rank}" \
+          --node_rank="${OMPI_COMM_WORLD_RANK}" \
           --master_addr="${main_node_ip}" \
           --master_port=1234 \
           dist_dcgan.py \
