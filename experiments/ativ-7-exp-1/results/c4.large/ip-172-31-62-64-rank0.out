@@ -1,0 +1,41 @@
+WARNING: Published ports are discarded when using host network mode
+WARNING: Published ports are discarded when using host network mode
+/usr/local/bin/python: can't open file 'dist_dcgan.py': [Errno 2] No such file or directory
+/usr/local/bin/python: can't open file 'dist_dcgan.py': [Errno 2] No such file or directory
+Killing subprocess 8
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/usr/local/bin/python', '-u', 'dist_dcgan.py', '--local_rank=0', '--dataset', 'cifar10', '--dataroot', './cifar10', '--num_epochs=1']' returned non-zero exit status 2.
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.6/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 340, in <module>
+    main()
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 326, in main
+    sigkill_handler(signal.SIGTERM, None)  # not coming back
+  File "/usr/local/lib/python3.6/dist-packages/torch/distributed/launch.py", line 301, in sigkill_handler
+    raise subprocess.CalledProcessError(returncode=last_return_code, cmd=cmd)
+subprocess.CalledProcessError: Command '['/usr/local/bin/python', '-u', 'dist_dcgan.py', '--local_rank=0', '--dataset', 'cifar10', '--dataroot', './cifar10', '--num_epochs=1']' returned non-zero exit status 2.
+Killing subprocess 8
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[17612,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------
