@@ -75,6 +75,8 @@ function launch_node {
 
   cd "${ROOT_DIR_PATH}"
 
+  log_in_category "Node" "Launching node. Results will being saved in ${result_file_path}"
+
   mpirun \
     -np 2 \
     --host "${NODE_IPS}" \
@@ -97,10 +99,7 @@ function launch_node {
               --dataroot ./cifar10 \
               --num_epochs=1 &> "${result_file_path}"
 
-  pid=$(echo "$!")
-
-  log_in_category "Node" "Launched node. Results are being saved in ${result_file_path}"
-  log_in_category "Node" "Process ID of node: ${pid}"
+  log_in_category "Node" "Finished executing node"
 }
 
 # Helpers

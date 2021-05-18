@@ -56,11 +56,11 @@ function launch_experiment {
   mkdir -p "${logs_folder_path}"
   mkdir -p "${instance_folder_path}"
 
-  "${EXPERIMENT_DIR_PATH}/bin/launch-experiment" "-m=${MAIN_NODE_IP}" "-n=${NODE_IPS}" &> "${log_file_path}"
-  pid=$(echo "$!")
+  log_in_category "Experiment" "Launching experiment. Logs will be saved in ${log_file_path}"
 
-  log_in_category "Experiment" "Launched experiment. Logs are being saved in ${log_file_path}"
-  log_in_category "Experiment" "Process ID of experiment: ${pid}"
+  "${EXPERIMENT_DIR_PATH}/bin/launch-experiment" "-m=${MAIN_NODE_IP}" "-n=${NODE_IPS}" &> "${log_file_path}"
+
+  log_in_category "Experiment" "Finished experiment execution"
 }
 
 # Helpers
