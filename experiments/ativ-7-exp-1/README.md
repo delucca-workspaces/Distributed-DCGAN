@@ -38,7 +38,7 @@ ativ-7-exp-1
 
 Sendo `c4.large` o nome da instância que você está utilizando e os arquivos `.out` os logs de execução daquele nó.
 
-Para replicar o experimento, basta executar o script [*run*](./run) passando os argumentos:
+Para replicar o experimento, basta executar o script [*run-ativ-6*](./run-ativ-7) passando os argumentos:
 
 * `-m=<ip-main>`
 * `-n=<ip-do-no-main>,<ip-do-no-worker>`
