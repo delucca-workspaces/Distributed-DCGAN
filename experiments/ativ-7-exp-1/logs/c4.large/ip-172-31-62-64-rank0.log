@@ -12,7 +12,7 @@
 [1;34m          [0;37m [1;34mclock speeds:[0;37m [1;34mmax:[0;37m 2900 MHz [1;34m1:[0;37m 2900 MHz [1;34m2:[0;37m 2900 MHz[0;37m
 [1;34mGraphics: [0;37m [1;34mCard:[0;37m Cirrus Logic GD 5446 [1;34mbus-ID:[0;37m 00:02.0[0;37m
 [1;34m          [0;37m [1;34mDisplay Server:[0;37m N/A [1;34mdriver:[0;37m N/A[0;37m
-[1;34m          [0;37m [1;34mtty size:[0;37m 120x66 [1;34mAdvanced Data:[0;37m N/A out of X[0;37m
+[1;34m          [0;37m [1;34mtty size:[0;37m 120x32 [1;34mAdvanced Data:[0;37m N/A out of X[0;37m
 [1;34mNetwork:  [0;37m [1;34mCard:[0;37m Intel 82599 Ethernet Controller Virtual Function[0;37m
 [1;34m          [0;37m [1;34mdriver:[0;37m ixgbevf [1;34mv:[0;37m 2.12.1-k [1;34mbus-ID:[0;37m 00:03.0[0;37m
 [1;34m          [0;37m [1;34mIF:[0;37m ens3 [1;34mstate:[0;37m up [1;34mspeed:[0;37m 10000 Mbps [1;34mduplex:[0;37m full [1;34mmac:[0;37m <filter>[0;37m
@@ -21,7 +21,7 @@
 [1;34mPartition:[0;37m [1;34mID-1:[0;37m / [1;34msize:[0;37m 16G [1;34mused:[0;37m 8.2G (53%) [1;34mfs:[0;37m ext4 [1;34mdev:[0;37m /dev/xvda1[0;37m
 [1;34mRAID:     [0;37m No RAID devices: /proc/mdstat, md_mod kernel module present[0;37m
 [1;34mSensors:  [0;37m None detected - is lm-sensors installed and configured?[0;37m
-[1;34mInfo:     [0;37m [1;34mProcesses:[0;37m 129 [1;34mUptime:[0;37m 19 min [1;34mMemory:[0;37m 230.1/3762.8MB[0;37m
+[1;34mInfo:     [0;37m [1;34mProcesses:[0;37m 133 [1;34mUptime:[0;37m 21 min [1;34mMemory:[0;37m 232.5/3762.8MB[0;37m
 [1;34m          [0;37m [1;34mInit:[0;37m systemd [1;34mrunlevel:[0;37m 5 [1;34mGcc sys:[0;37m 5.4.0[0;37m
 [1;34m          [0;37m [1;34mClient:[0;37m Shell (launch-experime) [1;34minxi:[0;37m 2.2.35[0;37m [0;37m
 [0m> [1mEnvironment variables:[m 
@@ -63,4 +63,6 @@
 >    LC_TIME=en_US.UTF-8
 >    LC_NAME=en_US.UTF-8
 >    _=/usr/bin/env
-> [1mGit HEAD revision:[m 56615611c63d5763056274d0f6853246baa3baba
+> [1mGit HEAD revision:[m bbfb95264d3a2681432aa175e9936caddd3ed86f
+[1m[36mNode:[m Launched node. Results are being saved in /home/ubuntu/Distributed-DCGAN/experiments/ativ-7-exp-1/results/c4.large/ip-172-31-62-64-rank0.out
+[1m[36mNode:[m Process ID of node: 6262
