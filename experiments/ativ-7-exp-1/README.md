@@ -71,7 +71,7 @@ Os resultdos consolidados e tratados estão localizados na pasta [`results/norma
 
 ### Análise dos resultados
 
-Como era esperado, a performance do treinamento é diretamente proporcional aos recursos das instâncias. Na tabela abaixo, inseri alguns gráficos que demonstram as métricas que foram monitoradas, são elas: `Tempo de inicialização`, `Tempo da época`, `Tempo total de treinamento` e `Tempo médio de iteração`
+Como era esperado, dentro das instâncias do mesmo time (`c` ou `m`), as médias das métricas que avaliamos é decresce de acordo com a quantidade de recursos da instância. Abaixo, vemos um gráfico comparando as médias das seguintes métricas: `Tempo de inicialização`, `Tempo da época`, `Tempo total de treinamento` e `Tempo médio de iteração`
 
 <table>
   <tr>
@@ -87,6 +87,10 @@ Como era esperado, a performance do treinamento é diretamente proporcional aos 
     <td><img src="./charts/iteration-average-time.png" /></td>
   </tr>
 </table>
+
+Observamos que os tempos de inicialização decrescem de forma linear. Mesmo quando colocamos lado a lado instâncias do tipo `c` e `m`, que notoriamente possuem objetivos diferentes. Vemos também que as instâncias do tipo `m` possuem uma performance muito superior no tempo de inicialização.
+
+Tendo esses dados em mãos, conseguimos comparar e verificar o custo de inicialização de cada uma das instância, como vemos no gráfico abaixo:
 
 ## Conclusão
 
