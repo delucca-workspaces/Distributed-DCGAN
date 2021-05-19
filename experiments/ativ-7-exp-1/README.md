@@ -52,6 +52,15 @@ Caso você queira avaliar os resultados de cada uma das instâncias, clique no t
 * [m5.large](./results/m5.large)
 * [m5.2xlarge](./results/m5.2xlarge)
 
+Além dos resultados, você pode também avaliar os logs de execução de cada uma das instâncias nas pastas abaixo:
+
+* [c4.large](./logs/c4.large)
+* [c5.large](./logs/c4.large)
+* [m4.large](./logs/m4.large)
+* [m5.large](./logs/m5.large)
+* [m5.2xlarge](./logs/m5.2xlarge)
+> Dentro dos logs de execução há informações sobre o ambiente de cada uma das instâncias que executaram os testes
+
 ### Análise dos resultados
 
 *TODO*
