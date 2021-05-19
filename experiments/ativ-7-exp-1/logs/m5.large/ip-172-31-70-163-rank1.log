@@ -1,0 +1,89 @@
+Experiment settings: Parsing experiment settings
+> Hardware details: 
+12System:    12Host ip-172-31-70-163 12Kernel 4.4.0-1128-aws x86_64 (64 bit 12gcc 5.4.0) 12Console tty
+12           12Distro Ubuntu 16.04 xenial
+12Machine:   12System Amazon EC2 12product m5.large
+12           12Mobo Amazon EC2 12model N/A 12Bios Amazon EC2 12v 1.0 12date 10/16/2017
+12CPU:       12Single core Intel Xeon Platinum 8259CL (-HT-) 12cache 36608 KB
+12           12flags (lm nx sse sse2 sse3 sse4_1 sse4_2 ssse3) 12bmips 4999
+12           12clock speeds 12max 2499 MHz 121 2499 MHz 122 2499 MHz
+12Graphics:  12Card Amazon.com Device 1111 12bus-ID 00:03.0
+12           12Display Server N/A 12driver N/A 12tty size N/A 12Advanced Data N/A out of X
+12Network:   12Card Amazon.com Elastic Network Adapter (ENA) 12driver ena 12v 2.1.0K 12bus-ID 00:05.0
+12           12IF ens5 12state up 12speed N/A 12duplex N/A 12mac <filter>
+12Drives:    12HDD Total Size NA (-) 12ID-1 /dev/nvme0n1 12model N/A 12size 17.2GB
+12Partition: 12ID-1 / 12size 16G 12used 8.2G (53%) 12fs ext4 12dev /dev/nvme0n1p1
+12RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present
+12Sensors:   None detected - is lm-sensors installed and configured?
+12Info:      12Processes 122 12Uptime 6 min 12Memory 199.5/7771.9MB 12Init systemd 12runlevel 5 12Gcc sys 5.4.0
+12           12Client Unknown : orted 12inxi 2.2.35 
+> Environment variables: 
+>    LC_PAPER=en_US.UTF-8
+>    OMPI_COMM_WORLD_RANK=1
+>    OMPI_MCA_db=^pmi
+>    LC_ADDRESS=en_US.UTF-8
+>    XDG_SESSION_ID=1
+>    LC_MONETARY=en_US.UTF-8
+>    OMPI_MCA_pubsub=^pmi
+>    SHELL=/bin/bash
+>    OMPI_MCA_orte_ess_num_procs=2
+>    SSH_CLIENT=172.31.74.137
+>    48322
+>    22
+>    OMPI_MCA_ess_base_vpid=1
+>    OMPI_MCA_ess_base_jobid=4125818881
+>    OMPI_MCA_orte_ess_jobid=4125818880
+>    LC_NUMERIC=en_US.UTF-8
+>    OMPI_MCA_orte_num_nodes=2
+>    OMPI_COMM_WORLD_LOCAL_RANK=0
+>    OMPI_MCA_orte_hnp_uri=4125818880.0;tcp://172.31.74.137,172.17.0.1:36556
+>    OMPI_ARGV=-m=172.31.74.137
+>    OMPI_MCA_initial_wdir=/home/ubuntu/Distributed-DCGAN/experiments/ativ-7-exp-1
+>    USER=ubuntu
+>    OPAL_OUTPUT_STDERR_FD=17
+>    LC_TELEPHONE=en_US.UTF-8
+>    OMPI_UNIVERSE_SIZE=2
+>    OMPI_MCA_orte_num_restarts=0
+>    OMPI_MCA_mpi_yield_when_idle=0
+>    OMPI_COMMAND=launch-node
+>    OMPI_FILE_LOCATION=/tmp/openmpi-sessions-ubuntu@ip-172-31-70-163_0/62955/1/1
+>    OMPI_APP_CTX_NUM_PROCS=2
+>    OMPI_MCA_orte_precondition_transports=5c5620c6c2caad4e-9418b61272a129b0
+>    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+>    MAIL=/var/mail/ubuntu
+>    OMPI_MCA_orte_tmpdir_base=/tmp
+>    OMPI_COMM_WORLD_LOCAL_SIZE=1
+>    LC_IDENTIFICATION=en_US.UTF-8
+>    OMPI_MCA_orte_bound_at_launch=1
+>    PWD=/home/ubuntu/Distributed-DCGAN/experiments/ativ-7-exp-1
+>    OMPI_COMM_WORLD_SIZE=2
+>    LANG=en_US.UTF-8
+>    OMPI_FIRST_RANKS=0
+>    LC_MEASUREMENT=en_US.UTF-8
+>    OMPI_MCA_orte_peer_fini_barrier_id=2
+>    OMPI_MCA_orte_app_num=0
+>    OMPI_MCA_grpcomm=^pmi
+>    HOME=/home/ubuntu
+>    SHLVL=2
+>    OMPI_MCA_orte_ess_node_rank=0
+>    OMPI_MCA_orte_peer_modex_id=0
+>    OMPI_MCA_orte_ess_vpid=1
+>    OMPI_MCA_ess=env
+>    LOGNAME=ubuntu
+>    OMPI_MCA_shmem_RUNTIME_QUERY_hint=mmap
+>    SSH_CONNECTION=172.31.74.137
+>    48322
+>    172.31.70.163
+>    22
+>    OMPI_COMM_WORLD_NODE_RANK=0
+>    OMPI_NUM_APP_CTX=1
+>    XDG_RUNTIME_DIR=/run/user/1000
+>    OMPI_MCA_plm=rsh
+>    LC_TIME=en_US.UTF-8
+>    OMPI_MCA_orte_local_daemon_uri=4125818880.1;tcp://172.31.70.163,172.17.0.1:32940
+>    OMPI_MCA_orte_peer_init_barrier_id=1
+>    LC_NAME=en_US.UTF-8
+>    _=/usr/bin/env
+> Git HEAD revision: b181ce0d66cd349b96268dc78e1618d7b868a47a
+DCGAN: Launching DCGAN. Results will being saved in /home/ubuntu/Distributed-DCGAN/experiments/ativ-7-exp-1/results/m5.large/ip-172-31-70-163-rank1.out
+DCGAN: Finished executing
