@@ -75,7 +75,7 @@ Como era esperado, a performance do treinamento é diretamente proporcional aos 
 
 | Tempo de inicialização | Tempo da época | Tempo total de treinamento | Tempo médio de iteração |
 :-:-:-:-:
-|![initialization chart](./charts/initialization-time.png)| | | |
+|![](./charts/initialization-time.png)|![](./charts/epoch-time.png)|![](./charts/total-time.png)|![](./charts/iteration-average-time.png)|
 
 ## Conclusão
 
