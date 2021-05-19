@@ -91,6 +91,7 @@ Como era esperado, dentro das instâncias do mesmo time (`c` ou `m`), as médias
 Observamos que os tempos de inicialização decrescem de forma linear. Mesmo quando colocamos lado a lado instâncias do tipo `c` e `m`, que notoriamente possuem objetivos diferentes. Vemos também que as instâncias do tipo `m` possuem uma performance muito superior no tempo de inicialização.
 
 Tendo esses dados em mãos, conseguimos comparar e verificar o custo de inicialização de cada uma das instância, como vemos no gráfico abaixo:
+
 ![](./charts/initialization-cost.png)
 
 ## Conclusão
