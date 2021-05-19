@@ -61,9 +61,20 @@ Além dos resultados, você pode também avaliar os logs de execução de cada u
 * [m5.2xlarge](./logs/m5.2xlarge)
 > Dentro dos logs de execução há informações sobre o ambiente de cada uma das instâncias que executaram os testes
 
+Os resultdos consolidados e tratados estão localizados na pasta [`results/normalized`](./results/normalized). Dentro dessa pasta, agrupamos os resultados nas seguintes categorias:
+
+* [Tempo de inicialização](./results/normalized/initialization-time.csv)
+* [Tempo da época](./results/normalized/epoch-time.csv)
+* [Tempo total](./results/normalized/total-time.csv)
+* [Tempo da iteração](./results/normalized/iteration-time.csv)
+* [Custo da instância](./results/normalized/instance-cost.csv)
+
 ### Análise dos resultados
 
-*TODO*
+Como era esperado, a performance do treinamento é diretamente proporcional aos recursos das instâncias. Na tabela abaixo, inseri alguns gráficos que demonstram as métricas que foram monitoradas, são elas: `Tempo de inicialização`, `Tempo da época`, `Tempo total de treinamento` e `Tempo médio de iteração`
+
+| Tempo de inicialização | Tempo da época | Tempo total de treinamento | Tempo médio de iteração |
+|![initialization chart](./charts/initialization-time.png)| | | |
 
 ## Conclusão
 

@@ -1,0 +1,6 @@
+instance_type,hourly_cost
+c4.large,0.1
+c5.large,0.085
+m4.large,0.1
+m5.large,0.096
+m5.2xlarge,0.384
