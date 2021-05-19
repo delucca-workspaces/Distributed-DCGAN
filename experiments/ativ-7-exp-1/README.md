@@ -73,8 +73,20 @@ Os resultdos consolidados e tratados estão localizados na pasta [`results/norma
 
 Como era esperado, a performance do treinamento é diretamente proporcional aos recursos das instâncias. Na tabela abaixo, inseri alguns gráficos que demonstram as métricas que foram monitoradas, são elas: `Tempo de inicialização`, `Tempo da época`, `Tempo total de treinamento` e `Tempo médio de iteração`
 
-| Tempo de inicialização | Tempo da época | Tempo total de treinamento | Tempo médio de iteração |
-| ![](./charts/initialization-time.png) | ![](./charts/epoch-time.png) | ![](./charts/total-time.png) | ![](./charts/iteration-average-time.png) |
+<table>
+  <tr>
+   <td>Tempo de inicialização</td>
+   <td>Tempo da época</td>
+   <td>Tempo total de treinamento</td>
+   <td>Tempo médio de iteração</td>
+  </tr>
+  <tr>
+    <td><img src="./charts/initialization-time.png" /></td>
+    <td><img src="./charts/epoch-time.png" /></td>
+    <td><img src="./charts/total-time.png" /></td>
+    <td><img src="./charts/iteration-average-time.png" /></td>
+  </tr>
+</table>
 
 ## Conclusão
 
