@@ -1,0 +1,1576 @@
+WARNING: Published ports are discarded when using host network mode
+Namespace(batch_size=32, beta1=0.5, cuda=False, dataroot='./cifar10', dataset='cifar10', image_size=64, learning_rate=0.0002, local_rank=0, max_workers=4, ndf=64, ngf=64, num_epochs=1, nz=100, out_folder='.', seed=0)
+Using seed: 0
+Using GPU: False
+Rank: 0. World Size: 2
+Dataset cifar10 loaded
+/usr/local/lib/python3.6/dist-packages/torch/utils/data/dataloader.py:478: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+Rank,0,Initialization Time: 33.60291814804077
+Rank: 0, Epoch: 0, Training ...
+[epoch: 0/1][iteration: 0/782][rank: 0] Loss_D: 1.4536, Loss_G: 4.1686, D(x): 0.5879, D(G(z)): 0.5917 / 0.0163, iteration time: 5.4831s
+Rank,0,Epoch,0,Iteration,0,It. time,5.483131170272827,Elapsed time,6.09697413444519
+[epoch: 0/1][iteration: 1/782][rank: 0] Loss_D: 0.9403, Loss_G: 3.3671, D(x): 0.5804, D(G(z)): 0.3053 / 0.0357, iteration time: 1.9165s
+Rank,0,Epoch,0,Iteration,1,It. time,1.9164738655090332,Elapsed time,8.314612865447998
+[epoch: 0/1][iteration: 2/782][rank: 0] Loss_D: 0.9239, Loss_G: 4.0483, D(x): 0.6769, D(G(z)): 0.3605 / 0.0179, iteration time: 1.9090s
+Rank,0,Epoch,0,Iteration,2,It. time,1.9089539051055908,Elapsed time,10.223920345306396
+[epoch: 0/1][iteration: 3/782][rank: 0] Loss_D: 0.6367, Loss_G: 4.7326, D(x): 0.7844, D(G(z)): 0.3035 / 0.0092, iteration time: 1.9115s
+Rank,0,Epoch,0,Iteration,3,It. time,1.9115092754364014,Elapsed time,12.13997197151184
+[epoch: 0/1][iteration: 4/782][rank: 0] Loss_D: 0.5888, Loss_G: 5.3106, D(x): 0.7767, D(G(z)): 0.2679 / 0.0052, iteration time: 1.9146s
+Rank,0,Epoch,0,Iteration,4,It. time,1.9146251678466797,Elapsed time,14.056404829025269
+[epoch: 0/1][iteration: 5/782][rank: 0] Loss_D: 0.5496, Loss_G: 5.8033, D(x): 0.7946, D(G(z)): 0.2502 / 0.0031, iteration time: 1.9076s
+Rank,0,Epoch,0,Iteration,5,It. time,1.9075777530670166,Elapsed time,15.965766191482544
+[epoch: 0/1][iteration: 6/782][rank: 0] Loss_D: 0.6051, Loss_G: 6.5352, D(x): 0.7919, D(G(z)): 0.2601 / 0.0016, iteration time: 1.9197s
+Rank,0,Epoch,0,Iteration,6,It. time,1.9196853637695312,Elapsed time,17.887147903442383
+[epoch: 0/1][iteration: 7/782][rank: 0] Loss_D: 0.6945, Loss_G: 6.8199, D(x): 0.7320, D(G(z)): 0.2397 / 0.0012, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,7,It. time,1.8795866966247559,Elapsed time,19.767257928848267
+[epoch: 0/1][iteration: 8/782][rank: 0] Loss_D: 0.5092, Loss_G: 7.8118, D(x): 0.8210, D(G(z)): 0.2400 / 0.0004, iteration time: 1.8792s
+Rank,0,Epoch,0,Iteration,8,It. time,1.8792357444763184,Elapsed time,21.64817976951599
+[epoch: 0/1][iteration: 9/782][rank: 0] Loss_D: 0.4180, Loss_G: 7.5806, D(x): 0.8072, D(G(z)): 0.1397 / 0.0005, iteration time: 1.9030s
+Rank,0,Epoch,0,Iteration,9,It. time,1.9029593467712402,Elapsed time,23.55290651321411
+[epoch: 0/1][iteration: 10/782][rank: 0] Loss_D: 0.3251, Loss_G: 8.5591, D(x): 0.8679, D(G(z)): 0.1544 / 0.0002, iteration time: 1.9061s
+Rank,0,Epoch,0,Iteration,10,It. time,1.9060754776000977,Elapsed time,25.460745334625244
+[epoch: 0/1][iteration: 11/782][rank: 0] Loss_D: 0.2484, Loss_G: 7.3392, D(x): 0.8545, D(G(z)): 0.0635 / 0.0007, iteration time: 1.9071s
+Rank,0,Epoch,0,Iteration,11,It. time,1.9070935249328613,Elapsed time,27.36952018737793
+[epoch: 0/1][iteration: 12/782][rank: 0] Loss_D: 0.8733, Loss_G: 12.1418, D(x): 0.9149, D(G(z)): 0.5322 / 0.0000, iteration time: 1.8998s
+Rank,0,Epoch,0,Iteration,12,It. time,1.899784803390503,Elapsed time,29.271098375320435
+[epoch: 0/1][iteration: 13/782][rank: 0] Loss_D: 0.1319, Loss_G: 11.9192, D(x): 0.8884, D(G(z)): 0.0004 / 0.0000, iteration time: 1.9035s
+Rank,0,Epoch,0,Iteration,13,It. time,1.9034929275512695,Elapsed time,31.176389694213867
+[epoch: 0/1][iteration: 14/782][rank: 0] Loss_D: 0.2085, Loss_G: 7.2695, D(x): 0.8393, D(G(z)): 0.0024 / 0.0008, iteration time: 1.8986s
+Rank,0,Epoch,0,Iteration,14,It. time,1.8985812664031982,Elapsed time,33.07669949531555
+[epoch: 0/1][iteration: 15/782][rank: 0] Loss_D: 1.6228, Loss_G: 12.7667, D(x): 0.9504, D(G(z)): 0.7825 / 0.0000, iteration time: 1.8967s
+Rank,0,Epoch,0,Iteration,15,It. time,1.8966963291168213,Elapsed time,34.97520565986633
+[epoch: 0/1][iteration: 16/782][rank: 0] Loss_D: 0.5396, Loss_G: 13.3188, D(x): 0.6502, D(G(z)): 0.0001 / 0.0000, iteration time: 1.8916s
+Rank,0,Epoch,0,Iteration,16,It. time,1.8915598392486572,Elapsed time,36.868475675582886
+[epoch: 0/1][iteration: 17/782][rank: 0] Loss_D: 0.1260, Loss_G: 11.9486, D(x): 0.8968, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8999s
+Rank,0,Epoch,0,Iteration,17,It. time,1.8998770713806152,Elapsed time,38.77128720283508
+[epoch: 0/1][iteration: 18/782][rank: 0] Loss_D: 0.0593, Loss_G: 7.4732, D(x): 0.9494, D(G(z)): 0.0011 / 0.0007, iteration time: 1.8844s
+Rank,0,Epoch,0,Iteration,18,It. time,1.8843600749969482,Elapsed time,40.657384157180786
+[epoch: 0/1][iteration: 19/782][rank: 0] Loss_D: 0.8323, Loss_G: 11.8693, D(x): 0.9710, D(G(z)): 0.5413 / 0.0000, iteration time: 1.9040s
+Rank,0,Epoch,0,Iteration,19,It. time,1.9040467739105225,Elapsed time,42.5632483959198
+[epoch: 0/1][iteration: 20/782][rank: 0] Loss_D: 0.0812, Loss_G: 12.4453, D(x): 0.9260, D(G(z)): 0.0002 / 0.0000, iteration time: 1.8922s
+Rank,0,Epoch,0,Iteration,20,It. time,1.8922243118286133,Elapsed time,44.45721411705017
+[epoch: 0/1][iteration: 21/782][rank: 0] Loss_D: 0.1387, Loss_G: 10.1949, D(x): 0.8974, D(G(z)): 0.0002 / 0.0000, iteration time: 1.9051s
+Rank,0,Epoch,0,Iteration,21,It. time,1.9050729274749756,Elapsed time,46.36404371261597
+[epoch: 0/1][iteration: 22/782][rank: 0] Loss_D: 0.0709, Loss_G: 5.1722, D(x): 0.9526, D(G(z)): 0.0208 / 0.0065, iteration time: 1.8956s
+Rank,0,Epoch,0,Iteration,22,It. time,1.8956358432769775,Elapsed time,48.263526916503906
+[epoch: 0/1][iteration: 23/782][rank: 0] Loss_D: 2.8928, Loss_G: 13.5701, D(x): 0.9585, D(G(z)): 0.9364 / 0.0000, iteration time: 1.8855s
+Rank,0,Epoch,0,Iteration,23,It. time,1.8854968547821045,Elapsed time,50.1507613658905
+[epoch: 0/1][iteration: 24/782][rank: 0] Loss_D: 0.2873, Loss_G: 14.5921, D(x): 0.7927, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8833s
+Rank,0,Epoch,0,Iteration,24,It. time,1.8833277225494385,Elapsed time,52.04099488258362
+[epoch: 0/1][iteration: 25/782][rank: 0] Loss_D: 0.3689, Loss_G: 13.5272, D(x): 0.7345, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8804s
+Rank,0,Epoch,0,Iteration,25,It. time,1.8804023265838623,Elapsed time,53.92319297790527
+[epoch: 0/1][iteration: 26/782][rank: 0] Loss_D: 0.1582, Loss_G: 10.9487, D(x): 0.8834, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8973s
+Rank,0,Epoch,0,Iteration,26,It. time,1.897294282913208,Elapsed time,55.82241368293762
+[epoch: 0/1][iteration: 27/782][rank: 0] Loss_D: 0.0399, Loss_G: 6.1481, D(x): 0.9642, D(G(z)): 0.0025 / 0.0024, iteration time: 1.8841s
+Rank,0,Epoch,0,Iteration,27,It. time,1.884077548980713,Elapsed time,57.708292961120605
+[epoch: 0/1][iteration: 28/782][rank: 0] Loss_D: 1.1379, Loss_G: 12.3914, D(x): 0.9591, D(G(z)): 0.6542 / 0.0000, iteration time: 1.8943s
+Rank,0,Epoch,0,Iteration,28,It. time,1.8942911624908447,Elapsed time,59.60570573806763
+[epoch: 0/1][iteration: 29/782][rank: 0] Loss_D: 0.1536, Loss_G: 13.4990, D(x): 0.8750, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9032s
+Rank,0,Epoch,0,Iteration,29,It. time,1.9032230377197266,Elapsed time,61.51064109802246
+[epoch: 0/1][iteration: 30/782][rank: 0] Loss_D: 0.1239, Loss_G: 12.6918, D(x): 0.9050, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9013s
+Rank,0,Epoch,0,Iteration,30,It. time,1.9013328552246094,Elapsed time,63.413633823394775
+[epoch: 0/1][iteration: 31/782][rank: 0] Loss_D: 0.1359, Loss_G: 10.5884, D(x): 0.8976, D(G(z)): 0.0000 / 0.0000, iteration time: 2.0141s
+Rank,0,Epoch,0,Iteration,31,It. time,2.0141170024871826,Elapsed time,65.42956161499023
+[epoch: 0/1][iteration: 32/782][rank: 0] Loss_D: 0.0360, Loss_G: 6.8817, D(x): 0.9669, D(G(z)): 0.0015 / 0.0013, iteration time: 1.9011s
+Rank,0,Epoch,0,Iteration,32,It. time,1.9010975360870361,Elapsed time,67.33242654800415
+[epoch: 0/1][iteration: 33/782][rank: 0] Loss_D: 0.5751, Loss_G: 10.5642, D(x): 0.8780, D(G(z)): 0.3456 / 0.0000, iteration time: 1.8908s
+Rank,0,Epoch,0,Iteration,33,It. time,1.890822172164917,Elapsed time,69.2262327671051
+[epoch: 0/1][iteration: 34/782][rank: 0] Loss_D: 0.0946, Loss_G: 10.5682, D(x): 0.9185, D(G(z)): 0.0010 / 0.0000, iteration time: 1.9250s
+Rank,0,Epoch,0,Iteration,34,It. time,1.9250447750091553,Elapsed time,71.15307807922363
+[epoch: 0/1][iteration: 35/782][rank: 0] Loss_D: 0.0801, Loss_G: 8.2240, D(x): 0.9287, D(G(z)): 0.0016 / 0.0004, iteration time: 1.8846s
+Rank,0,Epoch,0,Iteration,35,It. time,1.8845582008361816,Elapsed time,73.03943204879761
+[epoch: 0/1][iteration: 36/782][rank: 0] Loss_D: 0.2762, Loss_G: 8.3702, D(x): 0.8976, D(G(z)): 0.1450 / 0.0003, iteration time: 1.9084s
+Rank,0,Epoch,0,Iteration,36,It. time,1.908381462097168,Elapsed time,74.95179271697998
+[epoch: 0/1][iteration: 37/782][rank: 0] Loss_D: 0.3321, Loss_G: 12.4970, D(x): 0.9545, D(G(z)): 0.2434 / 0.0000, iteration time: 1.8892s
+Rank,0,Epoch,0,Iteration,37,It. time,1.8892030715942383,Elapsed time,76.8427963256836
+[epoch: 0/1][iteration: 38/782][rank: 0] Loss_D: 0.2165, Loss_G: 12.0253, D(x): 0.8304, D(G(z)): 0.0002 / 0.0000, iteration time: 1.8997s
+Rank,0,Epoch,0,Iteration,38,It. time,1.8996658325195312,Elapsed time,78.74422931671143
+[epoch: 0/1][iteration: 39/782][rank: 0] Loss_D: 0.0974, Loss_G: 8.9018, D(x): 0.9124, D(G(z)): 0.0007 / 0.0002, iteration time: 1.8958s
+Rank,0,Epoch,0,Iteration,39,It. time,1.895780086517334,Elapsed time,80.64692044258118
+[epoch: 0/1][iteration: 40/782][rank: 0] Loss_D: 0.5045, Loss_G: 13.3419, D(x): 0.9337, D(G(z)): 0.3430 / 0.0000, iteration time: 1.8861s
+Rank,0,Epoch,0,Iteration,40,It. time,1.8860986232757568,Elapsed time,82.53487157821655
+[epoch: 0/1][iteration: 41/782][rank: 0] Loss_D: 0.0855, Loss_G: 13.9060, D(x): 0.9205, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8961s
+Rank,0,Epoch,0,Iteration,41,It. time,1.8960731029510498,Elapsed time,84.43786787986755
+[epoch: 0/1][iteration: 42/782][rank: 0] Loss_D: 0.1561, Loss_G: 12.3836, D(x): 0.8662, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8799s
+Rank,0,Epoch,0,Iteration,42,It. time,1.8799355030059814,Elapsed time,86.31963729858398
+[epoch: 0/1][iteration: 43/782][rank: 0] Loss_D: 0.1049, Loss_G: 9.0342, D(x): 0.9056, D(G(z)): 0.0002 / 0.0001, iteration time: 1.8995s
+Rank,0,Epoch,0,Iteration,43,It. time,1.899545669555664,Elapsed time,88.22695016860962
+[epoch: 0/1][iteration: 44/782][rank: 0] Loss_D: 0.1304, Loss_G: 6.4117, D(x): 0.9444, D(G(z)): 0.0662 / 0.0019, iteration time: 1.8988s
+Rank,0,Epoch,0,Iteration,44,It. time,1.8988347053527832,Elapsed time,90.12751531600952
+[epoch: 0/1][iteration: 45/782][rank: 0] Loss_D: 1.2697, Loss_G: 16.5177, D(x): 0.9628, D(G(z)): 0.6897 / 0.0000, iteration time: 1.8980s
+Rank,0,Epoch,0,Iteration,45,It. time,1.8980369567871094,Elapsed time,92.02724075317383
+[epoch: 0/1][iteration: 46/782][rank: 0] Loss_D: 0.5286, Loss_G: 17.5527, D(x): 0.6814, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9151s
+Rank,0,Epoch,0,Iteration,46,It. time,1.9150896072387695,Elapsed time,93.94409465789795
+[epoch: 0/1][iteration: 47/782][rank: 0] Loss_D: 0.5040, Loss_G: 17.0458, D(x): 0.6899, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8998s
+Rank,0,Epoch,0,Iteration,47,It. time,1.8997642993927002,Elapsed time,95.84561729431152
+[epoch: 0/1][iteration: 48/782][rank: 0] Loss_D: 0.0981, Loss_G: 16.0855, D(x): 0.9150, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8768s
+Rank,0,Epoch,0,Iteration,48,It. time,1.8767790794372559,Elapsed time,97.72419381141663
+[epoch: 0/1][iteration: 49/782][rank: 0] Loss_D: 0.0543, Loss_G: 14.8006, D(x): 0.9529, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8751s
+Rank,0,Epoch,0,Iteration,49,It. time,1.875056266784668,Elapsed time,99.60620093345642
+[epoch: 0/1][iteration: 50/782][rank: 0] Loss_D: 0.0437, Loss_G: 12.9198, D(x): 0.9594, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9010s
+Rank,0,Epoch,0,Iteration,50,It. time,1.901017665863037,Elapsed time,101.50906181335449
+[epoch: 0/1][iteration: 51/782][rank: 0] Loss_D: 0.0208, Loss_G: 10.2637, D(x): 0.9800, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9001s
+Rank,0,Epoch,0,Iteration,51,It. time,1.9000658988952637,Elapsed time,103.4109513759613
+[epoch: 0/1][iteration: 52/782][rank: 0] Loss_D: 0.0106, Loss_G: 6.7309, D(x): 0.9909, D(G(z)): 0.0014 / 0.0015, iteration time: 1.8998s
+Rank,0,Epoch,0,Iteration,52,It. time,1.8997647762298584,Elapsed time,105.31251215934753
+[epoch: 0/1][iteration: 53/782][rank: 0] Loss_D: 0.1219, Loss_G: 6.2053, D(x): 0.9936, D(G(z)): 0.1072 / 0.0025, iteration time: 1.8825s
+Rank,0,Epoch,0,Iteration,53,It. time,1.8824985027313232,Elapsed time,107.20188164710999
+[epoch: 0/1][iteration: 54/782][rank: 0] Loss_D: 0.1553, Loss_G: 8.5207, D(x): 0.9928, D(G(z)): 0.1359 / 0.0002, iteration time: 1.8989s
+Rank,0,Epoch,0,Iteration,54,It. time,1.8988511562347412,Elapsed time,109.10248041152954
+[epoch: 0/1][iteration: 55/782][rank: 0] Loss_D: 0.0374, Loss_G: 8.1919, D(x): 0.9712, D(G(z)): 0.0068 / 0.0003, iteration time: 1.8958s
+Rank,0,Epoch,0,Iteration,55,It. time,1.8957602977752686,Elapsed time,111.00008726119995
+[epoch: 0/1][iteration: 56/782][rank: 0] Loss_D: 0.0753, Loss_G: 6.4920, D(x): 0.9682, D(G(z)): 0.0414 / 0.0017, iteration time: 1.8784s
+Rank,0,Epoch,0,Iteration,56,It. time,1.8784079551696777,Elapsed time,112.8858163356781
+[epoch: 0/1][iteration: 57/782][rank: 0] Loss_D: 1.0190, Loss_G: 14.9706, D(x): 0.9785, D(G(z)): 0.6130 / 0.0000, iteration time: 1.8927s
+Rank,0,Epoch,0,Iteration,57,It. time,1.8927059173583984,Elapsed time,114.78024768829346
+[epoch: 0/1][iteration: 58/782][rank: 0] Loss_D: 0.1852, Loss_G: 16.2270, D(x): 0.8491, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8939s
+Rank,0,Epoch,0,Iteration,58,It. time,1.893852710723877,Elapsed time,116.67597675323486
+[epoch: 0/1][iteration: 59/782][rank: 0] Loss_D: 0.3151, Loss_G: 15.7466, D(x): 0.8020, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8867s
+Rank,0,Epoch,0,Iteration,59,It. time,1.8867120742797852,Elapsed time,118.56444072723389
+[epoch: 0/1][iteration: 60/782][rank: 0] Loss_D: 0.1017, Loss_G: 14.4547, D(x): 0.9105, D(G(z)): 0.0000 / 0.0000, iteration time: 1.9050s
+Rank,0,Epoch,0,Iteration,60,It. time,1.9049875736236572,Elapsed time,120.47112226486206
+[epoch: 0/1][iteration: 61/782][rank: 0] Loss_D: 0.0747, Loss_G: 12.9160, D(x): 0.9321, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8951s
+Rank,0,Epoch,0,Iteration,61,It. time,1.8951466083526611,Elapsed time,122.36802649497986
+[epoch: 0/1][iteration: 62/782][rank: 0] Loss_D: 0.0197, Loss_G: 11.0883, D(x): 0.9807, D(G(z)): 0.0000 / 0.0000, iteration time: 1.8999s
+Rank,0,Epoch,0,Iteration,62,It. time,1.8998703956604004,Elapsed time,124.26975846290588
+[epoch: 0/1][iteration: 63/782][rank: 0] Loss_D: 0.0381, Loss_G: 8.4163, D(x): 0.9640, D(G(z)): 0.0003 / 0.0003, iteration time: 1.9244s
+Rank,0,Epoch,0,Iteration,63,It. time,1.9244329929351807,Elapsed time,126.19606471061707
+[epoch: 0/1][iteration: 64/782][rank: 0] Loss_D: 0.0509, Loss_G: 4.6570, D(x): 0.9703, D(G(z)): 0.0198 / 0.0133, iteration time: 1.9012s
+Rank,0,Epoch,0,Iteration,64,It. time,1.90120530128479,Elapsed time,128.10461330413818
+[epoch: 0/1][iteration: 65/782][rank: 0] Loss_D: 0.9679, Loss_G: 11.2419, D(x): 0.9674, D(G(z)): 0.5683 / 0.0000, iteration time: 1.9066s
+Rank,0,Epoch,0,Iteration,65,It. time,1.9065582752227783,Elapsed time,130.01302313804626
+[epoch: 0/1][iteration: 66/782][rank: 0] Loss_D: 0.1237, Loss_G: 11.7497, D(x): 0.9056, D(G(z)): 0.0004 / 0.0000, iteration time: 1.8918s
+Rank,0,Epoch,0,Iteration,66,It. time,1.8917722702026367,Elapsed time,131.90657377243042
+[epoch: 0/1][iteration: 67/782][rank: 0] Loss_D: 0.1680, Loss_G: 10.5448, D(x): 0.8597, D(G(z)): 0.0002 / 0.0001, iteration time: 1.8922s
+Rank,0,Epoch,0,Iteration,67,It. time,1.8922302722930908,Elapsed time,133.80055451393127
+[epoch: 0/1][iteration: 68/782][rank: 0] Loss_D: 0.0343, Loss_G: 7.9875, D(x): 0.9681, D(G(z)): 0.0013 / 0.0012, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,68,It. time,1.8891029357910156,Elapsed time,135.6965091228485
+[epoch: 0/1][iteration: 69/782][rank: 0] Loss_D: 0.0883, Loss_G: 4.8176, D(x): 0.9492, D(G(z)): 0.0318 / 0.0184, iteration time: 1.8912s
+Rank,0,Epoch,0,Iteration,69,It. time,1.8911731243133545,Elapsed time,137.58952713012695
+[epoch: 0/1][iteration: 70/782][rank: 0] Loss_D: 0.6341, Loss_G: 6.6888, D(x): 0.9366, D(G(z)): 0.3848 / 0.0014, iteration time: 1.8866s
+Rank,0,Epoch,0,Iteration,70,It. time,1.8865983486175537,Elapsed time,139.4820065498352
+[epoch: 0/1][iteration: 71/782][rank: 0] Loss_D: 0.1927, Loss_G: 6.4772, D(x): 0.8587, D(G(z)): 0.0159 / 0.0017, iteration time: 1.8880s
+Rank,0,Epoch,0,Iteration,71,It. time,1.8879961967468262,Elapsed time,141.371755361557
+[epoch: 0/1][iteration: 72/782][rank: 0] Loss_D: 0.2854, Loss_G: 4.3954, D(x): 0.8249, D(G(z)): 0.0616 / 0.0154, iteration time: 1.9002s
+Rank,0,Epoch,0,Iteration,72,It. time,1.900167465209961,Elapsed time,143.27365136146545
+[epoch: 0/1][iteration: 73/782][rank: 0] Loss_D: 0.4851, Loss_G: 6.3331, D(x): 0.9634, D(G(z)): 0.3338 / 0.0029, iteration time: 1.8951s
+Rank,0,Epoch,0,Iteration,73,It. time,1.8950669765472412,Elapsed time,145.17054915428162
+[epoch: 0/1][iteration: 74/782][rank: 0] Loss_D: 0.1982, Loss_G: 6.4524, D(x): 0.8564, D(G(z)): 0.0219 / 0.0031, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,74,It. time,1.8934571743011475,Elapsed time,147.065922498703
+[epoch: 0/1][iteration: 75/782][rank: 0] Loss_D: 0.1106, Loss_G: 4.7557, D(x): 0.9239, D(G(z)): 0.0284 / 0.0126, iteration time: 1.9213s
+Rank,0,Epoch,0,Iteration,75,It. time,1.9213063716888428,Elapsed time,148.9890468120575
+[epoch: 0/1][iteration: 76/782][rank: 0] Loss_D: 0.2264, Loss_G: 4.8548, D(x): 0.9363, D(G(z)): 0.1421 / 0.0090, iteration time: 1.9014s
+Rank,0,Epoch,0,Iteration,76,It. time,1.9013957977294922,Elapsed time,150.8921890258789
+[epoch: 0/1][iteration: 77/782][rank: 0] Loss_D: 0.3329, Loss_G: 6.7441, D(x): 0.8886, D(G(z)): 0.1616 / 0.0013, iteration time: 1.9012s
+Rank,0,Epoch,0,Iteration,77,It. time,1.901214838027954,Elapsed time,152.79514265060425
+[epoch: 0/1][iteration: 78/782][rank: 0] Loss_D: 0.1707, Loss_G: 5.6736, D(x): 0.8882, D(G(z)): 0.0365 / 0.0041, iteration time: 1.9136s
+Rank,0,Epoch,0,Iteration,78,It. time,1.913637638092041,Elapsed time,154.7157633304596
+[epoch: 0/1][iteration: 79/782][rank: 0] Loss_D: 0.2010, Loss_G: 4.3269, D(x): 0.8762, D(G(z)): 0.0595 / 0.0141, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,79,It. time,1.8975954055786133,Elapsed time,156.61511492729187
+[epoch: 0/1][iteration: 80/782][rank: 0] Loss_D: 0.5646, Loss_G: 8.1525, D(x): 0.9414, D(G(z)): 0.3709 / 0.0004, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,80,It. time,1.8877851963043213,Elapsed time,158.5046844482422
+[epoch: 0/1][iteration: 81/782][rank: 0] Loss_D: 0.3396, Loss_G: 7.7496, D(x): 0.7295, D(G(z)): 0.0015 / 0.0006, iteration time: 1.8831s
+Rank,0,Epoch,0,Iteration,81,It. time,1.8831079006195068,Elapsed time,160.3945038318634
+[epoch: 0/1][iteration: 82/782][rank: 0] Loss_D: 0.1308, Loss_G: 5.4420, D(x): 0.8883, D(G(z)): 0.0062 / 0.0085, iteration time: 1.9060s
+Rank,0,Epoch,0,Iteration,82,It. time,1.9060099124908447,Elapsed time,162.30226469039917
+[epoch: 0/1][iteration: 83/782][rank: 0] Loss_D: 0.1757, Loss_G: 4.4841, D(x): 0.9532, D(G(z)): 0.1156 / 0.0125, iteration time: 1.8895s
+Rank,0,Epoch,0,Iteration,83,It. time,1.8894646167755127,Elapsed time,164.19359469413757
+[epoch: 0/1][iteration: 84/782][rank: 0] Loss_D: 0.6798, Loss_G: 9.4116, D(x): 0.9810, D(G(z)): 0.4535 / 0.0004, iteration time: 1.8969s
+Rank,0,Epoch,0,Iteration,84,It. time,1.8968524932861328,Elapsed time,166.0922975540161
+[epoch: 0/1][iteration: 85/782][rank: 0] Loss_D: 1.1087, Loss_G: 8.0598, D(x): 0.4547, D(G(z)): 0.0012 / 0.0019, iteration time: 1.8920s
+Rank,0,Epoch,0,Iteration,85,It. time,1.8919625282287598,Elapsed time,167.9859962463379
+[epoch: 0/1][iteration: 86/782][rank: 0] Loss_D: 0.3503, Loss_G: 4.8554, D(x): 0.7452, D(G(z)): 0.0112 / 0.0164, iteration time: 1.8889s
+Rank,0,Epoch,0,Iteration,86,It. time,1.8889169692993164,Elapsed time,169.88009333610535
+[epoch: 0/1][iteration: 87/782][rank: 0] Loss_D: 0.2901, Loss_G: 4.3823, D(x): 0.9533, D(G(z)): 0.1975 / 0.0420, iteration time: 1.8841s
+Rank,0,Epoch,0,Iteration,87,It. time,1.8840570449829102,Elapsed time,171.765949010849
+[epoch: 0/1][iteration: 88/782][rank: 0] Loss_D: 0.4683, Loss_G: 6.0371, D(x): 0.8906, D(G(z)): 0.2406 / 0.0042, iteration time: 1.8803s
+Rank,0,Epoch,0,Iteration,88,It. time,1.8803470134735107,Elapsed time,173.65175366401672
+[epoch: 0/1][iteration: 89/782][rank: 0] Loss_D: 0.1977, Loss_G: 5.1463, D(x): 0.8739, D(G(z)): 0.0515 / 0.0167, iteration time: 1.8907s
+Rank,0,Epoch,0,Iteration,89,It. time,1.8906595706939697,Elapsed time,175.54417657852173
+[epoch: 0/1][iteration: 90/782][rank: 0] Loss_D: 0.2053, Loss_G: 5.3906, D(x): 0.9138, D(G(z)): 0.1002 / 0.0082, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,90,It. time,1.8884196281433105,Elapsed time,177.43427062034607
+[epoch: 0/1][iteration: 91/782][rank: 0] Loss_D: 0.2427, Loss_G: 5.7778, D(x): 0.9420, D(G(z)): 0.1581 / 0.0036, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,91,It. time,1.8975858688354492,Elapsed time,179.33699440956116
+[epoch: 0/1][iteration: 92/782][rank: 0] Loss_D: 0.4608, Loss_G: 4.4546, D(x): 0.7636, D(G(z)): 0.0896 / 0.0125, iteration time: 1.8937s
+Rank,0,Epoch,0,Iteration,92,It. time,1.8936755657196045,Elapsed time,181.23241066932678
+[epoch: 0/1][iteration: 93/782][rank: 0] Loss_D: 0.4145, Loss_G: 7.4122, D(x): 0.9257, D(G(z)): 0.2701 / 0.0008, iteration time: 1.9003s
+Rank,0,Epoch,0,Iteration,93,It. time,1.900284767150879,Elapsed time,183.13450360298157
+[epoch: 0/1][iteration: 94/782][rank: 0] Loss_D: 0.3854, Loss_G: 4.9445, D(x): 0.7279, D(G(z)): 0.0058 / 0.0128, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,94,It. time,1.8947803974151611,Elapsed time,185.0311040878296
+[epoch: 0/1][iteration: 95/782][rank: 0] Loss_D: 0.5116, Loss_G: 7.2607, D(x): 0.8784, D(G(z)): 0.2730 / 0.0021, iteration time: 1.8720s
+Rank,0,Epoch,0,Iteration,95,It. time,1.8720321655273438,Elapsed time,186.9049425125122
+[epoch: 0/1][iteration: 96/782][rank: 0] Loss_D: 0.3714, Loss_G: 5.5328, D(x): 0.7407, D(G(z)): 0.0162 / 0.0052, iteration time: 1.8923s
+Rank,0,Epoch,0,Iteration,96,It. time,1.8922629356384277,Elapsed time,188.7989523410797
+[epoch: 0/1][iteration: 97/782][rank: 0] Loss_D: 0.1928, Loss_G: 5.1897, D(x): 0.9424, D(G(z)): 0.1154 / 0.0083, iteration time: 1.8912s
+Rank,0,Epoch,0,Iteration,97,It. time,1.8911516666412354,Elapsed time,190.6919300556183
+[epoch: 0/1][iteration: 98/782][rank: 0] Loss_D: 0.4222, Loss_G: 7.7659, D(x): 0.9048, D(G(z)): 0.2464 / 0.0005, iteration time: 1.9068s
+Rank,0,Epoch,0,Iteration,98,It. time,1.9067776203155518,Elapsed time,192.6005573272705
+[epoch: 0/1][iteration: 99/782][rank: 0] Loss_D: 1.1347, Loss_G: 1.7468, D(x): 0.4563, D(G(z)): 0.0045 / 0.2016, iteration time: 1.9041s
+Rank,0,Epoch,0,Iteration,99,It. time,1.9040541648864746,Elapsed time,194.50640225410461
+[epoch: 0/1][iteration: 100/782][rank: 0] Loss_D: 1.9290, Loss_G: 8.9820, D(x): 0.9699, D(G(z)): 0.8188 / 0.0002, iteration time: 1.8957s
+Rank,0,Epoch,0,Iteration,100,It. time,1.8956513404846191,Elapsed time,196.40377116203308
+[epoch: 0/1][iteration: 101/782][rank: 0] Loss_D: 3.5226, Loss_G: 6.3825, D(x): 0.0794, D(G(z)): 0.0006 / 0.0030, iteration time: 1.8772s
+Rank,0,Epoch,0,Iteration,101,It. time,1.8771822452545166,Elapsed time,198.59001970291138
+[epoch: 0/1][iteration: 102/782][rank: 0] Loss_D: 0.7114, Loss_G: 3.4265, D(x): 0.5711, D(G(z)): 0.0081 / 0.0503, iteration time: 1.8866s
+Rank,0,Epoch,0,Iteration,102,It. time,1.8866233825683594,Elapsed time,200.47848320007324
+[epoch: 0/1][iteration: 103/782][rank: 0] Loss_D: 0.2601, Loss_G: 2.2392, D(x): 0.9506, D(G(z)): 0.1782 / 0.1379, iteration time: 1.9065s
+Rank,0,Epoch,0,Iteration,103,It. time,1.9064533710479736,Elapsed time,202.38676190376282
+[epoch: 0/1][iteration: 104/782][rank: 0] Loss_D: 0.5075, Loss_G: 3.1514, D(x): 0.9585, D(G(z)): 0.3530 / 0.0515, iteration time: 1.9025s
+Rank,0,Epoch,0,Iteration,104,It. time,1.9024569988250732,Elapsed time,204.2910418510437
+[epoch: 0/1][iteration: 105/782][rank: 0] Loss_D: 0.2425, Loss_G: 3.6865, D(x): 0.9388, D(G(z)): 0.1574 / 0.0305, iteration time: 1.9112s
+Rank,0,Epoch,0,Iteration,105,It. time,1.9111740589141846,Elapsed time,206.2039303779602
+[epoch: 0/1][iteration: 106/782][rank: 0] Loss_D: 0.3802, Loss_G: 3.1151, D(x): 0.8214, D(G(z)): 0.1266 / 0.0501, iteration time: 1.9166s
+Rank,0,Epoch,0,Iteration,106,It. time,1.916588544845581,Elapsed time,208.12241196632385
+[epoch: 0/1][iteration: 107/782][rank: 0] Loss_D: 0.4248, Loss_G: 3.2520, D(x): 0.8718, D(G(z)): 0.2246 / 0.0439, iteration time: 1.9221s
+Rank,0,Epoch,0,Iteration,107,It. time,1.9221129417419434,Elapsed time,210.04626989364624
+[epoch: 0/1][iteration: 108/782][rank: 0] Loss_D: 0.4901, Loss_G: 3.7151, D(x): 0.8309, D(G(z)): 0.2346 / 0.0273, iteration time: 1.8890s
+Rank,0,Epoch,0,Iteration,108,It. time,1.8889622688293457,Elapsed time,211.9443542957306
+[epoch: 0/1][iteration: 109/782][rank: 0] Loss_D: 0.5232, Loss_G: 2.9732, D(x): 0.7367, D(G(z)): 0.1558 / 0.0564, iteration time: 1.8942s
+Rank,0,Epoch,0,Iteration,109,It. time,1.8942217826843262,Elapsed time,213.84036993980408
+[epoch: 0/1][iteration: 110/782][rank: 0] Loss_D: 0.7998, Loss_G: 5.0177, D(x): 0.8133, D(G(z)): 0.4033 / 0.0147, iteration time: 1.8833s
+Rank,0,Epoch,0,Iteration,110,It. time,1.8832509517669678,Elapsed time,215.72666096687317
+[epoch: 0/1][iteration: 111/782][rank: 0] Loss_D: 0.7205, Loss_G: 2.5425, D(x): 0.5934, D(G(z)): 0.0464 / 0.0976, iteration time: 1.8969s
+Rank,0,Epoch,0,Iteration,111,It. time,1.8969449996948242,Elapsed time,217.62536525726318
+[epoch: 0/1][iteration: 112/782][rank: 0] Loss_D: 0.5657, Loss_G: 4.5777, D(x): 0.9467, D(G(z)): 0.3925 / 0.0113, iteration time: 1.8869s
+Rank,0,Epoch,0,Iteration,112,It. time,1.8868896961212158,Elapsed time,219.5182876586914
+[epoch: 0/1][iteration: 113/782][rank: 0] Loss_D: 0.3809, Loss_G: 3.7123, D(x): 0.7670, D(G(z)): 0.0782 / 0.0292, iteration time: 1.8942s
+Rank,0,Epoch,0,Iteration,113,It. time,1.8942022323608398,Elapsed time,221.41420722007751
+[epoch: 0/1][iteration: 114/782][rank: 0] Loss_D: 0.5281, Loss_G: 2.9339, D(x): 0.7664, D(G(z)): 0.1898 / 0.0573, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,114,It. time,1.8976109027862549,Elapsed time,223.31355500221252
+[epoch: 0/1][iteration: 115/782][rank: 0] Loss_D: 0.7296, Loss_G: 5.6007, D(x): 0.8010, D(G(z)): 0.3586 / 0.0071, iteration time: 1.8937s
+Rank,0,Epoch,0,Iteration,115,It. time,1.8937385082244873,Elapsed time,225.2090539932251
+[epoch: 0/1][iteration: 116/782][rank: 0] Loss_D: 0.4905, Loss_G: 2.6474, D(x): 0.6776, D(G(z)): 0.0285 / 0.1059, iteration time: 1.8890s
+Rank,0,Epoch,0,Iteration,116,It. time,1.8889684677124023,Elapsed time,227.10436511039734
+[epoch: 0/1][iteration: 117/782][rank: 0] Loss_D: 0.6928, Loss_G: 5.6467, D(x): 0.9184, D(G(z)): 0.4193 / 0.0044, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,117,It. time,1.8976054191589355,Elapsed time,229.00373125076294
+[epoch: 0/1][iteration: 118/782][rank: 0] Loss_D: 0.6285, Loss_G: 3.5719, D(x): 0.5963, D(G(z)): 0.0298 / 0.0362, iteration time: 1.9006s
+Rank,0,Epoch,0,Iteration,118,It. time,1.9005606174468994,Elapsed time,230.91124629974365
+[epoch: 0/1][iteration: 119/782][rank: 0] Loss_D: 0.3178, Loss_G: 3.6093, D(x): 0.9199, D(G(z)): 0.1884 / 0.0330, iteration time: 1.9094s
+Rank,0,Epoch,0,Iteration,119,It. time,1.909393310546875,Elapsed time,232.8224639892578
+[epoch: 0/1][iteration: 120/782][rank: 0] Loss_D: 0.5196, Loss_G: 5.0154, D(x): 0.8719, D(G(z)): 0.2793 / 0.0087, iteration time: 1.8995s
+Rank,0,Epoch,0,Iteration,120,It. time,1.8995013236999512,Elapsed time,234.72375202178955
+[epoch: 0/1][iteration: 121/782][rank: 0] Loss_D: 0.7013, Loss_G: 2.4125, D(x): 0.6057, D(G(z)): 0.0572 / 0.1109, iteration time: 1.8962s
+Rank,0,Epoch,0,Iteration,121,It. time,1.8962249755859375,Elapsed time,236.6217496395111
+[epoch: 0/1][iteration: 122/782][rank: 0] Loss_D: 0.9705, Loss_G: 6.6590, D(x): 0.9098, D(G(z)): 0.5648 / 0.0023, iteration time: 1.8889s
+Rank,0,Epoch,0,Iteration,122,It. time,1.8889107704162598,Elapsed time,238.51236081123352
+[epoch: 0/1][iteration: 123/782][rank: 0] Loss_D: 1.6178, Loss_G: 2.8160, D(x): 0.2943, D(G(z)): 0.0167 / 0.0895, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,123,It. time,1.8795924186706543,Elapsed time,240.39367938041687
+[epoch: 0/1][iteration: 124/782][rank: 0] Loss_D: 0.5228, Loss_G: 3.3883, D(x): 0.8703, D(G(z)): 0.2925 / 0.0394, iteration time: 1.9161s
+Rank,0,Epoch,0,Iteration,124,It. time,1.916137456893921,Elapsed time,242.31161260604858
+[epoch: 0/1][iteration: 125/782][rank: 0] Loss_D: 0.7275, Loss_G: 4.3630, D(x): 0.7807, D(G(z)): 0.3229 / 0.0201, iteration time: 1.9056s
+Rank,0,Epoch,0,Iteration,125,It. time,1.9055790901184082,Elapsed time,244.21892976760864
+[epoch: 0/1][iteration: 126/782][rank: 0] Loss_D: 0.5138, Loss_G: 2.2495, D(x): 0.6853, D(G(z)): 0.0832 / 0.1361, iteration time: 1.9025s
+Rank,0,Epoch,0,Iteration,126,It. time,1.9024603366851807,Elapsed time,246.1232032775879
+[epoch: 0/1][iteration: 127/782][rank: 0] Loss_D: 1.0888, Loss_G: 6.6525, D(x): 0.9282, D(G(z)): 0.6208 / 0.0020, iteration time: 1.8902s
+Rank,0,Epoch,0,Iteration,127,It. time,1.8902437686920166,Elapsed time,248.01520466804504
+[epoch: 0/1][iteration: 128/782][rank: 0] Loss_D: 1.9924, Loss_G: 3.3229, D(x): 0.2001, D(G(z)): 0.0096 / 0.0467, iteration time: 1.8972s
+Rank,0,Epoch,0,Iteration,128,It. time,1.8971564769744873,Elapsed time,249.91408324241638
+[epoch: 0/1][iteration: 129/782][rank: 0] Loss_D: 0.4456, Loss_G: 1.6584, D(x): 0.8203, D(G(z)): 0.1854 / 0.2275, iteration time: 1.8986s
+Rank,0,Epoch,0,Iteration,129,It. time,1.8986034393310547,Elapsed time,251.8144474029541
+[epoch: 0/1][iteration: 130/782][rank: 0] Loss_D: 0.7404, Loss_G: 4.1175, D(x): 0.8877, D(G(z)): 0.4505 / 0.0200, iteration time: 1.8913s
+Rank,0,Epoch,0,Iteration,130,It. time,1.8912725448608398,Elapsed time,253.7106807231903
+[epoch: 0/1][iteration: 131/782][rank: 0] Loss_D: 0.7089, Loss_G: 2.5794, D(x): 0.6170, D(G(z)): 0.0897 / 0.0843, iteration time: 1.9204s
+Rank,0,Epoch,0,Iteration,131,It. time,1.9203615188598633,Elapsed time,255.6327826976776
+[epoch: 0/1][iteration: 132/782][rank: 0] Loss_D: 0.5039, Loss_G: 2.7875, D(x): 0.8163, D(G(z)): 0.2299 / 0.0672, iteration time: 1.9039s
+Rank,0,Epoch,0,Iteration,132,It. time,1.903897762298584,Elapsed time,257.5384478569031
+[epoch: 0/1][iteration: 133/782][rank: 0] Loss_D: 0.6227, Loss_G: 4.8836, D(x): 0.8836, D(G(z)): 0.3480 / 0.0098, iteration time: 1.8865s
+Rank,0,Epoch,0,Iteration,133,It. time,1.8865268230438232,Elapsed time,259.4319386482239
+[epoch: 0/1][iteration: 134/782][rank: 0] Loss_D: 0.6146, Loss_G: 1.8629, D(x): 0.6029, D(G(z)): 0.0420 / 0.1719, iteration time: 1.8996s
+Rank,0,Epoch,0,Iteration,134,It. time,1.899644136428833,Elapsed time,261.3333327770233
+[epoch: 0/1][iteration: 135/782][rank: 0] Loss_D: 0.8124, Loss_G: 4.8630, D(x): 0.8999, D(G(z)): 0.4884 / 0.0093, iteration time: 1.8887s
+Rank,0,Epoch,0,Iteration,135,It. time,1.8886914253234863,Elapsed time,263.22372484207153
+[epoch: 0/1][iteration: 136/782][rank: 0] Loss_D: 0.8955, Loss_G: 2.5187, D(x): 0.4750, D(G(z)): 0.0343 / 0.0957, iteration time: 1.8802s
+Rank,0,Epoch,0,Iteration,136,It. time,1.8801634311676025,Elapsed time,265.11084485054016
+[epoch: 0/1][iteration: 137/782][rank: 0] Loss_D: 0.4112, Loss_G: 3.2781, D(x): 0.9294, D(G(z)): 0.2809 / 0.0432, iteration time: 1.8914s
+Rank,0,Epoch,0,Iteration,137,It. time,1.8914029598236084,Elapsed time,267.00919938087463
+[epoch: 0/1][iteration: 138/782][rank: 0] Loss_D: 0.3824, Loss_G: 3.6724, D(x): 0.8582, D(G(z)): 0.1893 / 0.0295, iteration time: 1.9070s
+Rank,0,Epoch,0,Iteration,138,It. time,1.9069581031799316,Elapsed time,268.91796803474426
+[epoch: 0/1][iteration: 139/782][rank: 0] Loss_D: 0.4319, Loss_G: 2.5276, D(x): 0.7649, D(G(z)): 0.1115 / 0.0913, iteration time: 1.9060s
+Rank,0,Epoch,0,Iteration,139,It. time,1.906017780303955,Elapsed time,270.8294277191162
+[epoch: 0/1][iteration: 140/782][rank: 0] Loss_D: 0.6800, Loss_G: 5.0209, D(x): 0.8719, D(G(z)): 0.3919 / 0.0073, iteration time: 1.8957s
+Rank,0,Epoch,0,Iteration,140,It. time,1.8957240581512451,Elapsed time,272.7311301231384
+[epoch: 0/1][iteration: 141/782][rank: 0] Loss_D: 0.4568, Loss_G: 3.0688, D(x): 0.6607, D(G(z)): 0.0201 / 0.0650, iteration time: 1.9014s
+Rank,0,Epoch,0,Iteration,141,It. time,1.9013750553131104,Elapsed time,274.6384630203247
+[epoch: 0/1][iteration: 142/782][rank: 0] Loss_D: 0.4584, Loss_G: 3.5136, D(x): 0.8690, D(G(z)): 0.2316 / 0.0419, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,142,It. time,1.8975625038146973,Elapsed time,276.53773403167725
+[epoch: 0/1][iteration: 143/782][rank: 0] Loss_D: 0.5403, Loss_G: 5.3378, D(x): 0.8912, D(G(z)): 0.3017 / 0.0076, iteration time: 1.8994s
+Rank,0,Epoch,0,Iteration,143,It. time,1.8993515968322754,Elapsed time,278.4389386177063
+[epoch: 0/1][iteration: 144/782][rank: 0] Loss_D: 0.4528, Loss_G: 2.4284, D(x): 0.7181, D(G(z)): 0.0472 / 0.0986, iteration time: 1.9017s
+Rank,0,Epoch,0,Iteration,144,It. time,1.9017469882965088,Elapsed time,280.34246158599854
+[epoch: 0/1][iteration: 145/782][rank: 0] Loss_D: 0.8177, Loss_G: 5.3168, D(x): 0.8782, D(G(z)): 0.4693 / 0.0064, iteration time: 1.9000s
+Rank,0,Epoch,0,Iteration,145,It. time,1.8999836444854736,Elapsed time,282.24429297447205
+[epoch: 0/1][iteration: 146/782][rank: 0] Loss_D: 0.7576, Loss_G: 1.2365, D(x): 0.5628, D(G(z)): 0.0397 / 0.3374, iteration time: 1.8918s
+Rank,0,Epoch,0,Iteration,146,It. time,1.8918023109436035,Elapsed time,284.1392056941986
+[epoch: 0/1][iteration: 147/782][rank: 0] Loss_D: 1.2273, Loss_G: 6.3065, D(x): 0.8970, D(G(z)): 0.6168 / 0.0030, iteration time: 1.8870s
+Rank,0,Epoch,0,Iteration,147,It. time,1.886960744857788,Elapsed time,286.0279452800751
+[epoch: 0/1][iteration: 148/782][rank: 0] Loss_D: 1.0029, Loss_G: 3.7515, D(x): 0.4564, D(G(z)): 0.0100 / 0.0369, iteration time: 1.9027s
+Rank,0,Epoch,0,Iteration,148,It. time,1.9027061462402344,Elapsed time,287.9324724674225
+[epoch: 0/1][iteration: 149/782][rank: 0] Loss_D: 0.2709, Loss_G: 2.4778, D(x): 0.8685, D(G(z)): 0.1007 / 0.1075, iteration time: 1.8879s
+Rank,0,Epoch,0,Iteration,149,It. time,1.8879048824310303,Elapsed time,289.8221824169159
+[epoch: 0/1][iteration: 150/782][rank: 0] Loss_D: 0.5741, Loss_G: 4.7398, D(x): 0.9427, D(G(z)): 0.3831 / 0.0145, iteration time: 1.8837s
+Rank,0,Epoch,0,Iteration,150,It. time,1.883683204650879,Elapsed time,291.7113835811615
+[epoch: 0/1][iteration: 151/782][rank: 0] Loss_D: 0.3237, Loss_G: 4.0765, D(x): 0.7962, D(G(z)): 0.0459 / 0.0211, iteration time: 1.8892s
+Rank,0,Epoch,0,Iteration,151,It. time,1.8891863822937012,Elapsed time,293.6085751056671
+[epoch: 0/1][iteration: 152/782][rank: 0] Loss_D: 0.4806, Loss_G: 2.8706, D(x): 0.7509, D(G(z)): 0.1296 / 0.0597, iteration time: 1.8904s
+Rank,0,Epoch,0,Iteration,152,It. time,1.8904452323913574,Elapsed time,295.5008282661438
+[epoch: 0/1][iteration: 153/782][rank: 0] Loss_D: 0.5703, Loss_G: 4.8502, D(x): 0.9195, D(G(z)): 0.3649 / 0.0091, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,153,It. time,1.888430118560791,Elapsed time,297.3911988735199
+[epoch: 0/1][iteration: 154/782][rank: 0] Loss_D: 0.4521, Loss_G: 2.8252, D(x): 0.6895, D(G(z)): 0.0329 / 0.0755, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,154,It. time,1.8935253620147705,Elapsed time,299.28655457496643
+[epoch: 0/1][iteration: 155/782][rank: 0] Loss_D: 0.3388, Loss_G: 3.1264, D(x): 0.8866, D(G(z)): 0.1850 / 0.0471, iteration time: 1.8846s
+Rank,0,Epoch,0,Iteration,155,It. time,1.8845868110656738,Elapsed time,301.17288303375244
+[epoch: 0/1][iteration: 156/782][rank: 0] Loss_D: 0.4320, Loss_G: 5.3178, D(x): 0.9140, D(G(z)): 0.2731 / 0.0052, iteration time: 1.9038s
+Rank,0,Epoch,0,Iteration,156,It. time,1.9037683010101318,Elapsed time,303.07832384109497
+[epoch: 0/1][iteration: 157/782][rank: 0] Loss_D: 0.2812, Loss_G: 3.9007, D(x): 0.7886, D(G(z)): 0.0282 / 0.0234, iteration time: 1.9021s
+Rank,0,Epoch,0,Iteration,157,It. time,1.9020662307739258,Elapsed time,304.9821240901947
+[epoch: 0/1][iteration: 158/782][rank: 0] Loss_D: 0.3311, Loss_G: 3.0677, D(x): 0.8654, D(G(z)): 0.1524 / 0.0512, iteration time: 1.8921s
+Rank,0,Epoch,0,Iteration,158,It. time,1.8920769691467285,Elapsed time,306.8760874271393
+[epoch: 0/1][iteration: 159/782][rank: 0] Loss_D: 0.3335, Loss_G: 5.7114, D(x): 0.9522, D(G(z)): 0.2379 / 0.0037, iteration time: 1.8818s
+Rank,0,Epoch,0,Iteration,159,It. time,1.881798267364502,Elapsed time,308.759658575058
+[epoch: 0/1][iteration: 160/782][rank: 0] Loss_D: 0.3506, Loss_G: 3.7667, D(x): 0.7479, D(G(z)): 0.0321 / 0.0292, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,160,It. time,1.8883798122406006,Elapsed time,310.6498155593872
+[epoch: 0/1][iteration: 161/782][rank: 0] Loss_D: 0.2331, Loss_G: 4.9030, D(x): 0.9587, D(G(z)): 0.1681 / 0.0089, iteration time: 1.9017s
+Rank,0,Epoch,0,Iteration,161,It. time,1.9017035961151123,Elapsed time,312.5609893798828
+[epoch: 0/1][iteration: 162/782][rank: 0] Loss_D: 0.1359, Loss_G: 4.8362, D(x): 0.9310, D(G(z)): 0.0578 / 0.0098, iteration time: 1.8991s
+Rank,0,Epoch,0,Iteration,162,It. time,1.8990731239318848,Elapsed time,314.46186900138855
+[epoch: 0/1][iteration: 163/782][rank: 0] Loss_D: 0.2594, Loss_G: 4.6317, D(x): 0.9071, D(G(z)): 0.1354 / 0.0116, iteration time: 1.8950s
+Rank,0,Epoch,0,Iteration,163,It. time,1.8950417041778564,Elapsed time,316.35872411727905
+[epoch: 0/1][iteration: 164/782][rank: 0] Loss_D: 0.4019, Loss_G: 3.9045, D(x): 0.7714, D(G(z)): 0.0880 / 0.0233, iteration time: 1.9062s
+Rank,0,Epoch,0,Iteration,164,It. time,1.9062068462371826,Elapsed time,318.27185249328613
+[epoch: 0/1][iteration: 165/782][rank: 0] Loss_D: 0.3114, Loss_G: 6.0193, D(x): 0.9405, D(G(z)): 0.2082 / 0.0030, iteration time: 1.8942s
+Rank,0,Epoch,0,Iteration,165,It. time,1.894200325012207,Elapsed time,320.16784930229187
+[epoch: 0/1][iteration: 166/782][rank: 0] Loss_D: 0.3260, Loss_G: 4.2366, D(x): 0.7915, D(G(z)): 0.0226 / 0.0162, iteration time: 1.8916s
+Rank,0,Epoch,0,Iteration,166,It. time,1.891625165939331,Elapsed time,322.0663959980011
+[epoch: 0/1][iteration: 167/782][rank: 0] Loss_D: 0.1971, Loss_G: 5.2046, D(x): 0.9639, D(G(z)): 0.1452 / 0.0064, iteration time: 1.8973s
+Rank,0,Epoch,0,Iteration,167,It. time,1.8972580432891846,Elapsed time,323.97245144844055
+[epoch: 0/1][iteration: 168/782][rank: 0] Loss_D: 0.2307, Loss_G: 5.6012, D(x): 0.9137, D(G(z)): 0.1227 / 0.0043, iteration time: 1.8921s
+Rank,0,Epoch,0,Iteration,168,It. time,1.8920912742614746,Elapsed time,325.8662829399109
+[epoch: 0/1][iteration: 169/782][rank: 0] Loss_D: 0.2244, Loss_G: 4.7308, D(x): 0.8719, D(G(z)): 0.0593 / 0.0118, iteration time: 1.9075s
+Rank,0,Epoch,0,Iteration,169,It. time,1.9074864387512207,Elapsed time,327.77552938461304
+[epoch: 0/1][iteration: 170/782][rank: 0] Loss_D: 0.2534, Loss_G: 5.4442, D(x): 0.9440, D(G(z)): 0.1648 / 0.0056, iteration time: 1.9095s
+Rank,0,Epoch,0,Iteration,170,It. time,1.9094507694244385,Elapsed time,329.68671011924744
+[epoch: 0/1][iteration: 171/782][rank: 0] Loss_D: 0.2618, Loss_G: 5.5254, D(x): 0.8976, D(G(z)): 0.1279 / 0.0051, iteration time: 1.8947s
+Rank,0,Epoch,0,Iteration,171,It. time,1.894667387008667,Elapsed time,331.58312463760376
+[epoch: 0/1][iteration: 172/782][rank: 0] Loss_D: 0.1547, Loss_G: 4.9388, D(x): 0.9052, D(G(z)): 0.0478 / 0.0089, iteration time: 1.8900s
+Rank,0,Epoch,0,Iteration,172,It. time,1.8900208473205566,Elapsed time,333.47491359710693
+[epoch: 0/1][iteration: 173/782][rank: 0] Loss_D: 0.2468, Loss_G: 6.2121, D(x): 0.9379, D(G(z)): 0.1495 / 0.0026, iteration time: 1.8918s
+Rank,0,Epoch,0,Iteration,173,It. time,1.891798973083496,Elapsed time,335.36858320236206
+[epoch: 0/1][iteration: 174/782][rank: 0] Loss_D: 0.2560, Loss_G: 5.4938, D(x): 0.8835, D(G(z)): 0.1120 / 0.0050, iteration time: 1.8877s
+Rank,0,Epoch,0,Iteration,174,It. time,1.8876712322235107,Elapsed time,337.2628457546234
+[epoch: 0/1][iteration: 175/782][rank: 0] Loss_D: 0.1299, Loss_G: 5.2883, D(x): 0.9316, D(G(z)): 0.0529 / 0.0058, iteration time: 1.9041s
+Rank,0,Epoch,0,Iteration,175,It. time,1.9040586948394775,Elapsed time,339.1686806678772
+[epoch: 0/1][iteration: 176/782][rank: 0] Loss_D: 0.1989, Loss_G: 5.4623, D(x): 0.9378, D(G(z)): 0.1189 / 0.0049, iteration time: 1.8868s
+Rank,0,Epoch,0,Iteration,176,It. time,1.8867807388305664,Elapsed time,341.05722284317017
+[epoch: 0/1][iteration: 177/782][rank: 0] Loss_D: 0.1337, Loss_G: 5.8042, D(x): 0.9454, D(G(z)): 0.0691 / 0.0035, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,177,It. time,1.8975541591644287,Elapsed time,342.95659136772156
+[epoch: 0/1][iteration: 178/782][rank: 0] Loss_D: 0.2987, Loss_G: 4.7339, D(x): 0.8479, D(G(z)): 0.0506 / 0.0122, iteration time: 1.8995s
+Rank,0,Epoch,0,Iteration,178,It. time,1.8995416164398193,Elapsed time,344.85792303085327
+[epoch: 0/1][iteration: 179/782][rank: 0] Loss_D: 0.1685, Loss_G: 6.0499, D(x): 0.9795, D(G(z)): 0.1318 / 0.0032, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,179,It. time,1.894782304763794,Elapsed time,346.75445318222046
+[epoch: 0/1][iteration: 180/782][rank: 0] Loss_D: 0.0970, Loss_G: 5.6964, D(x): 0.9455, D(G(z)): 0.0363 / 0.0047, iteration time: 1.8860s
+Rank,0,Epoch,0,Iteration,180,It. time,1.8859639167785645,Elapsed time,348.6473660469055
+[epoch: 0/1][iteration: 181/782][rank: 0] Loss_D: 0.1631, Loss_G: 4.9123, D(x): 0.9408, D(G(z)): 0.0745 / 0.0099, iteration time: 1.8931s
+Rank,0,Epoch,0,Iteration,181,It. time,1.8931150436401367,Elapsed time,350.5422604084015
+[epoch: 0/1][iteration: 182/782][rank: 0] Loss_D: 0.1466, Loss_G: 5.8907, D(x): 0.9664, D(G(z)): 0.1020 / 0.0038, iteration time: 1.8828s
+Rank,0,Epoch,0,Iteration,182,It. time,1.8828039169311523,Elapsed time,352.42686581611633
+[epoch: 0/1][iteration: 183/782][rank: 0] Loss_D: 0.1377, Loss_G: 6.0699, D(x): 0.9435, D(G(z)): 0.0653 / 0.0031, iteration time: 1.8825s
+Rank,0,Epoch,0,Iteration,183,It. time,1.8824958801269531,Elapsed time,354.3111319541931
+[epoch: 0/1][iteration: 184/782][rank: 0] Loss_D: 0.1776, Loss_G: 5.4159, D(x): 0.9062, D(G(z)): 0.0619 / 0.0067, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,184,It. time,1.895505428314209,Elapsed time,356.2083349227905
+[epoch: 0/1][iteration: 185/782][rank: 0] Loss_D: 0.1779, Loss_G: 7.2237, D(x): 0.9546, D(G(z)): 0.1128 / 0.0011, iteration time: 1.8880s
+Rank,0,Epoch,0,Iteration,185,It. time,1.887984037399292,Elapsed time,358.09813690185547
+[epoch: 0/1][iteration: 186/782][rank: 0] Loss_D: 0.0941, Loss_G: 6.5033, D(x): 0.9346, D(G(z)): 0.0203 / 0.0030, iteration time: 1.8977s
+Rank,0,Epoch,0,Iteration,186,It. time,1.8976857662200928,Elapsed time,359.9976415634155
+[epoch: 0/1][iteration: 187/782][rank: 0] Loss_D: 0.1006, Loss_G: 6.1146, D(x): 0.9700, D(G(z)): 0.0649 / 0.0043, iteration time: 1.8887s
+Rank,0,Epoch,0,Iteration,187,It. time,1.8887414932250977,Elapsed time,361.8881950378418
+[epoch: 0/1][iteration: 188/782][rank: 0] Loss_D: 0.1633, Loss_G: 7.0667, D(x): 0.9472, D(G(z)): 0.0971 / 0.0011, iteration time: 1.8952s
+Rank,0,Epoch,0,Iteration,188,It. time,1.8951835632324219,Elapsed time,363.7901232242584
+[epoch: 0/1][iteration: 189/782][rank: 0] Loss_D: 0.1815, Loss_G: 5.5438, D(x): 0.8823, D(G(z)): 0.0209 / 0.0057, iteration time: 1.8921s
+Rank,0,Epoch,0,Iteration,189,It. time,1.89207124710083,Elapsed time,365.68395256996155
+[epoch: 0/1][iteration: 190/782][rank: 0] Loss_D: 0.2751, Loss_G: 9.8661, D(x): 0.9652, D(G(z)): 0.1914 / 0.0001, iteration time: 1.8962s
+Rank,0,Epoch,0,Iteration,190,It. time,1.8961706161499023,Elapsed time,367.5818419456482
+[epoch: 0/1][iteration: 191/782][rank: 0] Loss_D: 0.0858, Loss_G: 8.7045, D(x): 0.9261, D(G(z)): 0.0017 / 0.0003, iteration time: 1.8933s
+Rank,0,Epoch,0,Iteration,191,It. time,1.8933017253875732,Elapsed time,369.47697281837463
+[epoch: 0/1][iteration: 192/782][rank: 0] Loss_D: 0.0547, Loss_G: 6.2716, D(x): 0.9549, D(G(z)): 0.0059 / 0.0030, iteration time: 1.8941s
+Rank,0,Epoch,0,Iteration,192,It. time,1.894063949584961,Elapsed time,371.3734748363495
+[epoch: 0/1][iteration: 193/782][rank: 0] Loss_D: 0.0801, Loss_G: 5.6560, D(x): 0.9901, D(G(z)): 0.0662 / 0.0041, iteration time: 1.8885s
+Rank,0,Epoch,0,Iteration,193,It. time,1.8884985446929932,Elapsed time,373.26375794410706
+[epoch: 0/1][iteration: 194/782][rank: 0] Loss_D: 0.1986, Loss_G: 8.7531, D(x): 0.9802, D(G(z)): 0.1534 / 0.0002, iteration time: 1.8879s
+Rank,0,Epoch,0,Iteration,194,It. time,1.8878703117370605,Elapsed time,375.15341305732727
+[epoch: 0/1][iteration: 195/782][rank: 0] Loss_D: 0.0548, Loss_G: 8.2746, D(x): 0.9532, D(G(z)): 0.0027 / 0.0003, iteration time: 1.9107s
+Rank,0,Epoch,0,Iteration,195,It. time,1.910733938217163,Elapsed time,377.06592559814453
+[epoch: 0/1][iteration: 196/782][rank: 0] Loss_D: 0.0409, Loss_G: 6.8738, D(x): 0.9649, D(G(z)): 0.0032 / 0.0016, iteration time: 1.8920s
+Rank,0,Epoch,0,Iteration,196,It. time,1.8919670581817627,Elapsed time,378.9633641242981
+[epoch: 0/1][iteration: 197/782][rank: 0] Loss_D: 0.0497, Loss_G: 4.6748, D(x): 0.9672, D(G(z)): 0.0143 / 0.0129, iteration time: 1.8965s
+Rank,0,Epoch,0,Iteration,197,It. time,1.8965373039245605,Elapsed time,380.8639442920685
+[epoch: 0/1][iteration: 198/782][rank: 0] Loss_D: 0.2531, Loss_G: 8.5107, D(x): 0.9830, D(G(z)): 0.1925 / 0.0002, iteration time: 1.8954s
+Rank,0,Epoch,0,Iteration,198,It. time,1.895383358001709,Elapsed time,382.76104283332825
+[epoch: 0/1][iteration: 199/782][rank: 0] Loss_D: 0.0268, Loss_G: 8.5496, D(x): 0.9761, D(G(z)): 0.0021 / 0.0002, iteration time: 1.9134s
+Rank,0,Epoch,0,Iteration,199,It. time,1.9133565425872803,Elapsed time,384.6762385368347
+[epoch: 0/1][iteration: 200/782][rank: 0] Loss_D: 0.1725, Loss_G: 7.1624, D(x): 0.8662, D(G(z)): 0.0011 / 0.0010, iteration time: 1.8806s
+Rank,0,Epoch,0,Iteration,200,It. time,1.8805568218231201,Elapsed time,386.5586495399475
+[epoch: 0/1][iteration: 201/782][rank: 0] Loss_D: 0.0450, Loss_G: 5.2394, D(x): 0.9632, D(G(z)): 0.0064 / 0.0069, iteration time: 1.9035s
+Rank,0,Epoch,0,Iteration,201,It. time,1.9034552574157715,Elapsed time,388.7693889141083
+[epoch: 0/1][iteration: 202/782][rank: 0] Loss_D: 0.1157, Loss_G: 6.0202, D(x): 0.9891, D(G(z)): 0.0945 / 0.0033, iteration time: 1.8813s
+Rank,0,Epoch,0,Iteration,202,It. time,1.8812739849090576,Elapsed time,390.6523492336273
+[epoch: 0/1][iteration: 203/782][rank: 0] Loss_D: 0.0991, Loss_G: 6.0969, D(x): 0.9503, D(G(z)): 0.0375 / 0.0041, iteration time: 1.9081s
+Rank,0,Epoch,0,Iteration,203,It. time,1.9081299304962158,Elapsed time,392.56222200393677
+[epoch: 0/1][iteration: 204/782][rank: 0] Loss_D: 0.0340, Loss_G: 5.5668, D(x): 0.9907, D(G(z)): 0.0239 / 0.0059, iteration time: 1.8869s
+Rank,0,Epoch,0,Iteration,204,It. time,1.88692307472229,Elapsed time,394.450927734375
+[epoch: 0/1][iteration: 205/782][rank: 0] Loss_D: 0.0696, Loss_G: 5.3455, D(x): 0.9635, D(G(z)): 0.0293 / 0.0065, iteration time: 1.8827s
+Rank,0,Epoch,0,Iteration,205,It. time,1.8827457427978516,Elapsed time,396.33814692497253
+[epoch: 0/1][iteration: 206/782][rank: 0] Loss_D: 0.0472, Loss_G: 5.6890, D(x): 0.9898, D(G(z)): 0.0357 / 0.0043, iteration time: 1.8831s
+Rank,0,Epoch,0,Iteration,206,It. time,1.8831062316894531,Elapsed time,398.2229542732239
+[epoch: 0/1][iteration: 207/782][rank: 0] Loss_D: 0.0403, Loss_G: 6.0219, D(x): 0.9931, D(G(z)): 0.0325 / 0.0029, iteration time: 1.9046s
+Rank,0,Epoch,0,Iteration,207,It. time,1.904649257659912,Elapsed time,400.1293625831604
+[epoch: 0/1][iteration: 208/782][rank: 0] Loss_D: 0.0992, Loss_G: 5.5415, D(x): 0.9565, D(G(z)): 0.0374 / 0.0050, iteration time: 1.9073s
+Rank,0,Epoch,0,Iteration,208,It. time,1.9072623252868652,Elapsed time,402.038373708725
+[epoch: 0/1][iteration: 209/782][rank: 0] Loss_D: 0.1327, Loss_G: 7.1955, D(x): 0.9556, D(G(z)): 0.0803 / 0.0009, iteration time: 1.9047s
+Rank,0,Epoch,0,Iteration,209,It. time,1.9046821594238281,Elapsed time,403.9447841644287
+[epoch: 0/1][iteration: 210/782][rank: 0] Loss_D: 0.0801, Loss_G: 6.5729, D(x): 0.9406, D(G(z)): 0.0123 / 0.0017, iteration time: 1.9035s
+Rank,0,Epoch,0,Iteration,210,It. time,1.9035005569458008,Elapsed time,405.8500154018402
+[epoch: 0/1][iteration: 211/782][rank: 0] Loss_D: 0.0377, Loss_G: 5.9055, D(x): 0.9768, D(G(z)): 0.0131 / 0.0033, iteration time: 1.8892s
+Rank,0,Epoch,0,Iteration,211,It. time,1.8892076015472412,Elapsed time,407.7486000061035
+[epoch: 0/1][iteration: 212/782][rank: 0] Loss_D: 0.0485, Loss_G: 5.6310, D(x): 0.9724, D(G(z)): 0.0192 / 0.0046, iteration time: 1.8909s
+Rank,0,Epoch,0,Iteration,212,It. time,1.8909258842468262,Elapsed time,409.6412010192871
+[epoch: 0/1][iteration: 213/782][rank: 0] Loss_D: 0.0677, Loss_G: 6.0805, D(x): 0.9747, D(G(z)): 0.0393 / 0.0026, iteration time: 1.8945s
+Rank,0,Epoch,0,Iteration,213,It. time,1.8944745063781738,Elapsed time,411.54188203811646
+[epoch: 0/1][iteration: 214/782][rank: 0] Loss_D: 0.0506, Loss_G: 6.6289, D(x): 0.9858, D(G(z)): 0.0351 / 0.0016, iteration time: 1.8894s
+Rank,0,Epoch,0,Iteration,214,It. time,1.8894026279449463,Elapsed time,413.4351878166199
+[epoch: 0/1][iteration: 215/782][rank: 0] Loss_D: 0.0401, Loss_G: 6.3486, D(x): 0.9736, D(G(z)): 0.0125 / 0.0021, iteration time: 1.8875s
+Rank,0,Epoch,0,Iteration,215,It. time,1.88749098777771,Elapsed time,415.3308870792389
+[epoch: 0/1][iteration: 216/782][rank: 0] Loss_D: 0.0533, Loss_G: 5.8366, D(x): 0.9653, D(G(z)): 0.0149 / 0.0032, iteration time: 1.8976s
+Rank,0,Epoch,0,Iteration,216,It. time,1.897634744644165,Elapsed time,417.236207485199
+[epoch: 0/1][iteration: 217/782][rank: 0] Loss_D: 0.0626, Loss_G: 5.7624, D(x): 0.9638, D(G(z)): 0.0229 / 0.0038, iteration time: 1.8970s
+Rank,0,Epoch,0,Iteration,217,It. time,1.8969535827636719,Elapsed time,419.13489961624146
+[epoch: 0/1][iteration: 218/782][rank: 0] Loss_D: 0.1166, Loss_G: 9.0553, D(x): 0.9833, D(G(z)): 0.0922 / 0.0002, iteration time: 1.8840s
+Rank,0,Epoch,0,Iteration,218,It. time,1.8839573860168457,Elapsed time,421.02057695388794
+[epoch: 0/1][iteration: 219/782][rank: 0] Loss_D: 0.0996, Loss_G: 8.3682, D(x): 0.9174, D(G(z)): 0.0012 / 0.0003, iteration time: 1.8939s
+Rank,0,Epoch,0,Iteration,219,It. time,1.8939242362976074,Elapsed time,422.9162256717682
+[epoch: 0/1][iteration: 220/782][rank: 0] Loss_D: 0.0230, Loss_G: 7.0986, D(x): 0.9789, D(G(z)): 0.0012 / 0.0010, iteration time: 1.8840s
+Rank,0,Epoch,0,Iteration,220,It. time,1.8839585781097412,Elapsed time,424.8073630332947
+[epoch: 0/1][iteration: 221/782][rank: 0] Loss_D: 0.0114, Loss_G: 5.5303, D(x): 0.9952, D(G(z)): 0.0065 / 0.0048, iteration time: 1.8979s
+Rank,0,Epoch,0,Iteration,221,It. time,1.8978886604309082,Elapsed time,426.7070894241333
+[epoch: 0/1][iteration: 222/782][rank: 0] Loss_D: 0.0315, Loss_G: 5.1932, D(x): 0.9915, D(G(z)): 0.0224 / 0.0072, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,222,It. time,1.8848230838775635,Elapsed time,428.5936346054077
+[epoch: 0/1][iteration: 223/782][rank: 0] Loss_D: 0.0456, Loss_G: 6.0445, D(x): 0.9922, D(G(z)): 0.0367 / 0.0028, iteration time: 1.8900s
+Rank,0,Epoch,0,Iteration,223,It. time,1.889979600906372,Elapsed time,430.4852991104126
+[epoch: 0/1][iteration: 224/782][rank: 0] Loss_D: 0.0188, Loss_G: 6.3329, D(x): 0.9927, D(G(z)): 0.0111 / 0.0020, iteration time: 1.8772s
+Rank,0,Epoch,0,Iteration,224,It. time,1.877166748046875,Elapsed time,432.36856412887573
+[epoch: 0/1][iteration: 225/782][rank: 0] Loss_D: 0.0401, Loss_G: 5.8726, D(x): 0.9895, D(G(z)): 0.0286 / 0.0032, iteration time: 1.8797s
+Rank,0,Epoch,0,Iteration,225,It. time,1.8797340393066406,Elapsed time,434.2500524520874
+[epoch: 0/1][iteration: 226/782][rank: 0] Loss_D: 0.0838, Loss_G: 7.7621, D(x): 0.9908, D(G(z)): 0.0702 / 0.0006, iteration time: 1.8993s
+Rank,0,Epoch,0,Iteration,226,It. time,1.899254560470581,Elapsed time,436.15114092826843
+[epoch: 0/1][iteration: 227/782][rank: 0] Loss_D: 0.1507, Loss_G: 7.1741, D(x): 0.8877, D(G(z)): 0.0019 / 0.0010, iteration time: 1.8852s
+Rank,0,Epoch,0,Iteration,227,It. time,1.885239839553833,Elapsed time,438.0436451435089
+[epoch: 0/1][iteration: 228/782][rank: 0] Loss_D: 0.0352, Loss_G: 5.2166, D(x): 0.9755, D(G(z)): 0.0093 / 0.0071, iteration time: 1.8951s
+Rank,0,Epoch,0,Iteration,228,It. time,1.895118236541748,Elapsed time,439.94252824783325
+[epoch: 0/1][iteration: 229/782][rank: 0] Loss_D: 0.0782, Loss_G: 5.9204, D(x): 0.9896, D(G(z)): 0.0635 / 0.0032, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,229,It. time,1.895491361618042,Elapsed time,441.83979058265686
+[epoch: 0/1][iteration: 230/782][rank: 0] Loss_D: 0.0327, Loss_G: 6.2253, D(x): 0.9921, D(G(z)): 0.0241 / 0.0023, iteration time: 1.9104s
+Rank,0,Epoch,0,Iteration,230,It. time,1.9103913307189941,Elapsed time,443.7519443035126
+[epoch: 0/1][iteration: 231/782][rank: 0] Loss_D: 0.0389, Loss_G: 6.1597, D(x): 0.9856, D(G(z)): 0.0234 / 0.0028, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,231,It. time,1.8796184062957764,Elapsed time,445.6390311717987
+[epoch: 0/1][iteration: 232/782][rank: 0] Loss_D: 0.0588, Loss_G: 5.9465, D(x): 0.9776, D(G(z)): 0.0330 / 0.0034, iteration time: 1.8832s
+Rank,0,Epoch,0,Iteration,232,It. time,1.8831517696380615,Elapsed time,447.52395582199097
+[epoch: 0/1][iteration: 233/782][rank: 0] Loss_D: 0.0370, Loss_G: 6.0821, D(x): 0.9851, D(G(z)): 0.0213 / 0.0030, iteration time: 1.9166s
+Rank,0,Epoch,0,Iteration,233,It. time,1.916640043258667,Elapsed time,449.44804859161377
+[epoch: 0/1][iteration: 234/782][rank: 0] Loss_D: 0.0606, Loss_G: 5.5000, D(x): 0.9698, D(G(z)): 0.0279 / 0.0053, iteration time: 1.9068s
+Rank,0,Epoch,0,Iteration,234,It. time,1.9067699909210205,Elapsed time,451.3565218448639
+[epoch: 0/1][iteration: 235/782][rank: 0] Loss_D: 0.1590, Loss_G: 8.7793, D(x): 0.9686, D(G(z)): 0.1141 / 0.0002, iteration time: 1.8930s
+Rank,0,Epoch,0,Iteration,235,It. time,1.8930318355560303,Elapsed time,453.25137519836426
+[epoch: 0/1][iteration: 236/782][rank: 0] Loss_D: 0.0789, Loss_G: 8.2140, D(x): 0.9357, D(G(z)): 0.0023 / 0.0003, iteration time: 1.8898s
+Rank,0,Epoch,0,Iteration,236,It. time,1.8897860050201416,Elapsed time,455.14295387268066
+[epoch: 0/1][iteration: 237/782][rank: 0] Loss_D: 0.0170, Loss_G: 6.5780, D(x): 0.9857, D(G(z)): 0.0023 / 0.0017, iteration time: 1.8954s
+Rank,0,Epoch,0,Iteration,237,It. time,1.8953850269317627,Elapsed time,457.0401301383972
+[epoch: 0/1][iteration: 238/782][rank: 0] Loss_D: 0.0268, Loss_G: 5.2981, D(x): 0.9890, D(G(z)): 0.0153 / 0.0066, iteration time: 1.8975s
+Rank,0,Epoch,0,Iteration,238,It. time,1.8975088596343994,Elapsed time,458.9393861293793
+[epoch: 0/1][iteration: 239/782][rank: 0] Loss_D: 0.0688, Loss_G: 6.6243, D(x): 0.9927, D(G(z)): 0.0584 / 0.0016, iteration time: 1.8929s
+Rank,0,Epoch,0,Iteration,239,It. time,1.892937421798706,Elapsed time,460.83409690856934
+[epoch: 0/1][iteration: 240/782][rank: 0] Loss_D: 0.0212, Loss_G: 6.7837, D(x): 0.9902, D(G(z)): 0.0111 / 0.0014, iteration time: 1.8768s
+Rank,0,Epoch,0,Iteration,240,It. time,1.876793384552002,Elapsed time,462.71261382102966
+[epoch: 0/1][iteration: 241/782][rank: 0] Loss_D: 0.0656, Loss_G: 5.1458, D(x): 0.9558, D(G(z)): 0.0124 / 0.0083, iteration time: 1.8941s
+Rank,0,Epoch,0,Iteration,241,It. time,1.8941066265106201,Elapsed time,464.6084933280945
+[epoch: 0/1][iteration: 242/782][rank: 0] Loss_D: 0.0534, Loss_G: 6.4201, D(x): 0.9939, D(G(z)): 0.0451 / 0.0018, iteration time: 1.8896s
+Rank,0,Epoch,0,Iteration,242,It. time,1.8896334171295166,Elapsed time,466.5050377845764
+[epoch: 0/1][iteration: 243/782][rank: 0] Loss_D: 0.0406, Loss_G: 6.9072, D(x): 0.9908, D(G(z)): 0.0303 / 0.0012, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,243,It. time,1.8955206871032715,Elapsed time,468.4023153781891
+[epoch: 0/1][iteration: 244/782][rank: 0] Loss_D: 0.0807, Loss_G: 5.4542, D(x): 0.9431, D(G(z)): 0.0172 / 0.0049, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,244,It. time,1.887765645980835,Elapsed time,470.2918224334717
+[epoch: 0/1][iteration: 245/782][rank: 0] Loss_D: 0.0596, Loss_G: 6.4727, D(x): 0.9798, D(G(z)): 0.0374 / 0.0018, iteration time: 1.8874s
+Rank,0,Epoch,0,Iteration,245,It. time,1.8873517513275146,Elapsed time,472.180992603302
+[epoch: 0/1][iteration: 246/782][rank: 0] Loss_D: 0.0406, Loss_G: 6.8251, D(x): 0.9829, D(G(z)): 0.0223 / 0.0016, iteration time: 1.8924s
+Rank,0,Epoch,0,Iteration,246,It. time,1.892441749572754,Elapsed time,474.0751144886017
+[epoch: 0/1][iteration: 247/782][rank: 0] Loss_D: 0.0833, Loss_G: 5.1925, D(x): 0.9387, D(G(z)): 0.0111 / 0.0073, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,247,It. time,1.8847501277923584,Elapsed time,475.9615602493286
+[epoch: 0/1][iteration: 248/782][rank: 0] Loss_D: 0.2460, Loss_G: 3.4880, D(x): 0.8282, D(G(z)): 0.0217 / 0.0400, iteration time: 1.8930s
+Rank,0,Epoch,0,Iteration,248,It. time,1.8929874897003174,Elapsed time,477.85636258125305
+[epoch: 0/1][iteration: 249/782][rank: 0] Loss_D: 0.1253, Loss_G: 11.4208, D(x): 0.9966, D(G(z)): 0.1126 / 0.0000, iteration time: 1.8941s
+Rank,0,Epoch,0,Iteration,249,It. time,1.894127368927002,Elapsed time,479.7522614002228
+[epoch: 0/1][iteration: 250/782][rank: 0] Loss_D: 0.1094, Loss_G: 8.0288, D(x): 0.9066, D(G(z)): 0.0007 / 0.0006, iteration time: 1.9037s
+Rank,0,Epoch,0,Iteration,250,It. time,1.9037322998046875,Elapsed time,481.65777564048767
+[epoch: 0/1][iteration: 251/782][rank: 0] Loss_D: 0.0223, Loss_G: 7.4014, D(x): 0.9787, D(G(z)): 0.0003 / 0.0016, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,251,It. time,1.8947830200195312,Elapsed time,483.5543668270111
+[epoch: 0/1][iteration: 252/782][rank: 0] Loss_D: 0.1029, Loss_G: 8.6972, D(x): 0.9903, D(G(z)): 0.0726 / 0.0009, iteration time: 1.9006s
+Rank,0,Epoch,0,Iteration,252,It. time,1.9006268978118896,Elapsed time,485.46003460884094
+[epoch: 0/1][iteration: 253/782][rank: 0] Loss_D: 0.0789, Loss_G: 6.2134, D(x): 0.9434, D(G(z)): 0.0119 / 0.0038, iteration time: 1.8989s
+Rank,0,Epoch,0,Iteration,253,It. time,1.8988845348358154,Elapsed time,487.36060428619385
+[epoch: 0/1][iteration: 254/782][rank: 0] Loss_D: 0.0582, Loss_G: 5.2264, D(x): 0.9891, D(G(z)): 0.0436 / 0.0081, iteration time: 1.8827s
+Rank,0,Epoch,0,Iteration,254,It. time,1.8827030658721924,Elapsed time,489.245014667511
+[epoch: 0/1][iteration: 255/782][rank: 0] Loss_D: 0.3314, Loss_G: 14.5557, D(x): 0.9917, D(G(z)): 0.2580 / 0.0000, iteration time: 1.8933s
+Rank,0,Epoch,0,Iteration,255,It. time,1.8933067321777344,Elapsed time,491.1400856971741
+[epoch: 0/1][iteration: 256/782][rank: 0] Loss_D: 7.1359, Loss_G: 6.8780, D(x): 0.0106, D(G(z)): 0.0000 / 0.0031, iteration time: 1.9012s
+Rank,0,Epoch,0,Iteration,256,It. time,1.9012305736541748,Elapsed time,493.04310035705566
+[epoch: 0/1][iteration: 257/782][rank: 0] Loss_D: 0.2964, Loss_G: 1.8612, D(x): 0.8158, D(G(z)): 0.0310 / 0.3640, iteration time: 1.8990s
+Rank,0,Epoch,0,Iteration,257,It. time,1.8990488052368164,Elapsed time,494.9438166618347
+[epoch: 0/1][iteration: 258/782][rank: 0] Loss_D: 1.1111, Loss_G: 6.8535, D(x): 0.9529, D(G(z)): 0.5213 / 0.0017, iteration time: 1.8981s
+Rank,0,Epoch,0,Iteration,258,It. time,1.8981359004974365,Elapsed time,496.84369826316833
+[epoch: 0/1][iteration: 259/782][rank: 0] Loss_D: 1.1685, Loss_G: 5.0258, D(x): 0.5699, D(G(z)): 0.0075 / 0.0147, iteration time: 1.8987s
+Rank,0,Epoch,0,Iteration,259,It. time,1.8987071514129639,Elapsed time,498.744117975235
+[epoch: 0/1][iteration: 260/782][rank: 0] Loss_D: 0.3902, Loss_G: 2.6575, D(x): 0.7547, D(G(z)): 0.0333 / 0.1500, iteration time: 1.9014s
+Rank,0,Epoch,0,Iteration,260,It. time,1.9013879299163818,Elapsed time,500.65137243270874
+[epoch: 0/1][iteration: 261/782][rank: 0] Loss_D: 0.7262, Loss_G: 3.5417, D(x): 0.9488, D(G(z)): 0.4240 / 0.0559, iteration time: 1.9125s
+Rank,0,Epoch,0,Iteration,261,It. time,1.9124798774719238,Elapsed time,502.56561183929443
+[epoch: 0/1][iteration: 262/782][rank: 0] Loss_D: 0.5800, Loss_G: 3.8019, D(x): 0.7207, D(G(z)): 0.1233 / 0.0382, iteration time: 1.8926s
+Rank,0,Epoch,0,Iteration,262,It. time,1.8926022052764893,Elapsed time,504.46404242515564
+[epoch: 0/1][iteration: 263/782][rank: 0] Loss_D: 0.2266, Loss_G: 3.3892, D(x): 0.8662, D(G(z)): 0.0604 / 0.0557, iteration time: 1.9085s
+Rank,0,Epoch,0,Iteration,263,It. time,1.9085381031036377,Elapsed time,506.37427163124084
+[epoch: 0/1][iteration: 264/782][rank: 0] Loss_D: 0.4126, Loss_G: 2.6750, D(x): 0.8315, D(G(z)): 0.1386 / 0.1095, iteration time: 1.8952s
+Rank,0,Epoch,0,Iteration,264,It. time,1.8952417373657227,Elapsed time,508.2712848186493
+[epoch: 0/1][iteration: 265/782][rank: 0] Loss_D: 0.2741, Loss_G: 3.0884, D(x): 0.8993, D(G(z)): 0.1340 / 0.0771, iteration time: 1.9152s
+Rank,0,Epoch,0,Iteration,265,It. time,1.9152235984802246,Elapsed time,510.1882412433624
+[epoch: 0/1][iteration: 266/782][rank: 0] Loss_D: 0.8777, Loss_G: 6.4408, D(x): 0.9292, D(G(z)): 0.4758 / 0.0027, iteration time: 1.8967s
+Rank,0,Epoch,0,Iteration,266,It. time,1.8967251777648926,Elapsed time,512.0867283344269
+[epoch: 0/1][iteration: 267/782][rank: 0] Loss_D: 1.2859, Loss_G: 3.5371, D(x): 0.3947, D(G(z)): 0.0074 / 0.0367, iteration time: 1.8867s
+Rank,0,Epoch,0,Iteration,267,It. time,1.8866934776306152,Elapsed time,513.9803640842438
+[epoch: 0/1][iteration: 268/782][rank: 0] Loss_D: 0.2319, Loss_G: 1.9652, D(x): 0.8993, D(G(z)): 0.1054 / 0.1850, iteration time: 1.8836s
+Rank,0,Epoch,0,Iteration,268,It. time,1.8836250305175781,Elapsed time,515.8656952381134
+[epoch: 0/1][iteration: 269/782][rank: 0] Loss_D: 0.8656, Loss_G: 4.9744, D(x): 0.9296, D(G(z)): 0.4838 / 0.0154, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,269,It. time,1.8948407173156738,Elapsed time,517.7622780799866
+[epoch: 0/1][iteration: 270/782][rank: 0] Loss_D: 0.7023, Loss_G: 4.0143, D(x): 0.6327, D(G(z)): 0.0688 / 0.0464, iteration time: 1.8837s
+Rank,0,Epoch,0,Iteration,270,It. time,1.8837330341339111,Elapsed time,519.6477646827698
+[epoch: 0/1][iteration: 271/782][rank: 0] Loss_D: 0.5782, Loss_G: 2.8228, D(x): 0.7456, D(G(z)): 0.1708 / 0.1135, iteration time: 1.8905s
+Rank,0,Epoch,0,Iteration,271,It. time,1.890519380569458,Elapsed time,521.5399837493896
+[epoch: 0/1][iteration: 272/782][rank: 0] Loss_D: 0.4355, Loss_G: 4.0009, D(x): 0.9274, D(G(z)): 0.2549 / 0.0320, iteration time: 1.8937s
+Rank,0,Epoch,0,Iteration,272,It. time,1.8937346935272217,Elapsed time,523.4354865550995
+[epoch: 0/1][iteration: 273/782][rank: 0] Loss_D: 0.3230, Loss_G: 2.6814, D(x): 0.8059, D(G(z)): 0.0802 / 0.1250, iteration time: 1.8977s
+Rank,0,Epoch,0,Iteration,273,It. time,1.897691249847412,Elapsed time,525.3348741531372
+[epoch: 0/1][iteration: 274/782][rank: 0] Loss_D: 0.8931, Loss_G: 6.0097, D(x): 0.9270, D(G(z)): 0.4802 / 0.0039, iteration time: 1.8989s
+Rank,0,Epoch,0,Iteration,274,It. time,1.8988828659057617,Elapsed time,527.2406902313232
+[epoch: 0/1][iteration: 275/782][rank: 0] Loss_D: 1.1681, Loss_G: 2.5670, D(x): 0.4031, D(G(z)): 0.0195 / 0.1349, iteration time: 1.8909s
+Rank,0,Epoch,0,Iteration,275,It. time,1.8909001350402832,Elapsed time,529.1383080482483
+[epoch: 0/1][iteration: 276/782][rank: 0] Loss_D: 0.6621, Loss_G: 2.7089, D(x): 0.8070, D(G(z)): 0.2779 / 0.1185, iteration time: 1.8932s
+Rank,0,Epoch,0,Iteration,276,It. time,1.8932242393493652,Elapsed time,531.0332577228546
+[epoch: 0/1][iteration: 277/782][rank: 0] Loss_D: 0.3831, Loss_G: 4.6304, D(x): 0.9513, D(G(z)): 0.2627 / 0.0196, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,277,It. time,1.889066219329834,Elapsed time,532.9284734725952
+[epoch: 0/1][iteration: 278/782][rank: 0] Loss_D: 0.6478, Loss_G: 2.7314, D(x): 0.6848, D(G(z)): 0.0740 / 0.1136, iteration time: 1.8919s
+Rank,0,Epoch,0,Iteration,278,It. time,1.8918957710266113,Elapsed time,534.8243339061737
+[epoch: 0/1][iteration: 279/782][rank: 0] Loss_D: 0.4940, Loss_G: 4.5742, D(x): 0.9531, D(G(z)): 0.3152 / 0.0149, iteration time: 1.8835s
+Rank,0,Epoch,0,Iteration,279,It. time,1.8835365772247314,Elapsed time,536.709771156311
+[epoch: 0/1][iteration: 280/782][rank: 0] Loss_D: 0.2883, Loss_G: 3.7630, D(x): 0.8266, D(G(z)): 0.0616 / 0.0303, iteration time: 1.9020s
+Rank,0,Epoch,0,Iteration,280,It. time,1.9019978046417236,Elapsed time,538.6134843826294
+[epoch: 0/1][iteration: 281/782][rank: 0] Loss_D: 0.3108, Loss_G: 3.5027, D(x): 0.8985, D(G(z)): 0.1570 / 0.0402, iteration time: 1.8932s
+Rank,0,Epoch,0,Iteration,281,It. time,1.8931856155395508,Elapsed time,540.5084171295166
+[epoch: 0/1][iteration: 282/782][rank: 0] Loss_D: 0.3679, Loss_G: 5.6951, D(x): 0.9260, D(G(z)): 0.2083 / 0.0091, iteration time: 1.8944s
+Rank,0,Epoch,0,Iteration,282,It. time,1.8944156169891357,Elapsed time,542.4045174121857
+[epoch: 0/1][iteration: 283/782][rank: 0] Loss_D: 0.7587, Loss_G: 1.5353, D(x): 0.6313, D(G(z)): 0.0306 / 0.2627, iteration time: 1.9038s
+Rank,0,Epoch,0,Iteration,283,It. time,1.9037566184997559,Elapsed time,544.3099637031555
+[epoch: 0/1][iteration: 284/782][rank: 0] Loss_D: 0.7416, Loss_G: 6.7279, D(x): 0.9824, D(G(z)): 0.4666 / 0.0018, iteration time: 1.8932s
+Rank,0,Epoch,0,Iteration,284,It. time,1.8932106494903564,Elapsed time,546.2050135135651
+[epoch: 0/1][iteration: 285/782][rank: 0] Loss_D: 1.2657, Loss_G: 1.7295, D(x): 0.4037, D(G(z)): 0.0141 / 0.2230, iteration time: 1.8823s
+Rank,0,Epoch,0,Iteration,285,It. time,1.882274866104126,Elapsed time,548.0890469551086
+[epoch: 0/1][iteration: 286/782][rank: 0] Loss_D: 0.4392, Loss_G: 3.5559, D(x): 0.9437, D(G(z)): 0.2935 / 0.0590, iteration time: 1.8898s
+Rank,0,Epoch,0,Iteration,286,It. time,1.8897819519042969,Elapsed time,549.9805867671967
+[epoch: 0/1][iteration: 287/782][rank: 0] Loss_D: 0.5204, Loss_G: 4.6056, D(x): 0.8586, D(G(z)): 0.2701 / 0.0164, iteration time: 1.8941s
+Rank,0,Epoch,0,Iteration,287,It. time,1.8941187858581543,Elapsed time,551.8764932155609
+[epoch: 0/1][iteration: 288/782][rank: 0] Loss_D: 0.5596, Loss_G: 2.0639, D(x): 0.6599, D(G(z)): 0.0571 / 0.1610, iteration time: 1.8960s
+Rank,0,Epoch,0,Iteration,288,It. time,1.8960278034210205,Elapsed time,553.7794392108917
+[epoch: 0/1][iteration: 289/782][rank: 0] Loss_D: 1.0376, Loss_G: 7.0983, D(x): 0.9381, D(G(z)): 0.5431 / 0.0015, iteration time: 1.8916s
+Rank,0,Epoch,0,Iteration,289,It. time,1.8915879726409912,Elapsed time,555.6728057861328
+[epoch: 0/1][iteration: 290/782][rank: 0] Loss_D: 1.3857, Loss_G: 1.8751, D(x): 0.3578, D(G(z)): 0.0044 / 0.1874, iteration time: 1.8827s
+Rank,0,Epoch,0,Iteration,290,It. time,1.8827269077301025,Elapsed time,557.5572192668915
+[epoch: 0/1][iteration: 291/782][rank: 0] Loss_D: 0.6474, Loss_G: 3.5350, D(x): 0.9521, D(G(z)): 0.4109 / 0.0353, iteration time: 1.8926s
+Rank,0,Epoch,0,Iteration,291,It. time,1.8926465511322021,Elapsed time,559.4515402317047
+[epoch: 0/1][iteration: 292/782][rank: 0] Loss_D: 0.3373, Loss_G: 3.7213, D(x): 0.8707, D(G(z)): 0.1514 / 0.0390, iteration time: 1.8872s
+Rank,0,Epoch,0,Iteration,292,It. time,1.8872437477111816,Elapsed time,561.3405394554138
+[epoch: 0/1][iteration: 293/782][rank: 0] Loss_D: 0.3571, Loss_G: 3.5040, D(x): 0.8725, D(G(z)): 0.1716 / 0.0418, iteration time: 1.8874s
+Rank,0,Epoch,0,Iteration,293,It. time,1.8874180316925049,Elapsed time,563.229654788971
+[epoch: 0/1][iteration: 294/782][rank: 0] Loss_D: 0.3775, Loss_G: 3.1706, D(x): 0.8156, D(G(z)): 0.1319 / 0.0522, iteration time: 1.8751s
+Rank,0,Epoch,0,Iteration,294,It. time,1.8750677108764648,Elapsed time,565.1064512729645
+[epoch: 0/1][iteration: 295/782][rank: 0] Loss_D: 0.4124, Loss_G: 5.4444, D(x): 0.9365, D(G(z)): 0.2767 / 0.0059, iteration time: 1.8979s
+Rank,0,Epoch,0,Iteration,295,It. time,1.8978753089904785,Elapsed time,567.0060589313507
+[epoch: 0/1][iteration: 296/782][rank: 0] Loss_D: 0.4743, Loss_G: 2.6048, D(x): 0.6990, D(G(z)): 0.0352 / 0.0967, iteration time: 1.9016s
+Rank,0,Epoch,0,Iteration,296,It. time,1.9015955924987793,Elapsed time,568.9093470573425
+[epoch: 0/1][iteration: 297/782][rank: 0] Loss_D: 0.3916, Loss_G: 5.3232, D(x): 0.9664, D(G(z)): 0.2816 / 0.0063, iteration time: 1.8859s
+Rank,0,Epoch,0,Iteration,297,It. time,1.8859243392944336,Elapsed time,570.7970192432404
+[epoch: 0/1][iteration: 298/782][rank: 0] Loss_D: 0.2939, Loss_G: 3.8639, D(x): 0.8263, D(G(z)): 0.0572 / 0.0322, iteration time: 1.8980s
+Rank,0,Epoch,0,Iteration,298,It. time,1.8980460166931152,Elapsed time,572.6967873573303
+[epoch: 0/1][iteration: 299/782][rank: 0] Loss_D: 0.4504, Loss_G: 6.8425, D(x): 0.9736, D(G(z)): 0.3169 / 0.0019, iteration time: 1.8789s
+Rank,0,Epoch,0,Iteration,299,It. time,1.878913164138794,Elapsed time,574.5773820877075
+[epoch: 0/1][iteration: 300/782][rank: 0] Loss_D: 0.8343, Loss_G: 2.2100, D(x): 0.5204, D(G(z)): 0.0084 / 0.1528, iteration time: 1.8829s
+Rank,0,Epoch,0,Iteration,300,It. time,1.8829350471496582,Elapsed time,576.4663419723511
+[epoch: 0/1][iteration: 301/782][rank: 0] Loss_D: 0.8051, Loss_G: 6.5828, D(x): 0.9817, D(G(z)): 0.4863 / 0.0023, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,301,It. time,1.887810230255127,Elapsed time,578.6693208217621
+[epoch: 0/1][iteration: 302/782][rank: 0] Loss_D: 0.8047, Loss_G: 4.2665, D(x): 0.5392, D(G(z)): 0.0095 / 0.0199, iteration time: 1.8930s
+Rank,0,Epoch,0,Iteration,302,It. time,1.8929979801177979,Elapsed time,580.5640707015991
+[epoch: 0/1][iteration: 303/782][rank: 0] Loss_D: 0.3659, Loss_G: 3.0636, D(x): 0.8786, D(G(z)): 0.1794 / 0.0692, iteration time: 1.8984s
+Rank,0,Epoch,0,Iteration,303,It. time,1.8983821868896484,Elapsed time,582.4641726016998
+[epoch: 0/1][iteration: 304/782][rank: 0] Loss_D: 1.1584, Loss_G: 7.4403, D(x): 0.9244, D(G(z)): 0.5992 / 0.0012, iteration time: 1.8931s
+Rank,0,Epoch,0,Iteration,304,It. time,1.893052339553833,Elapsed time,584.358957529068
+[epoch: 0/1][iteration: 305/782][rank: 0] Loss_D: 1.9819, Loss_G: 3.6174, D(x): 0.2452, D(G(z)): 0.0048 / 0.0377, iteration time: 1.9015s
+Rank,0,Epoch,0,Iteration,305,It. time,1.901468276977539,Elapsed time,586.2622058391571
+[epoch: 0/1][iteration: 306/782][rank: 0] Loss_D: 0.4310, Loss_G: 2.2360, D(x): 0.8376, D(G(z)): 0.1885 / 0.1422, iteration time: 1.8851s
+Rank,0,Epoch,0,Iteration,306,It. time,1.885056734085083,Elapsed time,588.1491293907166
+[epoch: 0/1][iteration: 307/782][rank: 0] Loss_D: 1.2219, Loss_G: 7.3071, D(x): 0.9861, D(G(z)): 0.6527 / 0.0011, iteration time: 1.9030s
+Rank,0,Epoch,0,Iteration,307,It. time,1.9029695987701416,Elapsed time,590.0538694858551
+[epoch: 0/1][iteration: 308/782][rank: 0] Loss_D: 1.7957, Loss_G: 4.8043, D(x): 0.2387, D(G(z)): 0.0045 / 0.0133, iteration time: 1.9144s
+Rank,0,Epoch,0,Iteration,308,It. time,1.9144103527069092,Elapsed time,591.9700274467468
+[epoch: 0/1][iteration: 309/782][rank: 0] Loss_D: 0.1966, Loss_G: 2.1955, D(x): 0.9072, D(G(z)): 0.0800 / 0.1357, iteration time: 1.9171s
+Rank,0,Epoch,0,Iteration,309,It. time,1.917072057723999,Elapsed time,593.8888988494873
+[epoch: 0/1][iteration: 310/782][rank: 0] Loss_D: 0.6198, Loss_G: 4.5609, D(x): 0.9541, D(G(z)): 0.3867 / 0.0129, iteration time: 1.9022s
+Rank,0,Epoch,0,Iteration,310,It. time,1.9021904468536377,Elapsed time,595.7927680015564
+[epoch: 0/1][iteration: 311/782][rank: 0] Loss_D: 0.2404, Loss_G: 4.3129, D(x): 0.8993, D(G(z)): 0.1097 / 0.0181, iteration time: 1.8876s
+Rank,0,Epoch,0,Iteration,311,It. time,1.8875732421875,Elapsed time,597.6820571422577
+[epoch: 0/1][iteration: 312/782][rank: 0] Loss_D: 0.3878, Loss_G: 3.2275, D(x): 0.7888, D(G(z)): 0.0959 / 0.0601, iteration time: 1.9101s
+Rank,0,Epoch,0,Iteration,312,It. time,1.9100549221038818,Elapsed time,599.5938103199005
+[epoch: 0/1][iteration: 313/782][rank: 0] Loss_D: 0.8201, Loss_G: 6.0817, D(x): 0.8373, D(G(z)): 0.4128 / 0.0028, iteration time: 1.8968s
+Rank,0,Epoch,0,Iteration,313,It. time,1.8968160152435303,Elapsed time,601.4923779964447
+[epoch: 0/1][iteration: 314/782][rank: 0] Loss_D: 1.5782, Loss_G: 2.4370, D(x): 0.2840, D(G(z)): 0.0136 / 0.1211, iteration time: 1.8957s
+Rank,0,Epoch,0,Iteration,314,It. time,1.895723581314087,Elapsed time,603.389833688736
+[epoch: 0/1][iteration: 315/782][rank: 0] Loss_D: 0.3082, Loss_G: 2.9899, D(x): 0.9496, D(G(z)): 0.2037 / 0.0711, iteration time: 1.9149s
+Rank,0,Epoch,0,Iteration,315,It. time,1.9149305820465088,Elapsed time,605.3065731525421
+[epoch: 0/1][iteration: 316/782][rank: 0] Loss_D: 0.7034, Loss_G: 5.3059, D(x): 0.9451, D(G(z)): 0.4022 / 0.0126, iteration time: 1.9140s
+Rank,0,Epoch,0,Iteration,316,It. time,1.9140305519104004,Elapsed time,607.222354888916
+[epoch: 0/1][iteration: 317/782][rank: 0] Loss_D: 0.5427, Loss_G: 4.1450, D(x): 0.6478, D(G(z)): 0.0251 / 0.0403, iteration time: 1.8912s
+Rank,0,Epoch,0,Iteration,317,It. time,1.8912005424499512,Elapsed time,609.1186010837555
+[epoch: 0/1][iteration: 318/782][rank: 0] Loss_D: 0.3998, Loss_G: 3.2569, D(x): 0.8702, D(G(z)): 0.1642 / 0.0824, iteration time: 1.8840s
+Rank,0,Epoch,0,Iteration,318,It. time,1.8839662075042725,Elapsed time,611.0111553668976
+[epoch: 0/1][iteration: 319/782][rank: 0] Loss_D: 0.4067, Loss_G: 4.3315, D(x): 0.9458, D(G(z)): 0.2597 / 0.0193, iteration time: 1.9084s
+Rank,0,Epoch,0,Iteration,319,It. time,1.9083967208862305,Elapsed time,612.9213302135468
+[epoch: 0/1][iteration: 320/782][rank: 0] Loss_D: 0.5403, Loss_G: 2.5215, D(x): 0.6882, D(G(z)): 0.0435 / 0.1123, iteration time: 1.8927s
+Rank,0,Epoch,0,Iteration,320,It. time,1.8927440643310547,Elapsed time,614.8157620429993
+[epoch: 0/1][iteration: 321/782][rank: 0] Loss_D: 0.6856, Loss_G: 4.7503, D(x): 0.9199, D(G(z)): 0.4138 / 0.0110, iteration time: 1.9007s
+Rank,0,Epoch,0,Iteration,321,It. time,1.9006953239440918,Elapsed time,616.7182080745697
+[epoch: 0/1][iteration: 322/782][rank: 0] Loss_D: 0.2577, Loss_G: 3.8689, D(x): 0.8268, D(G(z)): 0.0523 / 0.0278, iteration time: 1.9067s
+Rank,0,Epoch,0,Iteration,322,It. time,1.906726598739624,Elapsed time,618.6266844272614
+[epoch: 0/1][iteration: 323/782][rank: 0] Loss_D: 0.6419, Loss_G: 1.5630, D(x): 0.6226, D(G(z)): 0.1111 / 0.2355, iteration time: 1.9210s
+Rank,0,Epoch,0,Iteration,323,It. time,1.9209778308868408,Elapsed time,620.5494656562805
+[epoch: 0/1][iteration: 324/782][rank: 0] Loss_D: 0.9270, Loss_G: 6.3343, D(x): 0.9333, D(G(z)): 0.5453 / 0.0026, iteration time: 1.8986s
+Rank,0,Epoch,0,Iteration,324,It. time,1.8986303806304932,Elapsed time,622.4497675895691
+[epoch: 0/1][iteration: 325/782][rank: 0] Loss_D: 0.9198, Loss_G: 3.7203, D(x): 0.4744, D(G(z)): 0.0086 / 0.0350, iteration time: 1.9158s
+Rank,0,Epoch,0,Iteration,325,It. time,1.9157707691192627,Elapsed time,624.367244720459
+[epoch: 0/1][iteration: 326/782][rank: 0] Loss_D: 0.1065, Loss_G: 2.4850, D(x): 0.9791, D(G(z)): 0.0798 / 0.1165, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,326,It. time,1.894836664199829,Elapsed time,626.2638359069824
+[epoch: 0/1][iteration: 327/782][rank: 0] Loss_D: 0.5607, Loss_G: 5.2758, D(x): 0.9938, D(G(z)): 0.3761 / 0.0123, iteration time: 1.9083s
+Rank,0,Epoch,0,Iteration,327,It. time,1.9082701206207275,Elapsed time,628.1738760471344
+[epoch: 0/1][iteration: 328/782][rank: 0] Loss_D: 0.1081, Loss_G: 5.3230, D(x): 0.9320, D(G(z)): 0.0338 / 0.0104, iteration time: 1.9057s
+Rank,0,Epoch,0,Iteration,328,It. time,1.9057085514068604,Elapsed time,630.0813779830933
+[epoch: 0/1][iteration: 329/782][rank: 0] Loss_D: 0.2694, Loss_G: 3.2474, D(x): 0.8284, D(G(z)): 0.0425 / 0.0555, iteration time: 1.8791s
+Rank,0,Epoch,0,Iteration,329,It. time,1.879117488861084,Elapsed time,631.9622626304626
+[epoch: 0/1][iteration: 330/782][rank: 0] Loss_D: 0.1993, Loss_G: 3.4122, D(x): 0.9759, D(G(z)): 0.1491 / 0.0419, iteration time: 1.8920s
+Rank,0,Epoch,0,Iteration,330,It. time,1.8920142650604248,Elapsed time,633.8609323501587
+[epoch: 0/1][iteration: 331/782][rank: 0] Loss_D: 0.2096, Loss_G: 4.4428, D(x): 0.9550, D(G(z)): 0.1439 / 0.0146, iteration time: 1.8765s
+Rank,0,Epoch,0,Iteration,331,It. time,1.8764660358428955,Elapsed time,635.7391715049744
+[epoch: 0/1][iteration: 332/782][rank: 0] Loss_D: 0.2324, Loss_G: 3.3714, D(x): 0.8763, D(G(z)): 0.0838 / 0.0418, iteration time: 1.8936s
+Rank,0,Epoch,0,Iteration,332,It. time,1.8935656547546387,Elapsed time,637.6345505714417
+[epoch: 0/1][iteration: 333/782][rank: 0] Loss_D: 0.3390, Loss_G: 4.1048, D(x): 0.8375, D(G(z)): 0.1349 / 0.0202, iteration time: 1.8844s
+Rank,0,Epoch,0,Iteration,333,It. time,1.884423017501831,Elapsed time,639.5207180976868
+[epoch: 0/1][iteration: 334/782][rank: 0] Loss_D: 0.1952, Loss_G: 4.1070, D(x): 0.9249, D(G(z)): 0.1044 / 0.0196, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,334,It. time,1.888387680053711,Elapsed time,641.4107825756073
+[epoch: 0/1][iteration: 335/782][rank: 0] Loss_D: 0.2476, Loss_G: 5.1530, D(x): 0.9036, D(G(z)): 0.1255 / 0.0067, iteration time: 1.8928s
+Rank,0,Epoch,0,Iteration,335,It. time,1.8928308486938477,Elapsed time,643.3052926063538
+[epoch: 0/1][iteration: 336/782][rank: 0] Loss_D: 0.2707, Loss_G: 2.7889, D(x): 0.8183, D(G(z)): 0.0510 / 0.0763, iteration time: 1.9018s
+Rank,0,Epoch,0,Iteration,336,It. time,1.9018046855926514,Elapsed time,645.2088398933411
+[epoch: 0/1][iteration: 337/782][rank: 0] Loss_D: 1.1147, Loss_G: 10.0296, D(x): 0.9683, D(G(z)): 0.6184 / 0.0001, iteration time: 1.8953s
+Rank,0,Epoch,0,Iteration,337,It. time,1.895315408706665,Elapsed time,647.1058759689331
+[epoch: 0/1][iteration: 338/782][rank: 0] Loss_D: 2.8417, Loss_G: 4.7990, D(x): 0.1332, D(G(z)): 0.0009 / 0.0169, iteration time: 1.9010s
+Rank,0,Epoch,0,Iteration,338,It. time,1.900963306427002,Elapsed time,649.0086426734924
+[epoch: 0/1][iteration: 339/782][rank: 0] Loss_D: 0.1400, Loss_G: 2.3843, D(x): 0.9280, D(G(z)): 0.0552 / 0.1413, iteration time: 1.9045s
+Rank,0,Epoch,0,Iteration,339,It. time,1.9045047760009766,Elapsed time,650.9199094772339
+[epoch: 0/1][iteration: 340/782][rank: 0] Loss_D: 0.5894, Loss_G: 3.7920, D(x): 0.9936, D(G(z)): 0.3874 / 0.0315, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,340,It. time,1.8847918510437012,Elapsed time,652.8064279556274
+[epoch: 0/1][iteration: 341/782][rank: 0] Loss_D: 0.2471, Loss_G: 4.9102, D(x): 0.9641, D(G(z)): 0.1741 / 0.0094, iteration time: 1.8957s
+Rank,0,Epoch,0,Iteration,341,It. time,1.8957240581512451,Elapsed time,654.7038304805756
+[epoch: 0/1][iteration: 342/782][rank: 0] Loss_D: 0.2372, Loss_G: 3.9845, D(x): 0.8602, D(G(z)): 0.0679 / 0.0314, iteration time: 1.9016s
+Rank,0,Epoch,0,Iteration,342,It. time,1.9015915393829346,Elapsed time,656.609433889389
+[epoch: 0/1][iteration: 343/782][rank: 0] Loss_D: 0.1717, Loss_G: 3.4019, D(x): 0.9414, D(G(z)): 0.1001 / 0.0462, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,343,It. time,1.8796091079711914,Elapsed time,658.4907648563385
+[epoch: 0/1][iteration: 344/782][rank: 0] Loss_D: 0.3277, Loss_G: 4.1544, D(x): 0.9102, D(G(z)): 0.1919 / 0.0219, iteration time: 1.8900s
+Rank,0,Epoch,0,Iteration,344,It. time,1.890049934387207,Elapsed time,660.3825354576111
+[epoch: 0/1][iteration: 345/782][rank: 0] Loss_D: 0.7299, Loss_G: 6.4972, D(x): 0.8201, D(G(z)): 0.3449 / 0.0023, iteration time: 1.9068s
+Rank,0,Epoch,0,Iteration,345,It. time,1.9067766666412354,Elapsed time,662.2910330295563
+[epoch: 0/1][iteration: 346/782][rank: 0] Loss_D: 0.6826, Loss_G: 1.9016, D(x): 0.5474, D(G(z)): 0.0118 / 0.2033, iteration time: 1.8998s
+Rank,0,Epoch,0,Iteration,346,It. time,1.8997962474822998,Elapsed time,664.1925976276398
+[epoch: 0/1][iteration: 347/782][rank: 0] Loss_D: 1.4945, Loss_G: 8.5382, D(x): 0.9625, D(G(z)): 0.6643 / 0.0003, iteration time: 1.8826s
+Rank,0,Epoch,0,Iteration,347,It. time,1.8825891017913818,Elapsed time,666.0768976211548
+[epoch: 0/1][iteration: 348/782][rank: 0] Loss_D: 1.3044, Loss_G: 6.0188, D(x): 0.3173, D(G(z)): 0.0017 / 0.0053, iteration time: 1.8989s
+Rank,0,Epoch,0,Iteration,348,It. time,1.8988547325134277,Elapsed time,667.9782636165619
+[epoch: 0/1][iteration: 349/782][rank: 0] Loss_D: 0.2333, Loss_G: 3.6015, D(x): 0.8282, D(G(z)): 0.0195 / 0.0586, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,349,It. time,1.884157657623291,Elapsed time,669.8641560077667
+[epoch: 0/1][iteration: 350/782][rank: 0] Loss_D: 0.7211, Loss_G: 5.3763, D(x): 0.9860, D(G(z)): 0.4562 / 0.0058, iteration time: 1.8905s
+Rank,0,Epoch,0,Iteration,350,It. time,1.8904919624328613,Elapsed time,671.7564311027527
+[epoch: 0/1][iteration: 351/782][rank: 0] Loss_D: 0.2599, Loss_G: 4.6989, D(x): 0.8273, D(G(z)): 0.0432 / 0.0145, iteration time: 1.8990s
+Rank,0,Epoch,0,Iteration,351,It. time,1.898975133895874,Elapsed time,673.6572127342224
+[epoch: 0/1][iteration: 352/782][rank: 0] Loss_D: 0.2737, Loss_G: 3.4362, D(x): 0.8299, D(G(z)): 0.0690 / 0.0503, iteration time: 1.8898s
+Rank,0,Epoch,0,Iteration,352,It. time,1.8898262977600098,Elapsed time,675.5487163066864
+[epoch: 0/1][iteration: 353/782][rank: 0] Loss_D: 0.5625, Loss_G: 4.5061, D(x): 0.9202, D(G(z)): 0.3294 / 0.0158, iteration time: 1.8800s
+Rank,0,Epoch,0,Iteration,353,It. time,1.8799962997436523,Elapsed time,677.4305107593536
+[epoch: 0/1][iteration: 354/782][rank: 0] Loss_D: 0.4147, Loss_G: 3.8961, D(x): 0.7977, D(G(z)): 0.1422 / 0.0321, iteration time: 1.8916s
+Rank,0,Epoch,0,Iteration,354,It. time,1.8915801048278809,Elapsed time,679.3240025043488
+[epoch: 0/1][iteration: 355/782][rank: 0] Loss_D: 0.3381, Loss_G: 3.4445, D(x): 0.8448, D(G(z)): 0.1410 / 0.0379, iteration time: 1.9100s
+Rank,0,Epoch,0,Iteration,355,It. time,1.9100165367126465,Elapsed time,681.2357680797577
+[epoch: 0/1][iteration: 356/782][rank: 0] Loss_D: 0.5948, Loss_G: 4.9133, D(x): 0.8795, D(G(z)): 0.3390 / 0.0099, iteration time: 1.8958s
+Rank,0,Epoch,0,Iteration,356,It. time,1.8957645893096924,Elapsed time,683.1333429813385
+[epoch: 0/1][iteration: 357/782][rank: 0] Loss_D: 0.6819, Loss_G: 3.3506, D(x): 0.6133, D(G(z)): 0.0511 / 0.0524, iteration time: 1.8994s
+Rank,0,Epoch,0,Iteration,357,It. time,1.8994081020355225,Elapsed time,685.0388150215149
+[epoch: 0/1][iteration: 358/782][rank: 0] Loss_D: 0.4065, Loss_G: 5.1478, D(x): 0.9425, D(G(z)): 0.2776 / 0.0076, iteration time: 1.8967s
+Rank,0,Epoch,0,Iteration,358,It. time,1.8967125415802002,Elapsed time,686.9373624324799
+[epoch: 0/1][iteration: 359/782][rank: 0] Loss_D: 0.3573, Loss_G: 4.2074, D(x): 0.7752, D(G(z)): 0.0710 / 0.0206, iteration time: 1.8989s
+Rank,0,Epoch,0,Iteration,359,It. time,1.8988773822784424,Elapsed time,688.837952375412
+[epoch: 0/1][iteration: 360/782][rank: 0] Loss_D: 0.2997, Loss_G: 5.2681, D(x): 0.9147, D(G(z)): 0.1772 / 0.0061, iteration time: 1.8987s
+Rank,0,Epoch,0,Iteration,360,It. time,1.8986725807189941,Elapsed time,690.7383387088776
+[epoch: 0/1][iteration: 361/782][rank: 0] Loss_D: 0.2425, Loss_G: 3.8206, D(x): 0.8364, D(G(z)): 0.0491 / 0.0277, iteration time: 1.8960s
+Rank,0,Epoch,0,Iteration,361,It. time,1.8959693908691406,Elapsed time,692.6412489414215
+[epoch: 0/1][iteration: 362/782][rank: 0] Loss_D: 0.4027, Loss_G: 5.7136, D(x): 0.9466, D(G(z)): 0.2646 / 0.0045, iteration time: 1.8788s
+Rank,0,Epoch,0,Iteration,362,It. time,1.8787963390350342,Elapsed time,694.5218622684479
+[epoch: 0/1][iteration: 363/782][rank: 0] Loss_D: 0.2514, Loss_G: 4.5695, D(x): 0.8323, D(G(z)): 0.0460 / 0.0152, iteration time: 1.8732s
+Rank,0,Epoch,0,Iteration,363,It. time,1.8732073307037354,Elapsed time,696.4006130695343
+[epoch: 0/1][iteration: 364/782][rank: 0] Loss_D: 0.2665, Loss_G: 3.4062, D(x): 0.8447, D(G(z)): 0.0650 / 0.0438, iteration time: 1.8889s
+Rank,0,Epoch,0,Iteration,364,It. time,1.8889243602752686,Elapsed time,698.2913002967834
+[epoch: 0/1][iteration: 365/782][rank: 0] Loss_D: 0.3876, Loss_G: 6.4220, D(x): 0.9407, D(G(z)): 0.2444 / 0.0027, iteration time: 1.8968s
+Rank,0,Epoch,0,Iteration,365,It. time,1.896763563156128,Elapsed time,700.1897814273834
+[epoch: 0/1][iteration: 366/782][rank: 0] Loss_D: 0.3188, Loss_G: 3.7713, D(x): 0.7683, D(G(z)): 0.0178 / 0.0346, iteration time: 1.8867s
+Rank,0,Epoch,0,Iteration,366,It. time,1.886699914932251,Elapsed time,702.078234910965
+[epoch: 0/1][iteration: 367/782][rank: 0] Loss_D: 0.2460, Loss_G: 4.8016, D(x): 0.9739, D(G(z)): 0.1504 / 0.0116, iteration time: 1.8838s
+Rank,0,Epoch,0,Iteration,367,It. time,1.8838419914245605,Elapsed time,703.9638671875
+[epoch: 0/1][iteration: 368/782][rank: 0] Loss_D: 0.1681, Loss_G: 5.5820, D(x): 0.9551, D(G(z)): 0.1081 / 0.0048, iteration time: 1.8963s
+Rank,0,Epoch,0,Iteration,368,It. time,1.8962762355804443,Elapsed time,705.8619832992554
+[epoch: 0/1][iteration: 369/782][rank: 0] Loss_D: 0.1592, Loss_G: 5.2018, D(x): 0.9010, D(G(z)): 0.0328 / 0.0077, iteration time: 1.8803s
+Rank,0,Epoch,0,Iteration,369,It. time,1.8803198337554932,Elapsed time,707.7440586090088
+[epoch: 0/1][iteration: 370/782][rank: 0] Loss_D: 0.1950, Loss_G: 3.6224, D(x): 0.8816, D(G(z)): 0.0530 / 0.0327, iteration time: 1.9053s
+Rank,0,Epoch,0,Iteration,370,It. time,1.905290126800537,Elapsed time,709.651255607605
+[epoch: 0/1][iteration: 371/782][rank: 0] Loss_D: 0.1518, Loss_G: 4.7481, D(x): 0.9648, D(G(z)): 0.1057 / 0.0105, iteration time: 1.8914s
+Rank,0,Epoch,0,Iteration,371,It. time,1.891355037689209,Elapsed time,711.5444104671478
+[epoch: 0/1][iteration: 372/782][rank: 0] Loss_D: 0.2213, Loss_G: 5.6276, D(x): 0.9390, D(G(z)): 0.1383 / 0.0050, iteration time: 1.8882s
+Rank,0,Epoch,0,Iteration,372,It. time,1.8882482051849365,Elapsed time,713.4343769550323
+[epoch: 0/1][iteration: 373/782][rank: 0] Loss_D: 0.1973, Loss_G: 4.1130, D(x): 0.8576, D(G(z)): 0.0337 / 0.0248, iteration time: 1.8868s
+Rank,0,Epoch,0,Iteration,373,It. time,1.8868129253387451,Elapsed time,715.322949886322
+[epoch: 0/1][iteration: 374/782][rank: 0] Loss_D: 0.1030, Loss_G: 4.4157, D(x): 0.9765, D(G(z)): 0.0738 / 0.0167, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,374,It. time,1.8883752822875977,Elapsed time,717.2129805088043
+[epoch: 0/1][iteration: 375/782][rank: 0] Loss_D: 0.2347, Loss_G: 6.6540, D(x): 0.9746, D(G(z)): 0.1706 / 0.0018, iteration time: 1.9037s
+Rank,0,Epoch,0,Iteration,375,It. time,1.9037246704101562,Elapsed time,719.1184813976288
+[epoch: 0/1][iteration: 376/782][rank: 0] Loss_D: 0.2182, Loss_G: 5.8312, D(x): 0.8373, D(G(z)): 0.0055 / 0.0042, iteration time: 1.8747s
+Rank,0,Epoch,0,Iteration,376,It. time,1.8746764659881592,Elapsed time,720.9949045181274
+[epoch: 0/1][iteration: 377/782][rank: 0] Loss_D: 0.1245, Loss_G: 4.1052, D(x): 0.9488, D(G(z)): 0.0654 / 0.0218, iteration time: 1.9059s
+Rank,0,Epoch,0,Iteration,377,It. time,1.9058823585510254,Elapsed time,722.9025089740753
+[epoch: 0/1][iteration: 378/782][rank: 0] Loss_D: 0.1931, Loss_G: 6.2370, D(x): 0.9735, D(G(z)): 0.1458 / 0.0024, iteration time: 1.8916s
+Rank,0,Epoch,0,Iteration,378,It. time,1.8915681838989258,Elapsed time,724.7958436012268
+[epoch: 0/1][iteration: 379/782][rank: 0] Loss_D: 0.1292, Loss_G: 5.2125, D(x): 0.9075, D(G(z)): 0.0201 / 0.0082, iteration time: 1.8953s
+Rank,0,Epoch,0,Iteration,379,It. time,1.8952653408050537,Elapsed time,726.6980185508728
+[epoch: 0/1][iteration: 380/782][rank: 0] Loss_D: 0.2724, Loss_G: 6.1642, D(x): 0.9085, D(G(z)): 0.1476 / 0.0027, iteration time: 1.9080s
+Rank,0,Epoch,0,Iteration,380,It. time,1.9079954624176025,Elapsed time,728.607738494873
+[epoch: 0/1][iteration: 381/782][rank: 0] Loss_D: 0.1585, Loss_G: 5.3453, D(x): 0.9275, D(G(z)): 0.0739 / 0.0059, iteration time: 1.8883s
+Rank,0,Epoch,0,Iteration,381,It. time,1.8882594108581543,Elapsed time,730.497731924057
+[epoch: 0/1][iteration: 382/782][rank: 0] Loss_D: 0.3173, Loss_G: 5.3013, D(x): 0.8712, D(G(z)): 0.1481 / 0.0062, iteration time: 1.8888s
+Rank,0,Epoch,0,Iteration,382,It. time,1.8888249397277832,Elapsed time,732.3883414268494
+[epoch: 0/1][iteration: 383/782][rank: 0] Loss_D: 0.2955, Loss_G: 6.7984, D(x): 0.8888, D(G(z)): 0.1540 / 0.0013, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,383,It. time,1.889096975326538,Elapsed time,734.27916264534
+[epoch: 0/1][iteration: 384/782][rank: 0] Loss_D: 0.2883, Loss_G: 4.7468, D(x): 0.8142, D(G(z)): 0.0512 / 0.0105, iteration time: 1.8768s
+Rank,0,Epoch,0,Iteration,384,It. time,1.8767802715301514,Elapsed time,736.1641705036163
+[epoch: 0/1][iteration: 385/782][rank: 0] Loss_D: 0.4795, Loss_G: 8.7704, D(x): 0.9659, D(G(z)): 0.3371 / 0.0002, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,385,It. time,1.8883914947509766,Elapsed time,738.0582196712494
+[epoch: 0/1][iteration: 386/782][rank: 0] Loss_D: 0.9523, Loss_G: 3.5372, D(x): 0.5428, D(G(z)): 0.0020 / 0.0807, iteration time: 1.8860s
+Rank,0,Epoch,0,Iteration,386,It. time,1.8859872817993164,Elapsed time,739.9460647106171
+[epoch: 0/1][iteration: 387/782][rank: 0] Loss_D: 0.7689, Loss_G: 9.1805, D(x): 0.9805, D(G(z)): 0.4055 / 0.0003, iteration time: 1.8905s
+Rank,0,Epoch,0,Iteration,387,It. time,1.8904516696929932,Elapsed time,741.8383710384369
+[epoch: 0/1][iteration: 388/782][rank: 0] Loss_D: 0.8592, Loss_G: 5.4232, D(x): 0.5652, D(G(z)): 0.0024 / 0.0101, iteration time: 1.8911s
+Rank,0,Epoch,0,Iteration,388,It. time,1.89107084274292,Elapsed time,743.7311425209045
+[epoch: 0/1][iteration: 389/782][rank: 0] Loss_D: 0.1045, Loss_G: 4.3256, D(x): 0.9858, D(G(z)): 0.0800 / 0.0217, iteration time: 1.9006s
+Rank,0,Epoch,0,Iteration,389,It. time,1.9005522727966309,Elapsed time,745.6334691047668
+[epoch: 0/1][iteration: 390/782][rank: 0] Loss_D: 0.4571, Loss_G: 7.9451, D(x): 0.9758, D(G(z)): 0.2976 / 0.0005, iteration time: 1.8979s
+Rank,0,Epoch,0,Iteration,390,It. time,1.897895336151123,Elapsed time,747.533055305481
+[epoch: 0/1][iteration: 391/782][rank: 0] Loss_D: 0.6024, Loss_G: 3.8048, D(x): 0.5892, D(G(z)): 0.0047 / 0.0402, iteration time: 1.9180s
+Rank,0,Epoch,0,Iteration,391,It. time,1.917989730834961,Elapsed time,749.4534022808075
+[epoch: 0/1][iteration: 392/782][rank: 0] Loss_D: 0.3831, Loss_G: 5.7344, D(x): 0.9766, D(G(z)): 0.2803 / 0.0042, iteration time: 1.8956s
+Rank,0,Epoch,0,Iteration,392,It. time,1.8956325054168701,Elapsed time,751.3507850170135
+[epoch: 0/1][iteration: 393/782][rank: 0] Loss_D: 0.1050, Loss_G: 5.6699, D(x): 0.9494, D(G(z)): 0.0422 / 0.0046, iteration time: 1.8839s
+Rank,0,Epoch,0,Iteration,393,It. time,1.8839476108551025,Elapsed time,753.2426290512085
+[epoch: 0/1][iteration: 394/782][rank: 0] Loss_D: 0.2810, Loss_G: 3.9080, D(x): 0.8373, D(G(z)): 0.0647 / 0.0293, iteration time: 1.9018s
+Rank,0,Epoch,0,Iteration,394,It. time,1.9018096923828125,Elapsed time,755.1461224555969
+[epoch: 0/1][iteration: 395/782][rank: 0] Loss_D: 0.4096, Loss_G: 7.9970, D(x): 0.9619, D(G(z)): 0.2804 / 0.0005, iteration time: 1.8951s
+Rank,0,Epoch,0,Iteration,395,It. time,1.8951053619384766,Elapsed time,757.0429358482361
+[epoch: 0/1][iteration: 396/782][rank: 0] Loss_D: 2.0865, Loss_G: 0.5015, D(x): 0.2138, D(G(z)): 0.0026 / 0.6295, iteration time: 1.8776s
+Rank,0,Epoch,0,Iteration,396,It. time,1.8776202201843262,Elapsed time,758.9290080070496
+[epoch: 0/1][iteration: 397/782][rank: 0] Loss_D: 3.1420, Loss_G: 10.8633, D(x): 0.9974, D(G(z)): 0.9443 / 0.0000, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,397,It. time,1.8906266689300537,Elapsed time,760.826033115387
+[epoch: 0/1][iteration: 398/782][rank: 0] Loss_D: 3.5352, Loss_G: 8.2390, D(x): 0.0566, D(G(z)): 0.0000 / 0.0004, iteration time: 1.8711s
+Rank,0,Epoch,0,Iteration,398,It. time,1.8711135387420654,Elapsed time,762.7065079212189
+[epoch: 0/1][iteration: 399/782][rank: 0] Loss_D: 1.6439, Loss_G: 2.8055, D(x): 0.2857, D(G(z)): 0.0024 / 0.0925, iteration time: 1.8973s
+Rank,0,Epoch,0,Iteration,399,It. time,1.8973360061645508,Elapsed time,764.6127238273621
+[epoch: 0/1][iteration: 400/782][rank: 0] Loss_D: 0.3550, Loss_G: 1.4895, D(x): 0.9783, D(G(z)): 0.2699 / 0.2562, iteration time: 1.8764s
+Rank,0,Epoch,0,Iteration,400,It. time,1.8763597011566162,Elapsed time,766.490808725357
+[epoch: 0/1][iteration: 401/782][rank: 0] Loss_D: 0.8387, Loss_G: 3.4863, D(x): 0.9789, D(G(z)): 0.5156 / 0.0390, iteration time: 1.9048s
+Rank,0,Epoch,0,Iteration,401,It. time,1.9047508239746094,Elapsed time,768.70232462883
+[epoch: 0/1][iteration: 402/782][rank: 0] Loss_D: 0.3810, Loss_G: 4.1264, D(x): 0.8933, D(G(z)): 0.2131 / 0.0235, iteration time: 1.8831s
+Rank,0,Epoch,0,Iteration,402,It. time,1.8830814361572266,Elapsed time,770.5871906280518
+[epoch: 0/1][iteration: 403/782][rank: 0] Loss_D: 0.3424, Loss_G: 3.5805, D(x): 0.8605, D(G(z)): 0.1551 / 0.0378, iteration time: 1.8829s
+Rank,0,Epoch,0,Iteration,403,It. time,1.8828728199005127,Elapsed time,772.471884727478
+[epoch: 0/1][iteration: 404/782][rank: 0] Loss_D: 0.3455, Loss_G: 2.9633, D(x): 0.8580, D(G(z)): 0.1538 / 0.0679, iteration time: 1.9137s
+Rank,0,Epoch,0,Iteration,404,It. time,1.9136569499969482,Elapsed time,774.3872737884521
+[epoch: 0/1][iteration: 405/782][rank: 0] Loss_D: 0.4204, Loss_G: 3.4028, D(x): 0.8956, D(G(z)): 0.2452 / 0.0459, iteration time: 1.9046s
+Rank,0,Epoch,0,Iteration,405,It. time,1.9046406745910645,Elapsed time,776.293615102768
+[epoch: 0/1][iteration: 406/782][rank: 0] Loss_D: 0.6498, Loss_G: 3.4764, D(x): 0.7520, D(G(z)): 0.2598 / 0.0412, iteration time: 1.9004s
+Rank,0,Epoch,0,Iteration,406,It. time,1.9003689289093018,Elapsed time,778.1959137916565
+[epoch: 0/1][iteration: 407/782][rank: 0] Loss_D: 0.2861, Loss_G: 3.9250, D(x): 0.8462, D(G(z)): 0.0920 / 0.0261, iteration time: 1.8881s
+Rank,0,Epoch,0,Iteration,407,It. time,1.8880603313446045,Elapsed time,780.0857048034668
+[epoch: 0/1][iteration: 408/782][rank: 0] Loss_D: 0.4314, Loss_G: 3.8688, D(x): 0.8553, D(G(z)): 0.2225 / 0.0266, iteration time: 1.9018s
+Rank,0,Epoch,0,Iteration,408,It. time,1.9017589092254639,Elapsed time,781.9892189502716
+[epoch: 0/1][iteration: 409/782][rank: 0] Loss_D: 0.3607, Loss_G: 4.1344, D(x): 0.8349, D(G(z)): 0.1155 / 0.0255, iteration time: 1.8936s
+Rank,0,Epoch,0,Iteration,409,It. time,1.893578052520752,Elapsed time,783.88898396492
+[epoch: 0/1][iteration: 410/782][rank: 0] Loss_D: 0.4317, Loss_G: 4.0620, D(x): 0.8103, D(G(z)): 0.1635 / 0.0220, iteration time: 1.8804s
+Rank,0,Epoch,0,Iteration,410,It. time,1.8804430961608887,Elapsed time,785.7758400440216
+[epoch: 0/1][iteration: 411/782][rank: 0] Loss_D: 0.6074, Loss_G: 5.9572, D(x): 0.8256, D(G(z)): 0.3000 / 0.0044, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,411,It. time,1.8891401290893555,Elapsed time,787.6666803359985
+[epoch: 0/1][iteration: 412/782][rank: 0] Loss_D: 0.6320, Loss_G: 1.9684, D(x): 0.6037, D(G(z)): 0.0551 / 0.1955, iteration time: 1.8867s
+Rank,0,Epoch,0,Iteration,412,It. time,1.8867192268371582,Elapsed time,789.5551280975342
+[epoch: 0/1][iteration: 413/782][rank: 0] Loss_D: 2.4670, Loss_G: 10.5387, D(x): 0.9869, D(G(z)): 0.8697 / 0.0001, iteration time: 1.8907s
+Rank,0,Epoch,0,Iteration,413,It. time,1.890669584274292,Elapsed time,791.4476101398468
+[epoch: 0/1][iteration: 414/782][rank: 0] Loss_D: 2.3711, Loss_G: 8.1556, D(x): 0.2037, D(G(z)): 0.0003 / 0.0009, iteration time: 1.8882s
+Rank,0,Epoch,0,Iteration,414,It. time,1.888185739517212,Elapsed time,793.3397102355957
+[epoch: 0/1][iteration: 415/782][rank: 0] Loss_D: 1.3550, Loss_G: 4.0745, D(x): 0.3684, D(G(z)): 0.0034 / 0.0435, iteration time: 1.8920s
+Rank,0,Epoch,0,Iteration,415,It. time,1.8919734954833984,Elapsed time,795.2334649562836
+[epoch: 0/1][iteration: 416/782][rank: 0] Loss_D: 0.4928, Loss_G: 1.9690, D(x): 0.8730, D(G(z)): 0.2086 / 0.2314, iteration time: 1.9107s
+Rank,0,Epoch,0,Iteration,416,It. time,1.9107232093811035,Elapsed time,797.145991563797
+[epoch: 0/1][iteration: 417/782][rank: 0] Loss_D: 0.9699, Loss_G: 2.8989, D(x): 0.9615, D(G(z)): 0.5227 / 0.0766, iteration time: 1.8880s
+Rank,0,Epoch,0,Iteration,417,It. time,1.8880000114440918,Elapsed time,799.035804271698
+[epoch: 0/1][iteration: 418/782][rank: 0] Loss_D: 0.5011, Loss_G: 3.9119, D(x): 0.8920, D(G(z)): 0.2644 / 0.0293, iteration time: 1.8995s
+Rank,0,Epoch,0,Iteration,418,It. time,1.8995294570922852,Elapsed time,800.9372572898865
+[epoch: 0/1][iteration: 419/782][rank: 0] Loss_D: 0.5197, Loss_G: 3.1550, D(x): 0.7392, D(G(z)): 0.1510 / 0.0575, iteration time: 1.8872s
+Rank,0,Epoch,0,Iteration,419,It. time,1.8872053623199463,Elapsed time,802.8261485099792
+[epoch: 0/1][iteration: 420/782][rank: 0] Loss_D: 0.5538, Loss_G: 2.2897, D(x): 0.7246, D(G(z)): 0.1670 / 0.1417, iteration time: 1.8766s
+Rank,0,Epoch,0,Iteration,420,It. time,1.8765971660614014,Elapsed time,804.7044432163239
+[epoch: 0/1][iteration: 421/782][rank: 0] Loss_D: 0.7743, Loss_G: 2.3964, D(x): 0.8720, D(G(z)): 0.4294 / 0.1119, iteration time: 1.9089s
+Rank,0,Epoch,0,Iteration,421,It. time,1.908890962600708,Elapsed time,806.6151134967804
+[epoch: 0/1][iteration: 422/782][rank: 0] Loss_D: 0.8743, Loss_G: 3.0673, D(x): 0.8001, D(G(z)): 0.4321 / 0.0587, iteration time: 1.9098s
+Rank,0,Epoch,0,Iteration,422,It. time,1.9098002910614014,Elapsed time,808.5266408920288
+[epoch: 0/1][iteration: 423/782][rank: 0] Loss_D: 0.6059, Loss_G: 3.0128, D(x): 0.6623, D(G(z)): 0.1219 / 0.0627, iteration time: 1.9047s
+Rank,0,Epoch,0,Iteration,423,It. time,1.904667854309082,Elapsed time,810.433112859726
+[epoch: 0/1][iteration: 424/782][rank: 0] Loss_D: 0.7334, Loss_G: 2.2226, D(x): 0.6934, D(G(z)): 0.2478 / 0.1188, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,424,It. time,1.8795948028564453,Elapsed time,812.3144898414612
+[epoch: 0/1][iteration: 425/782][rank: 0] Loss_D: 1.1542, Loss_G: 3.6776, D(x): 0.7724, D(G(z)): 0.5236 / 0.0324, iteration time: 1.9040s
+Rank,0,Epoch,0,Iteration,425,It. time,1.9039835929870605,Elapsed time,814.2201974391937
+[epoch: 0/1][iteration: 426/782][rank: 0] Loss_D: 0.6467, Loss_G: 3.7100, D(x): 0.6541, D(G(z)): 0.1539 / 0.0298, iteration time: 1.9070s
+Rank,0,Epoch,0,Iteration,426,It. time,1.907031536102295,Elapsed time,816.1289892196655
+[epoch: 0/1][iteration: 427/782][rank: 0] Loss_D: 0.5331, Loss_G: 3.0019, D(x): 0.7499, D(G(z)): 0.1624 / 0.0594, iteration time: 1.8790s
+Rank,0,Epoch,0,Iteration,427,It. time,1.8789560794830322,Elapsed time,818.0096981525421
+[epoch: 0/1][iteration: 428/782][rank: 0] Loss_D: 0.4661, Loss_G: 3.9393, D(x): 0.8871, D(G(z)): 0.2700 / 0.0243, iteration time: 1.8968s
+Rank,0,Epoch,0,Iteration,428,It. time,1.896819829940796,Elapsed time,819.9082815647125
+[epoch: 0/1][iteration: 429/782][rank: 0] Loss_D: 0.3522, Loss_G: 3.4670, D(x): 0.8303, D(G(z)): 0.1119 / 0.0375, iteration time: 1.9043s
+Rank,0,Epoch,0,Iteration,429,It. time,1.9043378829956055,Elapsed time,821.8142831325531
+[epoch: 0/1][iteration: 430/782][rank: 0] Loss_D: 0.4004, Loss_G: 3.9328, D(x): 0.8859, D(G(z)): 0.2141 / 0.0288, iteration time: 1.8940s
+Rank,0,Epoch,0,Iteration,430,It. time,1.8940324783325195,Elapsed time,823.7134401798248
+[epoch: 0/1][iteration: 431/782][rank: 0] Loss_D: 0.3379, Loss_G: 4.3538, D(x): 0.8794, D(G(z)): 0.1659 / 0.0170, iteration time: 1.8766s
+Rank,0,Epoch,0,Iteration,431,It. time,1.876617193222046,Elapsed time,825.5918378829956
+[epoch: 0/1][iteration: 432/782][rank: 0] Loss_D: 0.2721, Loss_G: 3.7501, D(x): 0.8593, D(G(z)): 0.0966 / 0.0334, iteration time: 1.8862s
+Rank,0,Epoch,0,Iteration,432,It. time,1.8862483501434326,Elapsed time,827.4798600673676
+[epoch: 0/1][iteration: 433/782][rank: 0] Loss_D: 0.5874, Loss_G: 6.4419, D(x): 0.9501, D(G(z)): 0.3605 / 0.0023, iteration time: 1.8962s
+Rank,0,Epoch,0,Iteration,433,It. time,1.8961820602416992,Elapsed time,829.3777687549591
+[epoch: 0/1][iteration: 434/782][rank: 0] Loss_D: 0.9147, Loss_G: 3.5298, D(x): 0.5264, D(G(z)): 0.0148 / 0.0441, iteration time: 1.8896s
+Rank,0,Epoch,0,Iteration,434,It. time,1.8895502090454102,Elapsed time,831.2690343856812
+[epoch: 0/1][iteration: 435/782][rank: 0] Loss_D: 0.8557, Loss_G: 5.8122, D(x): 0.8324, D(G(z)): 0.4045 / 0.0050, iteration time: 1.8876s
+Rank,0,Epoch,0,Iteration,435,It. time,1.8875954151153564,Elapsed time,833.1583518981934
+[epoch: 0/1][iteration: 436/782][rank: 0] Loss_D: 0.6216, Loss_G: 3.3032, D(x): 0.6759, D(G(z)): 0.0736 / 0.0561, iteration time: 1.8854s
+Rank,0,Epoch,0,Iteration,436,It. time,1.885418176651001,Elapsed time,835.0454859733582
+[epoch: 0/1][iteration: 437/782][rank: 0] Loss_D: 0.5458, Loss_G: 4.6450, D(x): 0.9069, D(G(z)): 0.3070 / 0.0148, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,437,It. time,1.8848426342010498,Elapsed time,836.9321300983429
+[epoch: 0/1][iteration: 438/782][rank: 0] Loss_D: 0.5918, Loss_G: 4.4817, D(x): 0.7202, D(G(z)): 0.1611 / 0.0139, iteration time: 1.8929s
+Rank,0,Epoch,0,Iteration,438,It. time,1.8929336071014404,Elapsed time,838.8269491195679
+[epoch: 0/1][iteration: 439/782][rank: 0] Loss_D: 0.3818, Loss_G: 4.1297, D(x): 0.8762, D(G(z)): 0.1922 / 0.0210, iteration time: 1.8899s
+Rank,0,Epoch,0,Iteration,439,It. time,1.8899438381195068,Elapsed time,840.7186431884766
+[epoch: 0/1][iteration: 440/782][rank: 0] Loss_D: 0.4078, Loss_G: 3.8246, D(x): 0.8050, D(G(z)): 0.1449 / 0.0301, iteration time: 1.8758s
+Rank,0,Epoch,0,Iteration,440,It. time,1.8757941722869873,Elapsed time,842.5961635112762
+[epoch: 0/1][iteration: 441/782][rank: 0] Loss_D: 0.3566, Loss_G: 5.2206, D(x): 0.9032, D(G(z)): 0.2089 / 0.0071, iteration time: 1.8844s
+Rank,0,Epoch,0,Iteration,441,It. time,1.8844172954559326,Elapsed time,844.4878296852112
+[epoch: 0/1][iteration: 442/782][rank: 0] Loss_D: 0.8359, Loss_G: 1.9204, D(x): 0.5322, D(G(z)): 0.0612 / 0.1898, iteration time: 1.8959s
+Rank,0,Epoch,0,Iteration,442,It. time,1.8959133625030518,Elapsed time,846.3854475021362
+[epoch: 0/1][iteration: 443/782][rank: 0] Loss_D: 1.1340, Loss_G: 8.3913, D(x): 0.9660, D(G(z)): 0.5938 / 0.0003, iteration time: 1.9103s
+Rank,0,Epoch,0,Iteration,443,It. time,1.9103217124938965,Elapsed time,848.2975676059723
+[epoch: 0/1][iteration: 444/782][rank: 0] Loss_D: 0.6717, Loss_G: 6.2909, D(x): 0.5661, D(G(z)): 0.0014 / 0.0024, iteration time: 1.8925s
+Rank,0,Epoch,0,Iteration,444,It. time,1.8924553394317627,Elapsed time,850.1917102336884
+[epoch: 0/1][iteration: 445/782][rank: 0] Loss_D: 0.5211, Loss_G: 2.5527, D(x): 0.6386, D(G(z)): 0.0098 / 0.1039, iteration time: 1.8778s
+Rank,0,Epoch,0,Iteration,445,It. time,1.877800703048706,Elapsed time,852.0732135772705
+[epoch: 0/1][iteration: 446/782][rank: 0] Loss_D: 0.3534, Loss_G: 3.6224, D(x): 0.9812, D(G(z)): 0.2576 / 0.0360, iteration time: 1.8779s
+Rank,0,Epoch,0,Iteration,446,It. time,1.8779354095458984,Elapsed time,853.9528605937958
+[epoch: 0/1][iteration: 447/782][rank: 0] Loss_D: 0.4058, Loss_G: 5.2544, D(x): 0.9865, D(G(z)): 0.2625 / 0.0092, iteration time: 1.8780s
+Rank,0,Epoch,0,Iteration,447,It. time,1.8780417442321777,Elapsed time,855.8326005935669
+[epoch: 0/1][iteration: 448/782][rank: 0] Loss_D: 0.4040, Loss_G: 4.0181, D(x): 0.8009, D(G(z)): 0.1355 / 0.0231, iteration time: 1.8834s
+Rank,0,Epoch,0,Iteration,448,It. time,1.883387804031372,Elapsed time,857.7177345752716
+[epoch: 0/1][iteration: 449/782][rank: 0] Loss_D: 0.5378, Loss_G: 2.4389, D(x): 0.7319, D(G(z)): 0.1592 / 0.1122, iteration time: 1.8859s
+Rank,0,Epoch,0,Iteration,449,It. time,1.8859362602233887,Elapsed time,859.6054236888885
+[epoch: 0/1][iteration: 450/782][rank: 0] Loss_D: 1.4848, Loss_G: 8.4082, D(x): 0.9312, D(G(z)): 0.6918 / 0.0006, iteration time: 1.8759s
+Rank,0,Epoch,0,Iteration,450,It. time,1.8758764266967773,Elapsed time,861.4831244945526
+[epoch: 0/1][iteration: 451/782][rank: 0] Loss_D: 1.4565, Loss_G: 5.4512, D(x): 0.3469, D(G(z)): 0.0047 / 0.0198, iteration time: 1.8821s
+Rank,0,Epoch,0,Iteration,451,It. time,1.8820805549621582,Elapsed time,863.3670170307159
+[epoch: 0/1][iteration: 452/782][rank: 0] Loss_D: 0.3879, Loss_G: 3.1876, D(x): 0.7710, D(G(z)): 0.0769 / 0.1099, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,452,It. time,1.8878381252288818,Elapsed time,865.2592425346375
+[epoch: 0/1][iteration: 453/782][rank: 0] Loss_D: 0.3594, Loss_G: 3.6551, D(x): 0.9148, D(G(z)): 0.1797 / 0.0420, iteration time: 1.8855s
+Rank,0,Epoch,0,Iteration,453,It. time,1.8854773044586182,Elapsed time,867.1489186286926
+[epoch: 0/1][iteration: 454/782][rank: 0] Loss_D: 0.6076, Loss_G: 3.8114, D(x): 0.8192, D(G(z)): 0.2291 / 0.0320, iteration time: 1.8987s
+Rank,0,Epoch,0,Iteration,454,It. time,1.8987421989440918,Elapsed time,869.0493502616882
+[epoch: 0/1][iteration: 455/782][rank: 0] Loss_D: 0.2518, Loss_G: 4.2399, D(x): 0.8900, D(G(z)): 0.1083 / 0.0194, iteration time: 1.8727s
+Rank,0,Epoch,0,Iteration,455,It. time,1.8727097511291504,Elapsed time,870.9237930774689
+[epoch: 0/1][iteration: 456/782][rank: 0] Loss_D: 0.2116, Loss_G: 3.8315, D(x): 0.9246, D(G(z)): 0.1150 / 0.0301, iteration time: 1.8733s
+Rank,0,Epoch,0,Iteration,456,It. time,1.8733022212982178,Elapsed time,872.7988927364349
+[epoch: 0/1][iteration: 457/782][rank: 0] Loss_D: 0.2332, Loss_G: 3.6588, D(x): 0.8830, D(G(z)): 0.0878 / 0.0344, iteration time: 1.8805s
+Rank,0,Epoch,0,Iteration,457,It. time,1.8804779052734375,Elapsed time,874.6878666877747
+[epoch: 0/1][iteration: 458/782][rank: 0] Loss_D: 0.3028, Loss_G: 4.3829, D(x): 0.9051, D(G(z)): 0.1604 / 0.0163, iteration time: 1.9085s
+Rank,0,Epoch,0,Iteration,458,It. time,1.9084587097167969,Elapsed time,876.5980489253998
+[epoch: 0/1][iteration: 459/782][rank: 0] Loss_D: 0.3204, Loss_G: 3.9761, D(x): 0.8147, D(G(z)): 0.0812 / 0.0277, iteration time: 1.8804s
+Rank,0,Epoch,0,Iteration,459,It. time,1.8804094791412354,Elapsed time,878.4838180541992
+[epoch: 0/1][iteration: 460/782][rank: 0] Loss_D: 0.5529, Loss_G: 5.8354, D(x): 0.8769, D(G(z)): 0.3007 / 0.0039, iteration time: 1.8807s
+Rank,0,Epoch,0,Iteration,460,It. time,1.8806912899017334,Elapsed time,880.3720984458923
+[epoch: 0/1][iteration: 461/782][rank: 0] Loss_D: 0.9940, Loss_G: 2.0036, D(x): 0.4672, D(G(z)): 0.0188 / 0.1825, iteration time: 1.8833s
+Rank,0,Epoch,0,Iteration,461,It. time,1.8832783699035645,Elapsed time,882.2570462226868
+[epoch: 0/1][iteration: 462/782][rank: 0] Loss_D: 0.8961, Loss_G: 7.5469, D(x): 0.9717, D(G(z)): 0.5398 / 0.0018, iteration time: 1.8748s
+Rank,0,Epoch,0,Iteration,462,It. time,1.8748295307159424,Elapsed time,884.1382346153259
+[epoch: 0/1][iteration: 463/782][rank: 0] Loss_D: 0.8133, Loss_G: 4.6621, D(x): 0.5749, D(G(z)): 0.0222 / 0.0344, iteration time: 1.8942s
+Rank,0,Epoch,0,Iteration,463,It. time,1.8942320346832275,Elapsed time,886.034229516983
+[epoch: 0/1][iteration: 464/782][rank: 0] Loss_D: 0.4289, Loss_G: 3.2304, D(x): 0.8169, D(G(z)): 0.1152 / 0.0606, iteration time: 1.8923s
+Rank,0,Epoch,0,Iteration,464,It. time,1.8922719955444336,Elapsed time,887.9282126426697
+[epoch: 0/1][iteration: 465/782][rank: 0] Loss_D: 0.3811, Loss_G: 3.8531, D(x): 0.9029, D(G(z)): 0.2217 / 0.0248, iteration time: 1.8791s
+Rank,0,Epoch,0,Iteration,465,It. time,1.879115104675293,Elapsed time,889.8090651035309
+[epoch: 0/1][iteration: 466/782][rank: 0] Loss_D: 0.2937, Loss_G: 3.2533, D(x): 0.8484, D(G(z)): 0.1043 / 0.0503, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,466,It. time,1.8842499256134033,Elapsed time,891.6951563358307
+[epoch: 0/1][iteration: 467/782][rank: 0] Loss_D: 0.3038, Loss_G: 3.3090, D(x): 0.8739, D(G(z)): 0.1365 / 0.0462, iteration time: 1.9163s
+Rank,0,Epoch,0,Iteration,467,It. time,1.9163157939910889,Elapsed time,893.6133286952972
+[epoch: 0/1][iteration: 468/782][rank: 0] Loss_D: 0.3637, Loss_G: 3.8762, D(x): 0.8815, D(G(z)): 0.1987 / 0.0254, iteration time: 1.8850s
+Rank,0,Epoch,0,Iteration,468,It. time,1.8850038051605225,Elapsed time,895.5000720024109
+[epoch: 0/1][iteration: 469/782][rank: 0] Loss_D: 0.3507, Loss_G: 3.8398, D(x): 0.8287, D(G(z)): 0.1277 / 0.0270, iteration time: 1.8846s
+Rank,0,Epoch,0,Iteration,469,It. time,1.88458251953125,Elapsed time,897.3863155841827
+[epoch: 0/1][iteration: 470/782][rank: 0] Loss_D: 0.1830, Loss_G: 3.4559, D(x): 0.8846, D(G(z)): 0.0520 / 0.0417, iteration time: 1.9053s
+Rank,0,Epoch,0,Iteration,470,It. time,1.9053242206573486,Elapsed time,899.2955610752106
+[epoch: 0/1][iteration: 471/782][rank: 0] Loss_D: 0.4344, Loss_G: 4.5298, D(x): 0.9035, D(G(z)): 0.2621 / 0.0158, iteration time: 1.8939s
+Rank,0,Epoch,0,Iteration,471,It. time,1.8939132690429688,Elapsed time,901.1911880970001
+[epoch: 0/1][iteration: 472/782][rank: 0] Loss_D: 0.2103, Loss_G: 4.3319, D(x): 0.8856, D(G(z)): 0.0521 / 0.0189, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,472,It. time,1.8906476497650146,Elapsed time,903.0835359096527
+[epoch: 0/1][iteration: 473/782][rank: 0] Loss_D: 0.1466, Loss_G: 3.4258, D(x): 0.9241, D(G(z)): 0.0557 / 0.0424, iteration time: 1.9095s
+Rank,0,Epoch,0,Iteration,473,It. time,1.9094524383544922,Elapsed time,904.9947593212128
+[epoch: 0/1][iteration: 474/782][rank: 0] Loss_D: 0.2817, Loss_G: 4.2896, D(x): 0.9305, D(G(z)): 0.1776 / 0.0166, iteration time: 1.8834s
+Rank,0,Epoch,0,Iteration,474,It. time,1.883399248123169,Elapsed time,906.8799357414246
+[epoch: 0/1][iteration: 475/782][rank: 0] Loss_D: 0.0832, Loss_G: 4.9829, D(x): 0.9775, D(G(z)): 0.0572 / 0.0089, iteration time: 1.8993s
+Rank,0,Epoch,0,Iteration,475,It. time,1.8993024826049805,Elapsed time,908.7809574604034
+[epoch: 0/1][iteration: 476/782][rank: 0] Loss_D: 0.1653, Loss_G: 5.1305, D(x): 0.9573, D(G(z)): 0.1054 / 0.0086, iteration time: 1.8971s
+Rank,0,Epoch,0,Iteration,476,It. time,1.897123098373413,Elapsed time,910.6845273971558
+[epoch: 0/1][iteration: 477/782][rank: 0] Loss_D: 0.1861, Loss_G: 4.6437, D(x): 0.8965, D(G(z)): 0.0465 / 0.0137, iteration time: 1.8759s
+Rank,0,Epoch,0,Iteration,477,It. time,1.8758876323699951,Elapsed time,912.5622136592865
+[epoch: 0/1][iteration: 478/782][rank: 0] Loss_D: 0.1896, Loss_G: 3.7558, D(x): 0.9129, D(G(z)): 0.0826 / 0.0287, iteration time: 1.8675s
+Rank,0,Epoch,0,Iteration,478,It. time,1.8674848079681396,Elapsed time,914.4313855171204
+[epoch: 0/1][iteration: 479/782][rank: 0] Loss_D: 0.3188, Loss_G: 7.4966, D(x): 0.9611, D(G(z)): 0.2290 / 0.0011, iteration time: 1.9088s
+Rank,0,Epoch,0,Iteration,479,It. time,1.908846139907837,Elapsed time,916.3419728279114
+[epoch: 0/1][iteration: 480/782][rank: 0] Loss_D: 0.2478, Loss_G: 6.2229, D(x): 0.8180, D(G(z)): 0.0098 / 0.0047, iteration time: 1.8988s
+Rank,0,Epoch,0,Iteration,480,It. time,1.8987891674041748,Elapsed time,918.2424988746643
+[epoch: 0/1][iteration: 481/782][rank: 0] Loss_D: 0.2174, Loss_G: 3.8768, D(x): 0.8699, D(G(z)): 0.0482 / 0.0312, iteration time: 1.8846s
+Rank,0,Epoch,0,Iteration,481,It. time,1.884599208831787,Elapsed time,920.1287980079651
+[epoch: 0/1][iteration: 482/782][rank: 0] Loss_D: 0.2587, Loss_G: 6.1213, D(x): 0.9762, D(G(z)): 0.1775 / 0.0031, iteration time: 1.9034s
+Rank,0,Epoch,0,Iteration,482,It. time,1.9034249782562256,Elapsed time,922.0340855121613
+[epoch: 0/1][iteration: 483/782][rank: 0] Loss_D: 0.1112, Loss_G: 5.5371, D(x): 0.9583, D(G(z)): 0.0588 / 0.0056, iteration time: 1.9007s
+Rank,0,Epoch,0,Iteration,483,It. time,1.9007189273834229,Elapsed time,923.9365482330322
+[epoch: 0/1][iteration: 484/782][rank: 0] Loss_D: 0.1493, Loss_G: 5.1076, D(x): 0.9262, D(G(z)): 0.0626 / 0.0084, iteration time: 1.8987s
+Rank,0,Epoch,0,Iteration,484,It. time,1.898714303970337,Elapsed time,925.8371098041534
+[epoch: 0/1][iteration: 485/782][rank: 0] Loss_D: 0.2100, Loss_G: 5.1956, D(x): 0.9309, D(G(z)): 0.1210 / 0.0069, iteration time: 1.8858s
+Rank,0,Epoch,0,Iteration,485,It. time,1.8858473300933838,Elapsed time,927.7252538204193
+[epoch: 0/1][iteration: 486/782][rank: 0] Loss_D: 0.1722, Loss_G: 4.8156, D(x): 0.9036, D(G(z)): 0.0568 / 0.0107, iteration time: 1.9040s
+Rank,0,Epoch,0,Iteration,486,It. time,1.904003381729126,Elapsed time,929.6309499740601
+[epoch: 0/1][iteration: 487/782][rank: 0] Loss_D: 0.1594, Loss_G: 5.0255, D(x): 0.9597, D(G(z)): 0.1055 / 0.0098, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,487,It. time,1.8842203617095947,Elapsed time,931.5214564800262
+[epoch: 0/1][iteration: 488/782][rank: 0] Loss_D: 0.2383, Loss_G: 5.5008, D(x): 0.9258, D(G(z)): 0.1305 / 0.0074, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,488,It. time,1.889117956161499,Elapsed time,933.4165256023407
+[epoch: 0/1][iteration: 489/782][rank: 0] Loss_D: 0.1527, Loss_G: 6.0210, D(x): 0.9662, D(G(z)): 0.1063 / 0.0036, iteration time: 1.8910s
+Rank,0,Epoch,0,Iteration,489,It. time,1.8910155296325684,Elapsed time,935.3092412948608
+[epoch: 0/1][iteration: 490/782][rank: 0] Loss_D: 0.2977, Loss_G: 4.3205, D(x): 0.8017, D(G(z)): 0.0388 / 0.0198, iteration time: 1.8811s
+Rank,0,Epoch,0,Iteration,490,It. time,1.8810508251190186,Elapsed time,937.192049741745
+[epoch: 0/1][iteration: 491/782][rank: 0] Loss_D: 0.1231, Loss_G: 4.8192, D(x): 0.9731, D(G(z)): 0.0881 / 0.0101, iteration time: 1.8831s
+Rank,0,Epoch,0,Iteration,491,It. time,1.8831052780151367,Elapsed time,939.0768897533417
+[epoch: 0/1][iteration: 492/782][rank: 0] Loss_D: 0.1755, Loss_G: 6.5284, D(x): 0.9751, D(G(z)): 0.1301 / 0.0023, iteration time: 1.8766s
+Rank,0,Epoch,0,Iteration,492,It. time,1.87660813331604,Elapsed time,940.9551706314087
+[epoch: 0/1][iteration: 493/782][rank: 0] Loss_D: 0.1823, Loss_G: 6.4388, D(x): 0.9224, D(G(z)): 0.0843 / 0.0024, iteration time: 1.8793s
+Rank,0,Epoch,0,Iteration,493,It. time,1.8792741298675537,Elapsed time,942.8362183570862
+[epoch: 0/1][iteration: 494/782][rank: 0] Loss_D: 0.1504, Loss_G: 3.0087, D(x): 0.8892, D(G(z)): 0.0210 / 0.0885, iteration time: 1.8819s
+Rank,0,Epoch,0,Iteration,494,It. time,1.8819019794464111,Elapsed time,944.7197926044464
+[epoch: 0/1][iteration: 495/782][rank: 0] Loss_D: 0.2032, Loss_G: 6.4009, D(x): 0.9609, D(G(z)): 0.1420 / 0.0021, iteration time: 1.8919s
+Rank,0,Epoch,0,Iteration,495,It. time,1.8918800354003906,Elapsed time,946.6134102344513
+[epoch: 0/1][iteration: 496/782][rank: 0] Loss_D: 0.0883, Loss_G: 6.1178, D(x): 0.9598, D(G(z)): 0.0429 / 0.0033, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,496,It. time,1.8883657455444336,Elapsed time,948.5035190582275
+[epoch: 0/1][iteration: 497/782][rank: 0] Loss_D: 0.1442, Loss_G: 4.8983, D(x): 0.9004, D(G(z)): 0.0292 / 0.0098, iteration time: 1.8769s
+Rank,0,Epoch,0,Iteration,497,It. time,1.8769419193267822,Elapsed time,950.3821115493774
+[epoch: 0/1][iteration: 498/782][rank: 0] Loss_D: 0.4083, Loss_G: 12.8699, D(x): 0.9351, D(G(z)): 0.2589 / 0.0000, iteration time: 1.8856s
+Rank,0,Epoch,0,Iteration,498,It. time,1.8856313228607178,Elapsed time,952.2696294784546
+[epoch: 0/1][iteration: 499/782][rank: 0] Loss_D: 2.6313, Loss_G: 5.0412, D(x): 0.1476, D(G(z)): 0.0000 / 0.0185, iteration time: 1.9004s
+Rank,0,Epoch,0,Iteration,499,It. time,1.9004085063934326,Elapsed time,954.1718409061432
+[epoch: 0/1][iteration: 500/782][rank: 0] Loss_D: 0.4256, Loss_G: 0.8531, D(x): 0.7998, D(G(z)): 0.1274 / 0.5420, iteration time: 1.8814s
+Rank,0,Epoch,0,Iteration,500,It. time,1.8813574314117432,Elapsed time,956.0549716949463
+[epoch: 0/1][iteration: 501/782][rank: 0] Loss_D: 1.5956, Loss_G: 9.9046, D(x): 0.9493, D(G(z)): 0.6252 / 0.0001, iteration time: 1.9152s
+Rank,0,Epoch,0,Iteration,501,It. time,1.9152262210845947,Elapsed time,958.2860798835754
+[epoch: 0/1][iteration: 502/782][rank: 0] Loss_D: 3.4904, Loss_G: 3.5831, D(x): 0.0790, D(G(z)): 0.0020 / 0.0766, iteration time: 1.8956s
+Rank,0,Epoch,0,Iteration,502,It. time,1.8955845832824707,Elapsed time,960.1835260391235
+[epoch: 0/1][iteration: 503/782][rank: 0] Loss_D: 0.7043, Loss_G: 1.1600, D(x): 0.6682, D(G(z)): 0.1515 / 0.3924, iteration time: 1.8985s
+Rank,0,Epoch,0,Iteration,503,It. time,1.8985240459442139,Elapsed time,962.0837547779083
+[epoch: 0/1][iteration: 504/782][rank: 0] Loss_D: 1.1829, Loss_G: 3.1229, D(x): 0.9485, D(G(z)): 0.5949 / 0.0629, iteration time: 1.8837s
+Rank,0,Epoch,0,Iteration,504,It. time,1.8836793899536133,Elapsed time,963.9691400527954
+[epoch: 0/1][iteration: 505/782][rank: 0] Loss_D: 0.4340, Loss_G: 4.0338, D(x): 0.8517, D(G(z)): 0.2074 / 0.0231, iteration time: 1.8979s
+Rank,0,Epoch,0,Iteration,505,It. time,1.8979196548461914,Elapsed time,965.8688960075378
+[epoch: 0/1][iteration: 506/782][rank: 0] Loss_D: 0.5030, Loss_G: 3.1523, D(x): 0.7406, D(G(z)): 0.0746 / 0.0543, iteration time: 1.8972s
+Rank,0,Epoch,0,Iteration,506,It. time,1.8972370624542236,Elapsed time,967.7678375244141
+[epoch: 0/1][iteration: 507/782][rank: 0] Loss_D: 0.5393, Loss_G: 3.1107, D(x): 0.8895, D(G(z)): 0.3181 / 0.0523, iteration time: 1.9024s
+Rank,0,Epoch,0,Iteration,507,It. time,1.9024393558502197,Elapsed time,969.6720814704895
+[epoch: 0/1][iteration: 508/782][rank: 0] Loss_D: 0.6294, Loss_G: 3.1380, D(x): 0.7414, D(G(z)): 0.2445 / 0.0547, iteration time: 1.8813s
+Rank,0,Epoch,0,Iteration,508,It. time,1.8812587261199951,Elapsed time,971.5566718578339
+[epoch: 0/1][iteration: 509/782][rank: 0] Loss_D: 0.7401, Loss_G: 2.5977, D(x): 0.6913, D(G(z)): 0.2402 / 0.0859, iteration time: 1.8851s
+Rank,0,Epoch,0,Iteration,509,It. time,1.8850913047790527,Elapsed time,973.4445035457611
+[epoch: 0/1][iteration: 510/782][rank: 0] Loss_D: 0.5900, Loss_G: 4.0358, D(x): 0.7979, D(G(z)): 0.2775 / 0.0245, iteration time: 1.8930s
+Rank,0,Epoch,0,Iteration,510,It. time,1.8929836750030518,Elapsed time,975.3392558097839
+[epoch: 0/1][iteration: 511/782][rank: 0] Loss_D: 0.7076, Loss_G: 2.9403, D(x): 0.6886, D(G(z)): 0.2323 / 0.0712, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,511,It. time,1.888366937637329,Elapsed time,977.2293627262115
+[epoch: 0/1][iteration: 512/782][rank: 0] Loss_D: 0.4470, Loss_G: 4.2083, D(x): 0.8866, D(G(z)): 0.2504 / 0.0224, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,512,It. time,1.8954834938049316,Elapsed time,979.1265971660614
+[epoch: 0/1][iteration: 513/782][rank: 0] Loss_D: 0.6453, Loss_G: 5.7271, D(x): 0.8747, D(G(z)): 0.3362 / 0.0042, iteration time: 1.8683s
+Rank,0,Epoch,0,Iteration,513,It. time,1.8683056831359863,Elapsed time,980.9966135025024
+[epoch: 0/1][iteration: 514/782][rank: 0] Loss_D: 0.9326, Loss_G: 1.5525, D(x): 0.4799, D(G(z)): 0.0211 / 0.3119, iteration time: 1.8815s
+Rank,0,Epoch,0,Iteration,514,It. time,1.8815362453460693,Elapsed time,982.88494181633
+[epoch: 0/1][iteration: 515/782][rank: 0] Loss_D: 1.7878, Loss_G: 6.7840, D(x): 0.9768, D(G(z)): 0.7165 / 0.0030, iteration time: 1.8734s
+Rank,0,Epoch,0,Iteration,515,It. time,1.8733627796173096,Elapsed time,984.7600231170654
+[epoch: 0/1][iteration: 516/782][rank: 0] Loss_D: 1.0700, Loss_G: 4.4699, D(x): 0.4469, D(G(z)): 0.0152 / 0.0328, iteration time: 1.8766s
+Rank,0,Epoch,0,Iteration,516,It. time,1.8765933513641357,Elapsed time,986.6383402347565
+[epoch: 0/1][iteration: 517/782][rank: 0] Loss_D: 0.7769, Loss_G: 1.7101, D(x): 0.5940, D(G(z)): 0.1247 / 0.2258, iteration time: 1.8977s
+Rank,0,Epoch,0,Iteration,517,It. time,1.8977408409118652,Elapsed time,988.5378558635712
+[epoch: 0/1][iteration: 518/782][rank: 0] Loss_D: 1.7352, Loss_G: 4.2143, D(x): 0.9519, D(G(z)): 0.6612 / 0.0444, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,518,It. time,1.8877687454223633,Elapsed time,990.4273982048035
+[epoch: 0/1][iteration: 519/782][rank: 0] Loss_D: 0.5153, Loss_G: 4.5155, D(x): 0.7526, D(G(z)): 0.1300 / 0.0228, iteration time: 1.8870s
+Rank,0,Epoch,0,Iteration,519,It. time,1.8870418071746826,Elapsed time,992.3163206577301
+[epoch: 0/1][iteration: 520/782][rank: 0] Loss_D: 0.5526, Loss_G: 2.8969, D(x): 0.6552, D(G(z)): 0.0541 / 0.0797, iteration time: 1.8845s
+Rank,0,Epoch,0,Iteration,520,It. time,1.8844530582427979,Elapsed time,994.2024364471436
+[epoch: 0/1][iteration: 521/782][rank: 0] Loss_D: 0.7488, Loss_G: 3.5257, D(x): 0.9034, D(G(z)): 0.4233 / 0.0402, iteration time: 1.8990s
+Rank,0,Epoch,0,Iteration,521,It. time,1.8990113735198975,Elapsed time,996.1031405925751
+[epoch: 0/1][iteration: 522/782][rank: 0] Loss_D: 0.5702, Loss_G: 3.7134, D(x): 0.7344, D(G(z)): 0.1516 / 0.0331, iteration time: 1.8760s
+Rank,0,Epoch,0,Iteration,522,It. time,1.8759806156158447,Elapsed time,997.9808692932129
+[epoch: 0/1][iteration: 523/782][rank: 0] Loss_D: 0.5448, Loss_G: 2.7656, D(x): 0.7783, D(G(z)): 0.2064 / 0.0802, iteration time: 1.8885s
+Rank,0,Epoch,0,Iteration,523,It. time,1.8884680271148682,Elapsed time,999.8758752346039
+[epoch: 0/1][iteration: 524/782][rank: 0] Loss_D: 0.7278, Loss_G: 4.3211, D(x): 0.8042, D(G(z)): 0.3512 / 0.0228, iteration time: 1.8836s
+Rank,0,Epoch,0,Iteration,524,It. time,1.8835878372192383,Elapsed time,1001.7651860713959
+[epoch: 0/1][iteration: 525/782][rank: 0] Loss_D: 0.7723, Loss_G: 4.1874, D(x): 0.6560, D(G(z)): 0.2185 / 0.0194, iteration time: 1.9098s
+Rank,0,Epoch,0,Iteration,525,It. time,1.9097702503204346,Elapsed time,1003.6811769008636
+[epoch: 0/1][iteration: 526/782][rank: 0] Loss_D: 0.4224, Loss_G: 2.6854, D(x): 0.7795, D(G(z)): 0.1303 / 0.0882, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,526,It. time,1.8848323822021484,Elapsed time,1005.5677478313446
+[epoch: 0/1][iteration: 527/782][rank: 0] Loss_D: 0.6973, Loss_G: 5.3512, D(x): 0.9156, D(G(z)): 0.4123 / 0.0074, iteration time: 1.8949s
+Rank,0,Epoch,0,Iteration,527,It. time,1.8948559761047363,Elapsed time,1007.4644072055817
+[epoch: 0/1][iteration: 528/782][rank: 0] Loss_D: 0.6655, Loss_G: 3.4491, D(x): 0.5958, D(G(z)): 0.0613 / 0.0514, iteration time: 1.8845s
+Rank,0,Epoch,0,Iteration,528,It. time,1.884519338607788,Elapsed time,1009.3580846786499
+[epoch: 0/1][iteration: 529/782][rank: 0] Loss_D: 0.9519, Loss_G: 5.8794, D(x): 0.8474, D(G(z)): 0.4905 / 0.0043, iteration time: 1.8866s
+Rank,0,Epoch,0,Iteration,529,It. time,1.886634349822998,Elapsed time,1011.2464861869812
+[epoch: 0/1][iteration: 530/782][rank: 0] Loss_D: 1.2751, Loss_G: 2.4911, D(x): 0.3654, D(G(z)): 0.0538 / 0.1102, iteration time: 1.8940s
+Rank,0,Epoch,0,Iteration,530,It. time,1.8940308094024658,Elapsed time,1013.1424202919006
+[epoch: 0/1][iteration: 531/782][rank: 0] Loss_D: 1.4454, Loss_G: 7.0123, D(x): 0.9534, D(G(z)): 0.6896 / 0.0019, iteration time: 1.8889s
+Rank,0,Epoch,0,Iteration,531,It. time,1.8888516426086426,Elapsed time,1015.0381803512573
+[epoch: 0/1][iteration: 532/782][rank: 0] Loss_D: 1.0392, Loss_G: 4.5393, D(x): 0.4279, D(G(z)): 0.0057 / 0.0237, iteration time: 1.8806s
+Rank,0,Epoch,0,Iteration,532,It. time,1.8806138038635254,Elapsed time,1016.9205374717712
+[epoch: 0/1][iteration: 533/782][rank: 0] Loss_D: 0.3687, Loss_G: 2.5883, D(x): 0.8333, D(G(z)): 0.1272 / 0.1023, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,533,It. time,1.890615463256836,Elapsed time,1018.8128316402435
+[epoch: 0/1][iteration: 534/782][rank: 0] Loss_D: 0.5604, Loss_G: 4.1365, D(x): 0.9489, D(G(z)): 0.3465 / 0.0212, iteration time: 1.9056s
+Rank,0,Epoch,0,Iteration,534,It. time,1.9056272506713867,Elapsed time,1020.7223455905914
+[epoch: 0/1][iteration: 535/782][rank: 0] Loss_D: 0.2816, Loss_G: 4.3716, D(x): 0.9016, D(G(z)): 0.1363 / 0.0165, iteration time: 1.8915s
+Rank,0,Epoch,0,Iteration,535,It. time,1.8914730548858643,Elapsed time,1022.6155760288239
+[epoch: 0/1][iteration: 536/782][rank: 0] Loss_D: 0.3162, Loss_G: 3.3246, D(x): 0.8007, D(G(z)): 0.0771 / 0.0469, iteration time: 1.8914s
+Rank,0,Epoch,0,Iteration,536,It. time,1.8914079666137695,Elapsed time,1024.5087306499481
+[epoch: 0/1][iteration: 537/782][rank: 0] Loss_D: 0.4208, Loss_G: 2.7508, D(x): 0.8117, D(G(z)): 0.1488 / 0.0841, iteration time: 1.8900s
+Rank,0,Epoch,0,Iteration,537,It. time,1.8899734020233154,Elapsed time,1026.4004137516022
+[epoch: 0/1][iteration: 538/782][rank: 0] Loss_D: 0.4535, Loss_G: 2.9529, D(x): 0.8895, D(G(z)): 0.2546 / 0.0601, iteration time: 1.8874s
+Rank,0,Epoch,0,Iteration,538,It. time,1.887369155883789,Elapsed time,1028.2953052520752
+[epoch: 0/1][iteration: 539/782][rank: 0] Loss_D: 0.4458, Loss_G: 4.1358, D(x): 0.8445, D(G(z)): 0.2112 / 0.0211, iteration time: 1.8791s
+Rank,0,Epoch,0,Iteration,539,It. time,1.8791215419769287,Elapsed time,1030.1762235164642
+[epoch: 0/1][iteration: 540/782][rank: 0] Loss_D: 0.4174, Loss_G: 3.4870, D(x): 0.7772, D(G(z)): 0.0973 / 0.0505, iteration time: 1.8904s
+Rank,0,Epoch,0,Iteration,540,It. time,1.8903892040252686,Elapsed time,1032.0684022903442
+[epoch: 0/1][iteration: 541/782][rank: 0] Loss_D: 0.3239, Loss_G: 3.0570, D(x): 0.9113, D(G(z)): 0.1739 / 0.0724, iteration time: 1.8904s
+Rank,0,Epoch,0,Iteration,541,It. time,1.8903911113739014,Elapsed time,1033.9604811668396
+[epoch: 0/1][iteration: 542/782][rank: 0] Loss_D: 0.5854, Loss_G: 3.8371, D(x): 0.8551, D(G(z)): 0.3048 / 0.0293, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,542,It. time,1.8841533660888672,Elapsed time,1035.8463258743286
+[epoch: 0/1][iteration: 543/782][rank: 0] Loss_D: 0.6575, Loss_G: 2.7978, D(x): 0.6563, D(G(z)): 0.1352 / 0.0905, iteration time: 1.8854s
+Rank,0,Epoch,0,Iteration,543,It. time,1.8854095935821533,Elapsed time,1037.7335014343262
+[epoch: 0/1][iteration: 544/782][rank: 0] Loss_D: 0.4721, Loss_G: 3.6310, D(x): 0.8893, D(G(z)): 0.2438 / 0.0362, iteration time: 1.8871s
+Rank,0,Epoch,0,Iteration,544,It. time,1.8871023654937744,Elapsed time,1039.6222796440125
+[epoch: 0/1][iteration: 545/782][rank: 0] Loss_D: 0.3372, Loss_G: 3.1777, D(x): 0.8245, D(G(z)): 0.1093 / 0.0582, iteration time: 1.8882s
+Rank,0,Epoch,0,Iteration,545,It. time,1.8882110118865967,Elapsed time,1041.5122289657593
+[epoch: 0/1][iteration: 546/782][rank: 0] Loss_D: 0.6136, Loss_G: 2.9515, D(x): 0.7635, D(G(z)): 0.2131 / 0.0701, iteration time: 1.8974s
+Rank,0,Epoch,0,Iteration,546,It. time,1.8974077701568604,Elapsed time,1043.4114353656769
+[epoch: 0/1][iteration: 547/782][rank: 0] Loss_D: 0.6014, Loss_G: 4.9036, D(x): 0.8852, D(G(z)): 0.3504 / 0.0090, iteration time: 1.8800s
+Rank,0,Epoch,0,Iteration,547,It. time,1.8800323009490967,Elapsed time,1045.293179988861
+[epoch: 0/1][iteration: 548/782][rank: 0] Loss_D: 0.6187, Loss_G: 2.6507, D(x): 0.6122, D(G(z)): 0.0316 / 0.1032, iteration time: 1.8952s
+Rank,0,Epoch,0,Iteration,548,It. time,1.8952405452728271,Elapsed time,1047.1900906562805
+[epoch: 0/1][iteration: 549/782][rank: 0] Loss_D: 0.5345, Loss_G: 4.8229, D(x): 0.9691, D(G(z)): 0.3767 / 0.0097, iteration time: 1.9311s
+Rank,0,Epoch,0,Iteration,549,It. time,1.9310781955718994,Elapsed time,1049.122891664505
+[epoch: 0/1][iteration: 550/782][rank: 0] Loss_D: 0.2738, Loss_G: 3.8749, D(x): 0.8223, D(G(z)): 0.0460 / 0.0260, iteration time: 1.9055s
+Rank,0,Epoch,0,Iteration,550,It. time,1.9055404663085938,Elapsed time,1051.0302517414093
+[epoch: 0/1][iteration: 551/782][rank: 0] Loss_D: 0.2553, Loss_G: 3.3099, D(x): 0.8523, D(G(z)): 0.0818 / 0.0439, iteration time: 1.9239s
+Rank,0,Epoch,0,Iteration,551,It. time,1.9238803386688232,Elapsed time,1052.9558463096619
+[epoch: 0/1][iteration: 552/782][rank: 0] Loss_D: 0.2158, Loss_G: 3.5896, D(x): 0.9427, D(G(z)): 0.1385 / 0.0338, iteration time: 1.9002s
+Rank,0,Epoch,0,Iteration,552,It. time,1.9001882076263428,Elapsed time,1054.857711315155
+[epoch: 0/1][iteration: 553/782][rank: 0] Loss_D: 0.2459, Loss_G: 4.5427, D(x): 0.9344, D(G(z)): 0.1548 / 0.0129, iteration time: 1.8890s
+Rank,0,Epoch,0,Iteration,553,It. time,1.8890297412872314,Elapsed time,1056.7484395503998
+[epoch: 0/1][iteration: 554/782][rank: 0] Loss_D: 0.1742, Loss_G: 3.9999, D(x): 0.8863, D(G(z)): 0.0452 / 0.0223, iteration time: 1.8975s
+Rank,0,Epoch,0,Iteration,554,It. time,1.897528886795044,Elapsed time,1058.6476891040802
+[epoch: 0/1][iteration: 555/782][rank: 0] Loss_D: 0.1445, Loss_G: 3.4248, D(x): 0.9283, D(G(z)): 0.0633 / 0.0432, iteration time: 1.8899s
+Rank,0,Epoch,0,Iteration,555,It. time,1.889878749847412,Elapsed time,1060.5393919944763
+[epoch: 0/1][iteration: 556/782][rank: 0] Loss_D: 0.3803, Loss_G: 3.9255, D(x): 0.8625, D(G(z)): 0.1826 / 0.0242, iteration time: 1.8757s
+Rank,0,Epoch,0,Iteration,556,It. time,1.87571120262146,Elapsed time,1062.4169030189514
+[epoch: 0/1][iteration: 557/782][rank: 0] Loss_D: 0.4342, Loss_G: 3.2792, D(x): 0.7734, D(G(z)): 0.1143 / 0.0500, iteration time: 1.8776s
+Rank,0,Epoch,0,Iteration,557,It. time,1.8776423931121826,Elapsed time,1064.29629445076
+[epoch: 0/1][iteration: 558/782][rank: 0] Loss_D: 0.3691, Loss_G: 4.7572, D(x): 0.9236, D(G(z)): 0.2295 / 0.0135, iteration time: 1.8956s
+Rank,0,Epoch,0,Iteration,558,It. time,1.8956193923950195,Elapsed time,1066.1937050819397
+[epoch: 0/1][iteration: 559/782][rank: 0] Loss_D: 0.7080, Loss_G: 2.1039, D(x): 0.5692, D(G(z)): 0.0465 / 0.2009, iteration time: 1.8799s
+Rank,0,Epoch,0,Iteration,559,It. time,1.8798613548278809,Elapsed time,1068.07528758049
+[epoch: 0/1][iteration: 560/782][rank: 0] Loss_D: 0.9302, Loss_G: 7.9809, D(x): 0.9608, D(G(z)): 0.5367 / 0.0005, iteration time: 1.8739s
+Rank,0,Epoch,0,Iteration,560,It. time,1.8738901615142822,Elapsed time,1069.9533019065857
+[epoch: 0/1][iteration: 561/782][rank: 0] Loss_D: 0.7575, Loss_G: 4.5472, D(x): 0.5090, D(G(z)): 0.0024 / 0.0150, iteration time: 1.8876s
+Rank,0,Epoch,0,Iteration,561,It. time,1.8876368999481201,Elapsed time,1071.8426451683044
+[epoch: 0/1][iteration: 562/782][rank: 0] Loss_D: 0.1755, Loss_G: 2.7460, D(x): 0.9471, D(G(z)): 0.1074 / 0.0888, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,562,It. time,1.8954815864562988,Elapsed time,1073.7399649620056
+[epoch: 0/1][iteration: 563/782][rank: 0] Loss_D: 1.3760, Loss_G: 9.0571, D(x): 0.9718, D(G(z)): 0.6447 / 0.0002, iteration time: 1.9042s
+Rank,0,Epoch,0,Iteration,563,It. time,1.904224157333374,Elapsed time,1075.645977973938
+[epoch: 0/1][iteration: 564/782][rank: 0] Loss_D: 2.3292, Loss_G: 4.0335, D(x): 0.1435, D(G(z)): 0.0024 / 0.0667, iteration time: 1.8857s
+Rank,0,Epoch,0,Iteration,564,It. time,1.885683298110962,Elapsed time,1077.533396244049
+[epoch: 0/1][iteration: 565/782][rank: 0] Loss_D: 0.4339, Loss_G: 2.6183, D(x): 0.9035, D(G(z)): 0.2245 / 0.1105, iteration time: 1.8977s
+Rank,0,Epoch,0,Iteration,565,It. time,1.8976705074310303,Elapsed time,1079.432769060135
+[epoch: 0/1][iteration: 566/782][rank: 0] Loss_D: 0.8147, Loss_G: 5.4467, D(x): 0.9753, D(G(z)): 0.4578 / 0.0061, iteration time: 1.8919s
+Rank,0,Epoch,0,Iteration,566,It. time,1.8919308185577393,Elapsed time,1081.3264923095703
+[epoch: 0/1][iteration: 567/782][rank: 0] Loss_D: 0.5472, Loss_G: 3.9794, D(x): 0.6904, D(G(z)): 0.0592 / 0.0337, iteration time: 1.8980s
+Rank,0,Epoch,0,Iteration,567,It. time,1.8980066776275635,Elapsed time,1083.2262964248657
+[epoch: 0/1][iteration: 568/782][rank: 0] Loss_D: 0.3968, Loss_G: 3.4015, D(x): 0.8932, D(G(z)): 0.2202 / 0.0419, iteration time: 1.8920s
+Rank,0,Epoch,0,Iteration,568,It. time,1.8919613361358643,Elapsed time,1085.1200671195984
+[epoch: 0/1][iteration: 569/782][rank: 0] Loss_D: 0.5070, Loss_G: 3.8610, D(x): 0.8341, D(G(z)): 0.2478 / 0.0285, iteration time: 1.8944s
+Rank,0,Epoch,0,Iteration,569,It. time,1.894374132156372,Elapsed time,1087.0161526203156
+[epoch: 0/1][iteration: 570/782][rank: 0] Loss_D: 0.4846, Loss_G: 4.5672, D(x): 0.8684, D(G(z)): 0.2635 / 0.0148, iteration time: 1.8991s
+Rank,0,Epoch,0,Iteration,570,It. time,1.899116039276123,Elapsed time,1088.920955657959
+[epoch: 0/1][iteration: 571/782][rank: 0] Loss_D: 0.4824, Loss_G: 3.2253, D(x): 0.7246, D(G(z)): 0.0934 / 0.0554, iteration time: 1.8850s
+Rank,0,Epoch,0,Iteration,571,It. time,1.8849554061889648,Elapsed time,1090.8076725006104
+[epoch: 0/1][iteration: 572/782][rank: 0] Loss_D: 0.4888, Loss_G: 3.7172, D(x): 0.8245, D(G(z)): 0.2334 / 0.0333, iteration time: 1.9010s
+Rank,0,Epoch,0,Iteration,572,It. time,1.901041030883789,Elapsed time,1092.7103769779205
+[epoch: 0/1][iteration: 573/782][rank: 0] Loss_D: 0.4748, Loss_G: 3.6488, D(x): 0.7648, D(G(z)): 0.1485 / 0.0341, iteration time: 1.8923s
+Rank,0,Epoch,0,Iteration,573,It. time,1.892287254333496,Elapsed time,1094.6044313907623
+[epoch: 0/1][iteration: 574/782][rank: 0] Loss_D: 0.3326, Loss_G: 3.8631, D(x): 0.8709, D(G(z)): 0.1570 / 0.0278, iteration time: 1.8878s
+Rank,0,Epoch,0,Iteration,574,It. time,1.8877959251403809,Elapsed time,1096.4977447986603
+[epoch: 0/1][iteration: 575/782][rank: 0] Loss_D: 0.2753, Loss_G: 3.0305, D(x): 0.8569, D(G(z)): 0.0938 / 0.0562, iteration time: 1.8949s
+Rank,0,Epoch,0,Iteration,575,It. time,1.894862413406372,Elapsed time,1098.3943519592285
+[epoch: 0/1][iteration: 576/782][rank: 0] Loss_D: 0.2267, Loss_G: 4.3844, D(x): 0.9672, D(G(z)): 0.1712 / 0.0149, iteration time: 1.8767s
+Rank,0,Epoch,0,Iteration,576,It. time,1.8767495155334473,Elapsed time,1100.2728025913239
+[epoch: 0/1][iteration: 577/782][rank: 0] Loss_D: 0.2710, Loss_G: 4.6043, D(x): 0.8767, D(G(z)): 0.1109 / 0.0122, iteration time: 1.9055s
+Rank,0,Epoch,0,Iteration,577,It. time,1.9054815769195557,Elapsed time,1102.1799914836884
+[epoch: 0/1][iteration: 578/782][rank: 0] Loss_D: 0.4369, Loss_G: 3.0205, D(x): 0.7488, D(G(z)): 0.0884 / 0.0675, iteration time: 1.8967s
+Rank,0,Epoch,0,Iteration,578,It. time,1.8966829776763916,Elapsed time,1104.0785086154938
+[epoch: 0/1][iteration: 579/782][rank: 0] Loss_D: 0.4103, Loss_G: 4.1552, D(x): 0.9325, D(G(z)): 0.2542 / 0.0235, iteration time: 1.8729s
+Rank,0,Epoch,0,Iteration,579,It. time,1.8728737831115723,Elapsed time,1105.953138589859
+[epoch: 0/1][iteration: 580/782][rank: 0] Loss_D: 0.3876, Loss_G: 5.0940, D(x): 0.8797, D(G(z)): 0.1917 / 0.0078, iteration time: 1.8923s
+Rank,0,Epoch,0,Iteration,580,It. time,1.892263650894165,Elapsed time,1107.8471746444702
+[epoch: 0/1][iteration: 581/782][rank: 0] Loss_D: 0.4013, Loss_G: 3.0582, D(x): 0.7913, D(G(z)): 0.0846 / 0.0539, iteration time: 1.8929s
+Rank,0,Epoch,0,Iteration,581,It. time,1.8929095268249512,Elapsed time,1109.7418048381805
+[epoch: 0/1][iteration: 582/782][rank: 0] Loss_D: 0.3021, Loss_G: 3.1873, D(x): 0.8630, D(G(z)): 0.1298 / 0.0477, iteration time: 1.9026s
+Rank,0,Epoch,0,Iteration,582,It. time,1.9026317596435547,Elapsed time,1111.646149635315
+[epoch: 0/1][iteration: 583/782][rank: 0] Loss_D: 0.2969, Loss_G: 5.3035, D(x): 0.9473, D(G(z)): 0.2010 / 0.0063, iteration time: 1.8912s
+Rank,0,Epoch,0,Iteration,583,It. time,1.891150712966919,Elapsed time,1113.5391383171082
+[epoch: 0/1][iteration: 584/782][rank: 0] Loss_D: 0.3313, Loss_G: 2.7669, D(x): 0.7966, D(G(z)): 0.0687 / 0.0787, iteration time: 1.8917s
+Rank,0,Epoch,0,Iteration,584,It. time,1.8917086124420166,Elapsed time,1115.4326395988464
+[epoch: 0/1][iteration: 585/782][rank: 0] Loss_D: 0.3531, Loss_G: 4.6971, D(x): 0.9104, D(G(z)): 0.2106 / 0.0119, iteration time: 1.8743s
+Rank,0,Epoch,0,Iteration,585,It. time,1.874314308166504,Elapsed time,1117.3086535930634
+[epoch: 0/1][iteration: 586/782][rank: 0] Loss_D: 0.1516, Loss_G: 3.8793, D(x): 0.9232, D(G(z)): 0.0655 / 0.0273, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,586,It. time,1.8884010314941406,Elapsed time,1119.1988298892975
+[epoch: 0/1][iteration: 587/782][rank: 0] Loss_D: 0.2064, Loss_G: 3.2476, D(x): 0.8850, D(G(z)): 0.0672 / 0.0562, iteration time: 1.8851s
+Rank,0,Epoch,0,Iteration,587,It. time,1.885132074356079,Elapsed time,1121.0857708454132
+[epoch: 0/1][iteration: 588/782][rank: 0] Loss_D: 0.4759, Loss_G: 6.5904, D(x): 0.9814, D(G(z)): 0.3296 / 0.0019, iteration time: 1.8869s
+Rank,0,Epoch,0,Iteration,588,It. time,1.8868896961212158,Elapsed time,1122.9743740558624
+[epoch: 0/1][iteration: 589/782][rank: 0] Loss_D: 0.6730, Loss_G: 2.2839, D(x): 0.5734, D(G(z)): 0.0311 / 0.1352, iteration time: 1.8792s
+Rank,0,Epoch,0,Iteration,589,It. time,1.8791639804840088,Elapsed time,1124.855265378952
+[epoch: 0/1][iteration: 590/782][rank: 0] Loss_D: 0.5887, Loss_G: 5.2439, D(x): 0.9301, D(G(z)): 0.3341 / 0.0097, iteration time: 1.8921s
+Rank,0,Epoch,0,Iteration,590,It. time,1.8921256065368652,Elapsed time,1126.7491281032562
+[epoch: 0/1][iteration: 591/782][rank: 0] Loss_D: 0.4957, Loss_G: 4.3428, D(x): 0.7664, D(G(z)): 0.1659 / 0.0163, iteration time: 1.8853s
+Rank,0,Epoch,0,Iteration,591,It. time,1.8853018283843994,Elapsed time,1128.6407122612
+[epoch: 0/1][iteration: 592/782][rank: 0] Loss_D: 0.1951, Loss_G: 2.9450, D(x): 0.8787, D(G(z)): 0.0576 / 0.0639, iteration time: 1.8954s
+Rank,0,Epoch,0,Iteration,592,It. time,1.8953557014465332,Elapsed time,1130.5377931594849
+[epoch: 0/1][iteration: 593/782][rank: 0] Loss_D: 0.9019, Loss_G: 7.1482, D(x): 0.8497, D(G(z)): 0.4720 / 0.0015, iteration time: 1.8869s
+Rank,0,Epoch,0,Iteration,593,It. time,1.886850357055664,Elapsed time,1132.4302594661713
+[epoch: 0/1][iteration: 594/782][rank: 0] Loss_D: 0.8242, Loss_G: 3.0803, D(x): 0.5084, D(G(z)): 0.0156 / 0.1098, iteration time: 1.8796s
+Rank,0,Epoch,0,Iteration,594,It. time,1.8795866966247559,Elapsed time,1134.3170511722565
+[epoch: 0/1][iteration: 595/782][rank: 0] Loss_D: 0.6929, Loss_G: 6.6393, D(x): 0.9473, D(G(z)): 0.3991 / 0.0018, iteration time: 1.8927s
+Rank,0,Epoch,0,Iteration,595,It. time,1.8926594257354736,Elapsed time,1136.2160654067993
+[epoch: 0/1][iteration: 596/782][rank: 0] Loss_D: 0.4049, Loss_G: 3.6750, D(x): 0.7265, D(G(z)): 0.0220 / 0.0530, iteration time: 1.8835s
+Rank,0,Epoch,0,Iteration,596,It. time,1.8835177421569824,Elapsed time,1138.1012692451477
+[epoch: 0/1][iteration: 597/782][rank: 0] Loss_D: 0.3528, Loss_G: 4.7854, D(x): 0.9708, D(G(z)): 0.2500 / 0.0117, iteration time: 1.8876s
+Rank,0,Epoch,0,Iteration,597,It. time,1.8875579833984375,Elapsed time,1139.9904959201813
+[epoch: 0/1][iteration: 598/782][rank: 0] Loss_D: 0.2765, Loss_G: 5.3296, D(x): 0.9037, D(G(z)): 0.1444 / 0.0071, iteration time: 1.8815s
+Rank,0,Epoch,0,Iteration,598,It. time,1.8814983367919922,Elapsed time,1141.8778204917908
+[epoch: 0/1][iteration: 599/782][rank: 0] Loss_D: 0.2827, Loss_G: 4.1170, D(x): 0.7974, D(G(z)): 0.0282 / 0.0230, iteration time: 1.8928s
+Rank,0,Epoch,0,Iteration,599,It. time,1.8927628993988037,Elapsed time,1143.7723534107208
+[epoch: 0/1][iteration: 600/782][rank: 0] Loss_D: 0.3955, Loss_G: 4.5436, D(x): 0.8773, D(G(z)): 0.2048 / 0.0147, iteration time: 1.8925s
+Rank,0,Epoch,0,Iteration,600,It. time,1.8925061225891113,Elapsed time,1145.6666464805603
+[epoch: 0/1][iteration: 601/782][rank: 0] Loss_D: 0.2502, Loss_G: 3.4717, D(x): 0.8641, D(G(z)): 0.0673 / 0.0385, iteration time: 1.8971s
+Rank,0,Epoch,0,Iteration,601,It. time,1.8970952033996582,Elapsed time,1147.8817191123962
+[epoch: 0/1][iteration: 602/782][rank: 0] Loss_D: 0.5839, Loss_G: 7.3411, D(x): 0.9643, D(G(z)): 0.3717 / 0.0009, iteration time: 1.8993s
+Rank,0,Epoch,0,Iteration,602,It. time,1.899336814880371,Elapsed time,1149.7828531265259
+[epoch: 0/1][iteration: 603/782][rank: 0] Loss_D: 0.9015, Loss_G: 2.8067, D(x): 0.5053, D(G(z)): 0.0081 / 0.0986, iteration time: 1.9060s
+Rank,0,Epoch,0,Iteration,603,It. time,1.905977487564087,Elapsed time,1151.6905782222748
+[epoch: 0/1][iteration: 604/782][rank: 0] Loss_D: 0.7592, Loss_G: 6.8329, D(x): 0.9760, D(G(z)): 0.4661 / 0.0015, iteration time: 1.8897s
+Rank,0,Epoch,0,Iteration,604,It. time,1.8897371292114258,Elapsed time,1153.581990480423
+[epoch: 0/1][iteration: 605/782][rank: 0] Loss_D: 0.7164, Loss_G: 3.4841, D(x): 0.5684, D(G(z)): 0.0473 / 0.0718, iteration time: 1.8771s
+Rank,0,Epoch,0,Iteration,605,It. time,1.8770742416381836,Elapsed time,1155.4607691764832
+[epoch: 0/1][iteration: 606/782][rank: 0] Loss_D: 0.3631, Loss_G: 4.1955, D(x): 0.9325, D(G(z)): 0.2242 / 0.0198, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,606,It. time,1.890594720840454,Elapsed time,1157.3531231880188
+[epoch: 0/1][iteration: 607/782][rank: 0] Loss_D: 0.4009, Loss_G: 5.7679, D(x): 0.8961, D(G(z)): 0.2267 / 0.0046, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,607,It. time,1.8954553604125977,Elapsed time,1159.2502863407135
+[epoch: 0/1][iteration: 608/782][rank: 0] Loss_D: 0.2795, Loss_G: 3.7756, D(x): 0.8306, D(G(z)): 0.0683 / 0.0317, iteration time: 1.8768s
+Rank,0,Epoch,0,Iteration,608,It. time,1.8767566680908203,Elapsed time,1161.128800868988
+[epoch: 0/1][iteration: 609/782][rank: 0] Loss_D: 0.2490, Loss_G: 4.2390, D(x): 0.9393, D(G(z)): 0.1562 / 0.0208, iteration time: 1.8767s
+Rank,0,Epoch,0,Iteration,609,It. time,1.8766560554504395,Elapsed time,1163.012050628662
+[epoch: 0/1][iteration: 610/782][rank: 0] Loss_D: 0.5371, Loss_G: 7.6928, D(x): 0.9677, D(G(z)): 0.3552 / 0.0006, iteration time: 1.8725s
+Rank,0,Epoch,0,Iteration,610,It. time,1.8724586963653564,Elapsed time,1164.8864014148712
+[epoch: 0/1][iteration: 611/782][rank: 0] Loss_D: 0.6493, Loss_G: 5.3231, D(x): 0.5807, D(G(z)): 0.0042 / 0.0075, iteration time: 1.8888s
+Rank,0,Epoch,0,Iteration,611,It. time,1.888847827911377,Elapsed time,1166.7770743370056
+[epoch: 0/1][iteration: 612/782][rank: 0] Loss_D: 0.1885, Loss_G: 3.8114, D(x): 0.9627, D(G(z)): 0.1269 / 0.0339, iteration time: 1.8954s
+Rank,0,Epoch,0,Iteration,612,It. time,1.8954360485076904,Elapsed time,1168.6742470264435
+[epoch: 0/1][iteration: 613/782][rank: 0] Loss_D: 0.5843, Loss_G: 7.2473, D(x): 0.9741, D(G(z)): 0.3883 / 0.0011, iteration time: 1.8974s
+Rank,0,Epoch,0,Iteration,613,It. time,1.8973877429962158,Elapsed time,1170.5733830928802
+[epoch: 0/1][iteration: 614/782][rank: 0] Loss_D: 0.7978, Loss_G: 4.8222, D(x): 0.5364, D(G(z)): 0.0117 / 0.0120, iteration time: 1.8919s
+Rank,0,Epoch,0,Iteration,614,It. time,1.8919100761413574,Elapsed time,1172.4669592380524
+[epoch: 0/1][iteration: 615/782][rank: 0] Loss_D: 0.2976, Loss_G: 4.1694, D(x): 0.9226, D(G(z)): 0.1666 / 0.0236, iteration time: 1.8893s
+Rank,0,Epoch,0,Iteration,615,It. time,1.8893392086029053,Elapsed time,1174.3580005168915
+[epoch: 0/1][iteration: 616/782][rank: 0] Loss_D: 1.0308, Loss_G: 9.0108, D(x): 0.8717, D(G(z)): 0.5348 / 0.0002, iteration time: 1.8868s
+Rank,0,Epoch,0,Iteration,616,It. time,1.8868367671966553,Elapsed time,1176.252866268158
+[epoch: 0/1][iteration: 617/782][rank: 0] Loss_D: 2.8998, Loss_G: 3.5764, D(x): 0.1004, D(G(z)): 0.0017 / 0.0472, iteration time: 1.8918s
+Rank,0,Epoch,0,Iteration,617,It. time,1.8918299674987793,Elapsed time,1178.146487236023
+[epoch: 0/1][iteration: 618/782][rank: 0] Loss_D: 0.8556, Loss_G: 5.8048, D(x): 0.9528, D(G(z)): 0.4685 / 0.0049, iteration time: 1.8977s
+Rank,0,Epoch,0,Iteration,618,It. time,1.8976502418518066,Elapsed time,1180.0458238124847
+[epoch: 0/1][iteration: 619/782][rank: 0] Loss_D: 0.6767, Loss_G: 2.9539, D(x): 0.5977, D(G(z)): 0.0660 / 0.0732, iteration time: 1.9020s
+Rank,0,Epoch,0,Iteration,619,It. time,1.9019675254821777,Elapsed time,1181.9495084285736
+[epoch: 0/1][iteration: 620/782][rank: 0] Loss_D: 0.6568, Loss_G: 5.1714, D(x): 0.8983, D(G(z)): 0.3609 / 0.0085, iteration time: 1.8855s
+Rank,0,Epoch,0,Iteration,620,It. time,1.8854904174804688,Elapsed time,1183.8367593288422
+[epoch: 0/1][iteration: 621/782][rank: 0] Loss_D: 0.4158, Loss_G: 3.9384, D(x): 0.7683, D(G(z)): 0.0969 / 0.0290, iteration time: 1.8964s
+Rank,0,Epoch,0,Iteration,621,It. time,1.8964009284973145,Elapsed time,1185.7349152565002
+[epoch: 0/1][iteration: 622/782][rank: 0] Loss_D: 0.3677, Loss_G: 3.6009, D(x): 0.8425, D(G(z)): 0.1570 / 0.0348, iteration time: 1.9019s
+Rank,0,Epoch,0,Iteration,622,It. time,1.9019200801849365,Elapsed time,1187.6386275291443
+[epoch: 0/1][iteration: 623/782][rank: 0] Loss_D: 0.4751, Loss_G: 2.3789, D(x): 0.7164, D(G(z)): 0.1004 / 0.1207, iteration time: 1.8737s
+Rank,0,Epoch,0,Iteration,623,It. time,1.8737249374389648,Elapsed time,1189.5141205787659
+[epoch: 0/1][iteration: 624/782][rank: 0] Loss_D: 0.8857, Loss_G: 6.0049, D(x): 0.9559, D(G(z)): 0.5129 / 0.0031, iteration time: 1.8950s
+Rank,0,Epoch,0,Iteration,624,It. time,1.8950257301330566,Elapsed time,1191.4109771251678
+[epoch: 0/1][iteration: 625/782][rank: 0] Loss_D: 0.4101, Loss_G: 4.0869, D(x): 0.7087, D(G(z)): 0.0277 / 0.0267, iteration time: 1.8682s
+Rank,0,Epoch,0,Iteration,625,It. time,1.8681812286376953,Elapsed time,1193.2808883190155
+[epoch: 0/1][iteration: 626/782][rank: 0] Loss_D: 0.5354, Loss_G: 2.0734, D(x): 0.6898, D(G(z)): 0.0820 / 0.1854, iteration time: 1.8877s
+Rank,0,Epoch,0,Iteration,626,It. time,1.8876643180847168,Elapsed time,1195.170505285263
+[epoch: 0/1][iteration: 627/782][rank: 0] Loss_D: 0.7719, Loss_G: 4.7169, D(x): 0.9680, D(G(z)): 0.4657 / 0.0106, iteration time: 1.8948s
+Rank,0,Epoch,0,Iteration,627,It. time,1.8947629928588867,Elapsed time,1197.0670001506805
+[epoch: 0/1][iteration: 628/782][rank: 0] Loss_D: 0.4462, Loss_G: 4.0665, D(x): 0.7501, D(G(z)): 0.1189 / 0.0251, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,628,It. time,1.8905525207519531,Elapsed time,1198.9593584537506
+[epoch: 0/1][iteration: 629/782][rank: 0] Loss_D: 0.3723, Loss_G: 2.9161, D(x): 0.8828, D(G(z)): 0.2050 / 0.0689, iteration time: 1.8925s
+Rank,0,Epoch,0,Iteration,629,It. time,1.8924560546875,Elapsed time,1200.8536174297333
+[epoch: 0/1][iteration: 630/782][rank: 0] Loss_D: 0.8679, Loss_G: 4.0332, D(x): 0.7039, D(G(z)): 0.3549 / 0.0214, iteration time: 1.8896s
+Rank,0,Epoch,0,Iteration,630,It. time,1.889636754989624,Elapsed time,1202.7450125217438
+[epoch: 0/1][iteration: 631/782][rank: 0] Loss_D: 0.4431, Loss_G: 4.6282, D(x): 0.8744, D(G(z)): 0.2410 / 0.0126, iteration time: 1.8919s
+Rank,0,Epoch,0,Iteration,631,It. time,1.8918533325195312,Elapsed time,1204.6386115550995
+[epoch: 0/1][iteration: 632/782][rank: 0] Loss_D: 0.7135, Loss_G: 2.3440, D(x): 0.5809, D(G(z)): 0.0736 / 0.1190, iteration time: 1.8923s
+Rank,0,Epoch,0,Iteration,632,It. time,1.8922982215881348,Elapsed time,1206.5326182842255
+[epoch: 0/1][iteration: 633/782][rank: 0] Loss_D: 1.3980, Loss_G: 7.3738, D(x): 0.9172, D(G(z)): 0.6847 / 0.0009, iteration time: 1.8872s
+Rank,0,Epoch,0,Iteration,633,It. time,1.887211561203003,Elapsed time,1208.4266185760498
+[epoch: 0/1][iteration: 634/782][rank: 0] Loss_D: 2.1163, Loss_G: 2.6222, D(x): 0.1816, D(G(z)): 0.0063 / 0.0860, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,634,It. time,1.8935139179229736,Elapsed time,1210.3218145370483
+[epoch: 0/1][iteration: 635/782][rank: 0] Loss_D: 0.3915, Loss_G: 2.2872, D(x): 0.8816, D(G(z)): 0.2153 / 0.1238, iteration time: 1.8753s
+Rank,0,Epoch,0,Iteration,635,It. time,1.8753259181976318,Elapsed time,1212.1988735198975
+[epoch: 0/1][iteration: 636/782][rank: 0] Loss_D: 0.9567, Loss_G: 6.9856, D(x): 0.9585, D(G(z)): 0.5375 / 0.0022, iteration time: 1.8857s
+Rank,0,Epoch,0,Iteration,636,It. time,1.8857367038726807,Elapsed time,1214.0864236354828
+[epoch: 0/1][iteration: 637/782][rank: 0] Loss_D: 1.2767, Loss_G: 3.5236, D(x): 0.3875, D(G(z)): 0.0063 / 0.0518, iteration time: 1.9004s
+Rank,0,Epoch,0,Iteration,637,It. time,1.900357961654663,Elapsed time,1215.9885349273682
+[epoch: 0/1][iteration: 638/782][rank: 0] Loss_D: 0.3181, Loss_G: 2.1229, D(x): 0.9243, D(G(z)): 0.1990 / 0.1489, iteration time: 1.8870s
+Rank,0,Epoch,0,Iteration,638,It. time,1.886970043182373,Elapsed time,1217.8771977424622
+[epoch: 0/1][iteration: 639/782][rank: 0] Loss_D: 0.7429, Loss_G: 4.8808, D(x): 0.9766, D(G(z)): 0.4651 / 0.0099, iteration time: 1.8848s
+Rank,0,Epoch,0,Iteration,639,It. time,1.8847556114196777,Elapsed time,1219.763680934906
+[epoch: 0/1][iteration: 640/782][rank: 0] Loss_D: 0.9399, Loss_G: 2.2962, D(x): 0.4659, D(G(z)): 0.0644 / 0.1534, iteration time: 1.8908s
+Rank,0,Epoch,0,Iteration,640,It. time,1.8907556533813477,Elapsed time,1221.656123161316
+[epoch: 0/1][iteration: 641/782][rank: 0] Loss_D: 0.5107, Loss_G: 3.0682, D(x): 0.9230, D(G(z)): 0.3113 / 0.0580, iteration time: 1.8860s
+Rank,0,Epoch,0,Iteration,641,It. time,1.8860359191894531,Elapsed time,1223.54390335083
+[epoch: 0/1][iteration: 642/782][rank: 0] Loss_D: 0.3061, Loss_G: 3.4179, D(x): 0.8870, D(G(z)): 0.1501 / 0.0500, iteration time: 1.9008s
+Rank,0,Epoch,0,Iteration,642,It. time,1.9007937908172607,Elapsed time,1225.446462392807
+[epoch: 0/1][iteration: 643/782][rank: 0] Loss_D: 0.5514, Loss_G: 3.9005, D(x): 0.8356, D(G(z)): 0.2659 / 0.0351, iteration time: 1.9007s
+Rank,0,Epoch,0,Iteration,643,It. time,1.900698184967041,Elapsed time,1227.3489344120026
+[epoch: 0/1][iteration: 644/782][rank: 0] Loss_D: 0.4763, Loss_G: 2.4164, D(x): 0.7481, D(G(z)): 0.1361 / 0.1109, iteration time: 1.8985s
+Rank,0,Epoch,0,Iteration,644,It. time,1.8984582424163818,Elapsed time,1229.2490861415863
+[epoch: 0/1][iteration: 645/782][rank: 0] Loss_D: 0.6766, Loss_G: 3.1398, D(x): 0.8203, D(G(z)): 0.3255 / 0.0570, iteration time: 1.9070s
+Rank,0,Epoch,0,Iteration,645,It. time,1.906951665878296,Elapsed time,1231.1577687263489
+[epoch: 0/1][iteration: 646/782][rank: 0] Loss_D: 0.4520, Loss_G: 3.0059, D(x): 0.8245, D(G(z)): 0.2093 / 0.0569, iteration time: 1.8971s
+Rank,0,Epoch,0,Iteration,646,It. time,1.8971397876739502,Elapsed time,1233.0566527843475
+[epoch: 0/1][iteration: 647/782][rank: 0] Loss_D: 0.4550, Loss_G: 3.0143, D(x): 0.8249, D(G(z)): 0.2082 / 0.0588, iteration time: 1.9016s
+Rank,0,Epoch,0,Iteration,647,It. time,1.9015841484069824,Elapsed time,1234.9599676132202
+[epoch: 0/1][iteration: 648/782][rank: 0] Loss_D: 0.3925, Loss_G: 3.1049, D(x): 0.8692, D(G(z)): 0.2045 / 0.0539, iteration time: 1.9145s
+Rank,0,Epoch,0,Iteration,648,It. time,1.914470911026001,Elapsed time,1236.876174211502
+[epoch: 0/1][iteration: 649/782][rank: 0] Loss_D: 0.6257, Loss_G: 2.7236, D(x): 0.7190, D(G(z)): 0.1881 / 0.0831, iteration time: 1.8998s
+Rank,0,Epoch,0,Iteration,649,It. time,1.89982271194458,Elapsed time,1238.777745962143
+[epoch: 0/1][iteration: 650/782][rank: 0] Loss_D: 0.5821, Loss_G: 4.9445, D(x): 0.9171, D(G(z)): 0.3504 / 0.0091, iteration time: 1.8884s
+Rank,0,Epoch,0,Iteration,650,It. time,1.8884212970733643,Elapsed time,1240.6679067611694
+[epoch: 0/1][iteration: 651/782][rank: 0] Loss_D: 0.6035, Loss_G: 1.7856, D(x): 0.5986, D(G(z)): 0.0284 / 0.2106, iteration time: 1.9016s
+Rank,0,Epoch,0,Iteration,651,It. time,1.901641607284546,Elapsed time,1242.573152065277
+[epoch: 0/1][iteration: 652/782][rank: 0] Loss_D: 0.6201, Loss_G: 4.8196, D(x): 0.9251, D(G(z)): 0.3845 / 0.0113, iteration time: 1.8777s
+Rank,0,Epoch,0,Iteration,652,It. time,1.8776941299438477,Elapsed time,1244.4525141716003
+[epoch: 0/1][iteration: 653/782][rank: 0] Loss_D: 0.3358, Loss_G: 3.7209, D(x): 0.8106, D(G(z)): 0.1010 / 0.0331, iteration time: 1.8875s
+Rank,0,Epoch,0,Iteration,653,It. time,1.8875231742858887,Elapsed time,1246.34174990654
+[epoch: 0/1][iteration: 654/782][rank: 0] Loss_D: 0.5560, Loss_G: 2.9634, D(x): 0.7592, D(G(z)): 0.1823 / 0.0842, iteration time: 1.8770s
+Rank,0,Epoch,0,Iteration,654,It. time,1.8770110607147217,Elapsed time,1248.2204768657684
+[epoch: 0/1][iteration: 655/782][rank: 0] Loss_D: 0.5831, Loss_G: 3.4961, D(x): 0.7986, D(G(z)): 0.2575 / 0.0556, iteration time: 1.8750s
+Rank,0,Epoch,0,Iteration,655,It. time,1.8749918937683105,Elapsed time,1250.0971882343292
+[epoch: 0/1][iteration: 656/782][rank: 0] Loss_D: 0.7366, Loss_G: 3.8789, D(x): 0.7360, D(G(z)): 0.2696 / 0.0276, iteration time: 1.8999s
+Rank,0,Epoch,0,Iteration,656,It. time,1.8999145030975342,Elapsed time,1252.003323316574
+[epoch: 0/1][iteration: 657/782][rank: 0] Loss_D: 0.2598, Loss_G: 3.8309, D(x): 0.8492, D(G(z)): 0.0761 / 0.0306, iteration time: 1.8771s
+Rank,0,Epoch,0,Iteration,657,It. time,1.8770639896392822,Elapsed time,1253.8822004795074
+[epoch: 0/1][iteration: 658/782][rank: 0] Loss_D: 0.5025, Loss_G: 2.7200, D(x): 0.7306, D(G(z)): 0.1163 / 0.0938, iteration time: 1.8758s
+Rank,0,Epoch,0,Iteration,658,It. time,1.8758139610290527,Elapsed time,1255.7599413394928
+[epoch: 0/1][iteration: 659/782][rank: 0] Loss_D: 0.3865, Loss_G: 5.8637, D(x): 0.9712, D(G(z)): 0.2821 / 0.0036, iteration time: 1.9008s
+Rank,0,Epoch,0,Iteration,659,It. time,1.9007806777954102,Elapsed time,1257.6676132678986
+[epoch: 0/1][iteration: 660/782][rank: 0] Loss_D: 0.4091, Loss_G: 3.0450, D(x): 0.7013, D(G(z)): 0.0224 / 0.0592, iteration time: 1.8962s
+Rank,0,Epoch,0,Iteration,660,It. time,1.8961505889892578,Elapsed time,1259.5654611587524
+[epoch: 0/1][iteration: 661/782][rank: 0] Loss_D: 0.2579, Loss_G: 3.5268, D(x): 0.9077, D(G(z)): 0.1386 / 0.0393, iteration time: 1.8879s
+Rank,0,Epoch,0,Iteration,661,It. time,1.887937068939209,Elapsed time,1261.455087184906
+[epoch: 0/1][iteration: 662/782][rank: 0] Loss_D: 0.1587, Loss_G: 4.2094, D(x): 0.9631, D(G(z)): 0.1100 / 0.0192, iteration time: 1.8892s
+Rank,0,Epoch,0,Iteration,662,It. time,1.8892254829406738,Elapsed time,1263.3482275009155
+[epoch: 0/1][iteration: 663/782][rank: 0] Loss_D: 0.3084, Loss_G: 4.3263, D(x): 0.8970, D(G(z)): 0.1603 / 0.0174, iteration time: 1.8822s
+Rank,0,Epoch,0,Iteration,663,It. time,1.8821568489074707,Elapsed time,1265.2321245670319
+[epoch: 0/1][iteration: 664/782][rank: 0] Loss_D: 0.2895, Loss_G: 4.7066, D(x): 0.9180, D(G(z)): 0.1612 / 0.0120, iteration time: 1.8936s
+Rank,0,Epoch,0,Iteration,664,It. time,1.8935582637786865,Elapsed time,1267.1274523735046
+[epoch: 0/1][iteration: 665/782][rank: 0] Loss_D: 0.7532, Loss_G: 2.6651, D(x): 0.6148, D(G(z)): 0.1170 / 0.0893, iteration time: 1.8831s
+Rank,0,Epoch,0,Iteration,665,It. time,1.8831052780151367,Elapsed time,1269.0122890472412
+[epoch: 0/1][iteration: 666/782][rank: 0] Loss_D: 0.7046, Loss_G: 5.7138, D(x): 0.8434, D(G(z)): 0.3702 / 0.0045, iteration time: 1.8874s
+Rank,0,Epoch,0,Iteration,666,It. time,1.8874459266662598,Elapsed time,1270.906860589981
+[epoch: 0/1][iteration: 667/782][rank: 0] Loss_D: 0.5012, Loss_G: 2.9863, D(x): 0.6771, D(G(z)): 0.0400 / 0.0791, iteration time: 1.8793s
+Rank,0,Epoch,0,Iteration,667,It. time,1.8793439865112305,Elapsed time,1272.7879297733307
+[epoch: 0/1][iteration: 668/782][rank: 0] Loss_D: 0.3310, Loss_G: 3.9931, D(x): 0.9478, D(G(z)): 0.2196 / 0.0240, iteration time: 1.8865s
+Rank,0,Epoch,0,Iteration,668,It. time,1.8864686489105225,Elapsed time,1274.6761102676392
+[epoch: 0/1][iteration: 669/782][rank: 0] Loss_D: 0.3642, Loss_G: 5.9733, D(x): 0.9169, D(G(z)): 0.2193 / 0.0031, iteration time: 1.8760s
+Rank,0,Epoch,0,Iteration,669,It. time,1.875990629196167,Elapsed time,1276.5537929534912
+[epoch: 0/1][iteration: 670/782][rank: 0] Loss_D: 0.3466, Loss_G: 3.2388, D(x): 0.7684, D(G(z)): 0.0413 / 0.0620, iteration time: 1.8930s
+Rank,0,Epoch,0,Iteration,670,It. time,1.8929781913757324,Elapsed time,1278.4484746456146
+[epoch: 0/1][iteration: 671/782][rank: 0] Loss_D: 0.5264, Loss_G: 4.8775, D(x): 0.9086, D(G(z)): 0.3055 / 0.0093, iteration time: 1.8801s
+Rank,0,Epoch,0,Iteration,671,It. time,1.880098819732666,Elapsed time,1280.3302912712097
+[epoch: 0/1][iteration: 672/782][rank: 0] Loss_D: 0.3239, Loss_G: 3.1650, D(x): 0.7834, D(G(z)): 0.0247 / 0.0507, iteration time: 1.8846s
+Rank,0,Epoch,0,Iteration,672,It. time,1.8846337795257568,Elapsed time,1282.2166624069214
+[epoch: 0/1][iteration: 673/782][rank: 0] Loss_D: 0.2726, Loss_G: 3.7284, D(x): 0.9135, D(G(z)): 0.1523 / 0.0298, iteration time: 1.8931s
+Rank,0,Epoch,0,Iteration,673,It. time,1.89308762550354,Elapsed time,1284.11159324646
+[epoch: 0/1][iteration: 674/782][rank: 0] Loss_D: 0.1967, Loss_G: 4.9411, D(x): 0.9663, D(G(z)): 0.1429 / 0.0085, iteration time: 1.8900s
+Rank,0,Epoch,0,Iteration,674,It. time,1.8899524211883545,Elapsed time,1286.0034425258636
+[epoch: 0/1][iteration: 675/782][rank: 0] Loss_D: 0.2188, Loss_G: 3.7671, D(x): 0.8876, D(G(z)): 0.0753 / 0.0280, iteration time: 1.8915s
+Rank,0,Epoch,0,Iteration,675,It. time,1.8915038108825684,Elapsed time,1287.89670586586
+[epoch: 0/1][iteration: 676/782][rank: 0] Loss_D: 0.2811, Loss_G: 2.7839, D(x): 0.8493, D(G(z)): 0.0722 / 0.0724, iteration time: 1.9005s
+Rank,0,Epoch,0,Iteration,676,It. time,1.9005241394042969,Elapsed time,1289.798979997635
+[epoch: 0/1][iteration: 677/782][rank: 0] Loss_D: 0.4463, Loss_G: 4.0859, D(x): 0.8501, D(G(z)): 0.2238 / 0.0186, iteration time: 1.9049s
+Rank,0,Epoch,0,Iteration,677,It. time,1.9048564434051514,Elapsed time,1291.7056238651276
+[epoch: 0/1][iteration: 678/782][rank: 0] Loss_D: 0.2641, Loss_G: 4.7868, D(x): 0.9163, D(G(z)): 0.1459 / 0.0103, iteration time: 1.8879s
+Rank,0,Epoch,0,Iteration,678,It. time,1.8878841400146484,Elapsed time,1293.5953147411346
+[epoch: 0/1][iteration: 679/782][rank: 0] Loss_D: 0.2985, Loss_G: 2.9633, D(x): 0.7962, D(G(z)): 0.0522 / 0.0602, iteration time: 1.8904s
+Rank,0,Epoch,0,Iteration,679,It. time,1.8903989791870117,Elapsed time,1295.4874715805054
+[epoch: 0/1][iteration: 680/782][rank: 0] Loss_D: 0.3454, Loss_G: 5.4171, D(x): 0.9219, D(G(z)): 0.2162 / 0.0052, iteration time: 1.8803s
+Rank,0,Epoch,0,Iteration,680,It. time,1.8803291320800781,Elapsed time,1297.3717398643494
+[epoch: 0/1][iteration: 681/782][rank: 0] Loss_D: 0.4198, Loss_G: 2.2824, D(x): 0.7357, D(G(z)): 0.0591 / 0.1376, iteration time: 1.8926s
+Rank,0,Epoch,0,Iteration,681,It. time,1.8926291465759277,Elapsed time,1299.2707180976868
+[epoch: 0/1][iteration: 682/782][rank: 0] Loss_D: 0.5696, Loss_G: 7.5344, D(x): 0.9528, D(G(z)): 0.3497 / 0.0010, iteration time: 1.8957s
+Rank,0,Epoch,0,Iteration,682,It. time,1.8956756591796875,Elapsed time,1301.1681189537048
+[epoch: 0/1][iteration: 683/782][rank: 0] Loss_D: 1.0520, Loss_G: 1.2777, D(x): 0.4458, D(G(z)): 0.0222 / 0.3514, iteration time: 1.8790s
+Rank,0,Epoch,0,Iteration,683,It. time,1.878990888595581,Elapsed time,1303.048885345459
+[epoch: 0/1][iteration: 684/782][rank: 0] Loss_D: 1.2911, Loss_G: 10.4441, D(x): 0.9958, D(G(z)): 0.6620 / 0.0000, iteration time: 1.9006s
+Rank,0,Epoch,0,Iteration,684,It. time,1.9006309509277344,Elapsed time,1304.9512841701508
+[epoch: 0/1][iteration: 685/782][rank: 0] Loss_D: 3.3008, Loss_G: 3.1165, D(x): 0.0566, D(G(z)): 0.0012 / 0.0990, iteration time: 1.8703s
+Rank,0,Epoch,0,Iteration,685,It. time,1.8702819347381592,Elapsed time,1306.8284876346588
+[epoch: 0/1][iteration: 686/782][rank: 0] Loss_D: 0.5351, Loss_G: 2.9088, D(x): 0.9510, D(G(z)): 0.3037 / 0.0869, iteration time: 1.8947s
+Rank,0,Epoch,0,Iteration,686,It. time,1.8947455883026123,Elapsed time,1308.724909067154
+[epoch: 0/1][iteration: 687/782][rank: 0] Loss_D: 1.1203, Loss_G: 5.4260, D(x): 0.9492, D(G(z)): 0.5587 / 0.0079, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,687,It. time,1.890582799911499,Elapsed time,1310.6172132492065
+[epoch: 0/1][iteration: 688/782][rank: 0] Loss_D: 1.9334, Loss_G: 1.2351, D(x): 0.2321, D(G(z)): 0.0721 / 0.3430, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,688,It. time,1.8890538215637207,Elapsed time,1312.5079410076141
+[epoch: 0/1][iteration: 689/782][rank: 0] Loss_D: 2.0141, Loss_G: 3.9409, D(x): 0.8963, D(G(z)): 0.7932 / 0.0347, iteration time: 1.8833s
+Rank,0,Epoch,0,Iteration,689,It. time,1.8832762241363525,Elapsed time,1314.3973715305328
+[epoch: 0/1][iteration: 690/782][rank: 0] Loss_D: 1.4200, Loss_G: 2.3897, D(x): 0.3561, D(G(z)): 0.2317 / 0.1213, iteration time: 1.8890s
+Rank,0,Epoch,0,Iteration,690,It. time,1.88895845413208,Elapsed time,1316.2881181240082
+[epoch: 0/1][iteration: 691/782][rank: 0] Loss_D: 1.3051, Loss_G: 3.3857, D(x): 0.6024, D(G(z)): 0.4738 / 0.0462, iteration time: 1.8994s
+Rank,0,Epoch,0,Iteration,691,It. time,1.8994190692901611,Elapsed time,1318.1892013549805
+[epoch: 0/1][iteration: 692/782][rank: 0] Loss_D: 1.3353, Loss_G: 2.0561, D(x): 0.4452, D(G(z)): 0.2642 / 0.1759, iteration time: 1.8819s
+Rank,0,Epoch,0,Iteration,692,It. time,1.8819217681884766,Elapsed time,1320.0728425979614
+[epoch: 0/1][iteration: 693/782][rank: 0] Loss_D: 0.7816, Loss_G: 3.9942, D(x): 0.8175, D(G(z)): 0.3929 / 0.0237, iteration time: 1.8939s
+Rank,0,Epoch,0,Iteration,693,It. time,1.8938822746276855,Elapsed time,1321.9684126377106
+[epoch: 0/1][iteration: 694/782][rank: 0] Loss_D: 0.3815, Loss_G: 4.2683, D(x): 0.8466, D(G(z)): 0.1704 / 0.0214, iteration time: 1.8940s
+Rank,0,Epoch,0,Iteration,694,It. time,1.8940367698669434,Elapsed time,1323.8641428947449
+[epoch: 0/1][iteration: 695/782][rank: 0] Loss_D: 0.5438, Loss_G: 1.8176, D(x): 0.6803, D(G(z)): 0.0767 / 0.2064, iteration time: 1.8803s
+Rank,0,Epoch,0,Iteration,695,It. time,1.8802623748779297,Elapsed time,1325.7461249828339
+[epoch: 0/1][iteration: 696/782][rank: 0] Loss_D: 0.9224, Loss_G: 5.1960, D(x): 0.9539, D(G(z)): 0.5391 / 0.0069, iteration time: 1.8809s
+Rank,0,Epoch,0,Iteration,696,It. time,1.88093900680542,Elapsed time,1327.6287806034088
+[epoch: 0/1][iteration: 697/782][rank: 0] Loss_D: 0.2771, Loss_G: 4.2315, D(x): 0.8049, D(G(z)): 0.0371 / 0.0185, iteration time: 1.8870s
+Rank,0,Epoch,0,Iteration,697,It. time,1.8869588375091553,Elapsed time,1329.5174822807312
+[epoch: 0/1][iteration: 698/782][rank: 0] Loss_D: 0.6009, Loss_G: 2.3191, D(x): 0.6340, D(G(z)): 0.0633 / 0.1571, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,698,It. time,1.889094591140747,Elapsed time,1331.4082963466644
+[epoch: 0/1][iteration: 699/782][rank: 0] Loss_D: 0.9456, Loss_G: 5.2783, D(x): 0.9562, D(G(z)): 0.5346 / 0.0062, iteration time: 1.8945s
+Rank,0,Epoch,0,Iteration,699,It. time,1.8944823741912842,Elapsed time,1333.3044521808624
+[epoch: 0/1][iteration: 700/782][rank: 0] Loss_D: 1.0714, Loss_G: 2.8029, D(x): 0.4135, D(G(z)): 0.0293 / 0.0847, iteration time: 1.8869s
+Rank,0,Epoch,0,Iteration,700,It. time,1.8868751525878906,Elapsed time,1335.1982758045197
+[epoch: 0/1][iteration: 701/782][rank: 0] Loss_D: 0.5648, Loss_G: 2.2804, D(x): 0.8245, D(G(z)): 0.2763 / 0.1394, iteration time: 1.9000s
+Rank,0,Epoch,0,Iteration,701,It. time,1.8999593257904053,Elapsed time,1337.4181234836578
+[epoch: 0/1][iteration: 702/782][rank: 0] Loss_D: 0.7135, Loss_G: 4.9044, D(x): 0.8934, D(G(z)): 0.3932 / 0.0117, iteration time: 1.8887s
+Rank,0,Epoch,0,Iteration,702,It. time,1.8887403011322021,Elapsed time,1339.3085663318634
+[epoch: 0/1][iteration: 703/782][rank: 0] Loss_D: 0.4466, Loss_G: 2.9421, D(x): 0.7554, D(G(z)): 0.1191 / 0.0710, iteration time: 1.8863s
+Rank,0,Epoch,0,Iteration,703,It. time,1.8862745761871338,Elapsed time,1341.1965057849884
+[epoch: 0/1][iteration: 704/782][rank: 0] Loss_D: 1.2688, Loss_G: 2.3982, D(x): 0.5646, D(G(z)): 0.3590 / 0.1188, iteration time: 1.8837s
+Rank,0,Epoch,0,Iteration,704,It. time,1.883711814880371,Elapsed time,1343.081936597824
+[epoch: 0/1][iteration: 705/782][rank: 0] Loss_D: 0.7787, Loss_G: 3.5024, D(x): 0.7410, D(G(z)): 0.3321 / 0.0391, iteration time: 1.8721s
+Rank,0,Epoch,0,Iteration,705,It. time,1.8720688819885254,Elapsed time,1344.9634556770325
+[epoch: 0/1][iteration: 706/782][rank: 0] Loss_D: 0.8101, Loss_G: 3.7208, D(x): 0.7240, D(G(z)): 0.3244 / 0.0444, iteration time: 1.8835s
+Rank,0,Epoch,0,Iteration,706,It. time,1.8834688663482666,Elapsed time,1346.8487539291382
+[epoch: 0/1][iteration: 707/782][rank: 0] Loss_D: 0.4915, Loss_G: 2.7475, D(x): 0.7374, D(G(z)): 0.1381 / 0.0838, iteration time: 1.8985s
+Rank,0,Epoch,0,Iteration,707,It. time,1.898512840270996,Elapsed time,1348.7539203166962
+[epoch: 0/1][iteration: 708/782][rank: 0] Loss_D: 0.5813, Loss_G: 3.8308, D(x): 0.8196, D(G(z)): 0.2744 / 0.0269, iteration time: 1.8942s
+Rank,0,Epoch,0,Iteration,708,It. time,1.8942465782165527,Elapsed time,1350.649910211563
+[epoch: 0/1][iteration: 709/782][rank: 0] Loss_D: 0.3660, Loss_G: 3.7505, D(x): 0.8563, D(G(z)): 0.1700 / 0.0277, iteration time: 1.8821s
+Rank,0,Epoch,0,Iteration,709,It. time,1.882122278213501,Elapsed time,1352.5337657928467
+[epoch: 0/1][iteration: 710/782][rank: 0] Loss_D: 0.3544, Loss_G: 3.0595, D(x): 0.8302, D(G(z)): 0.1394 / 0.0566, iteration time: 1.8758s
+Rank,0,Epoch,0,Iteration,710,It. time,1.8757672309875488,Elapsed time,1354.411255121231
+[epoch: 0/1][iteration: 711/782][rank: 0] Loss_D: 0.4643, Loss_G: 3.3253, D(x): 0.8326, D(G(z)): 0.2238 / 0.0455, iteration time: 1.8888s
+Rank,0,Epoch,0,Iteration,711,It. time,1.8887622356414795,Elapsed time,1356.3018426895142
+[epoch: 0/1][iteration: 712/782][rank: 0] Loss_D: 0.5702, Loss_G: 3.9534, D(x): 0.7996, D(G(z)): 0.2643 / 0.0252, iteration time: 1.8893s
+Rank,0,Epoch,0,Iteration,712,It. time,1.8893153667449951,Elapsed time,1358.1929206848145
+[epoch: 0/1][iteration: 713/782][rank: 0] Loss_D: 0.4574, Loss_G: 2.2791, D(x): 0.7495, D(G(z)): 0.1197 / 0.1245, iteration time: 1.8871s
+Rank,0,Epoch,0,Iteration,713,It. time,1.8871188163757324,Elapsed time,1360.0865244865417
+[epoch: 0/1][iteration: 714/782][rank: 0] Loss_D: 0.5579, Loss_G: 4.2983, D(x): 0.9027, D(G(z)): 0.3374 / 0.0158, iteration time: 1.8909s
+Rank,0,Epoch,0,Iteration,714,It. time,1.8909263610839844,Elapsed time,1361.9850642681122
+[epoch: 0/1][iteration: 715/782][rank: 0] Loss_D: 0.6651, Loss_G: 1.9779, D(x): 0.5911, D(G(z)): 0.0738 / 0.1598, iteration time: 1.8851s
+Rank,0,Epoch,0,Iteration,715,It. time,1.8850760459899902,Elapsed time,1363.871909379959
+[epoch: 0/1][iteration: 716/782][rank: 0] Loss_D: 0.7352, Loss_G: 6.4085, D(x): 0.9633, D(G(z)): 0.4717 / 0.0023, iteration time: 1.8988s
+Rank,0,Epoch,0,Iteration,716,It. time,1.8988394737243652,Elapsed time,1365.7724304199219
+[epoch: 0/1][iteration: 717/782][rank: 0] Loss_D: 1.0301, Loss_G: 2.2476, D(x): 0.4085, D(G(z)): 0.0156 / 0.1854, iteration time: 1.8875s
+Rank,0,Epoch,0,Iteration,717,It. time,1.8875107765197754,Elapsed time,1367.6616995334625
+[epoch: 0/1][iteration: 718/782][rank: 0] Loss_D: 0.9488, Loss_G: 5.0331, D(x): 0.9672, D(G(z)): 0.5024 / 0.0081, iteration time: 1.8745s
+Rank,0,Epoch,0,Iteration,718,It. time,1.8745477199554443,Elapsed time,1369.537945985794
+[epoch: 0/1][iteration: 719/782][rank: 0] Loss_D: 0.1710, Loss_G: 5.0852, D(x): 0.8797, D(G(z)): 0.0318 / 0.0100, iteration time: 1.8888s
+Rank,0,Epoch,0,Iteration,719,It. time,1.888798475265503,Elapsed time,1371.4322044849396
+[epoch: 0/1][iteration: 720/782][rank: 0] Loss_D: 0.4720, Loss_G: 2.3942, D(x): 0.7108, D(G(z)): 0.0661 / 0.1147, iteration time: 1.8754s
+Rank,0,Epoch,0,Iteration,720,It. time,1.8754279613494873,Elapsed time,1373.3148517608643
+[epoch: 0/1][iteration: 721/782][rank: 0] Loss_D: 0.7315, Loss_G: 5.0774, D(x): 0.9550, D(G(z)): 0.4149 / 0.0095, iteration time: 1.8866s
+Rank,0,Epoch,0,Iteration,721,It. time,1.8866164684295654,Elapsed time,1375.2086567878723
+[epoch: 0/1][iteration: 722/782][rank: 0] Loss_D: 0.3678, Loss_G: 3.5013, D(x): 0.7583, D(G(z)): 0.0515 / 0.0418, iteration time: 1.8904s
+Rank,0,Epoch,0,Iteration,722,It. time,1.890409231185913,Elapsed time,1377.1009032726288
+[epoch: 0/1][iteration: 723/782][rank: 0] Loss_D: 0.4567, Loss_G: 2.6131, D(x): 0.7984, D(G(z)): 0.1685 / 0.0958, iteration time: 1.8955s
+Rank,0,Epoch,0,Iteration,723,It. time,1.8954846858978271,Elapsed time,1378.9981656074524
+[epoch: 0/1][iteration: 724/782][rank: 0] Loss_D: 0.5433, Loss_G: 4.5724, D(x): 0.8474, D(G(z)): 0.2872 / 0.0128, iteration time: 1.8740s
+Rank,0,Epoch,0,Iteration,724,It. time,1.8739798069000244,Elapsed time,1380.8738813400269
+[epoch: 0/1][iteration: 725/782][rank: 0] Loss_D: 0.6333, Loss_G: 3.0734, D(x): 0.6864, D(G(z)): 0.1631 / 0.0596, iteration time: 1.8865s
+Rank,0,Epoch,0,Iteration,725,It. time,1.8865184783935547,Elapsed time,1382.7621521949768
+[epoch: 0/1][iteration: 726/782][rank: 0] Loss_D: 0.3798, Loss_G: 1.8723, D(x): 0.7787, D(G(z)): 0.0939 / 0.2079, iteration time: 1.8847s
+Rank,0,Epoch,0,Iteration,726,It. time,1.8846995830535889,Elapsed time,1384.6506180763245
+[epoch: 0/1][iteration: 727/782][rank: 0] Loss_D: 0.9219, Loss_G: 7.7188, D(x): 0.9587, D(G(z)): 0.5194 / 0.0006, iteration time: 1.8819s
+Rank,0,Epoch,0,Iteration,727,It. time,1.8819153308868408,Elapsed time,1386.5343432426453
+[epoch: 0/1][iteration: 728/782][rank: 0] Loss_D: 1.8734, Loss_G: 1.7192, D(x): 0.2176, D(G(z)): 0.0029 / 0.2223, iteration time: 1.8857s
+Rank,0,Epoch,0,Iteration,728,It. time,1.8856678009033203,Elapsed time,1388.4217796325684
+[epoch: 0/1][iteration: 729/782][rank: 0] Loss_D: 0.5153, Loss_G: 4.3966, D(x): 0.9650, D(G(z)): 0.3399 / 0.0176, iteration time: 1.8779s
+Rank,0,Epoch,0,Iteration,729,It. time,1.8779172897338867,Elapsed time,1390.3014941215515
+[epoch: 0/1][iteration: 730/782][rank: 0] Loss_D: 0.4066, Loss_G: 1.9095, D(x): 0.7621, D(G(z)): 0.1028 / 0.1744, iteration time: 1.8804s
+Rank,0,Epoch,0,Iteration,730,It. time,1.8803577423095703,Elapsed time,1392.1835289001465
+[epoch: 0/1][iteration: 731/782][rank: 0] Loss_D: 0.2988, Loss_G: 3.4715, D(x): 0.9404, D(G(z)): 0.1945 / 0.0393, iteration time: 1.8996s
+Rank,0,Epoch,0,Iteration,731,It. time,1.8995912075042725,Elapsed time,1394.0848598480225
+[epoch: 0/1][iteration: 732/782][rank: 0] Loss_D: 0.2916, Loss_G: 3.7088, D(x): 0.8868, D(G(z)): 0.1499 / 0.0283, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,732,It. time,1.8935444355010986,Elapsed time,1395.9801456928253
+[epoch: 0/1][iteration: 733/782][rank: 0] Loss_D: 0.3664, Loss_G: 2.9220, D(x): 0.8444, D(G(z)): 0.1661 / 0.0647, iteration time: 1.8956s
+Rank,0,Epoch,0,Iteration,733,It. time,1.8955557346343994,Elapsed time,1397.87744474411
+[epoch: 0/1][iteration: 734/782][rank: 0] Loss_D: 0.3793, Loss_G: 3.3318, D(x): 0.8784, D(G(z)): 0.2014 / 0.0470, iteration time: 1.8824s
+Rank,0,Epoch,0,Iteration,734,It. time,1.8824012279510498,Elapsed time,1399.7658166885376
+[epoch: 0/1][iteration: 735/782][rank: 0] Loss_D: 0.4955, Loss_G: 2.4977, D(x): 0.7578, D(G(z)): 0.1614 / 0.0956, iteration time: 1.8853s
+Rank,0,Epoch,0,Iteration,735,It. time,1.8853304386138916,Elapsed time,1401.652939081192
+[epoch: 0/1][iteration: 736/782][rank: 0] Loss_D: 0.8144, Loss_G: 6.8831, D(x): 0.9261, D(G(z)): 0.4774 / 0.0016, iteration time: 1.8771s
+Rank,0,Epoch,0,Iteration,736,It. time,1.877086877822876,Elapsed time,1403.5364842414856
+[epoch: 0/1][iteration: 737/782][rank: 0] Loss_D: 1.6591, Loss_G: 1.6407, D(x): 0.2415, D(G(z)): 0.0043 / 0.2556, iteration time: 1.8934s
+Rank,0,Epoch,0,Iteration,737,It. time,1.8934173583984375,Elapsed time,1405.4316091537476
+[epoch: 0/1][iteration: 738/782][rank: 0] Loss_D: 0.9247, Loss_G: 5.0682, D(x): 0.9730, D(G(z)): 0.4954 / 0.0086, iteration time: 1.9243s
+Rank,0,Epoch,0,Iteration,738,It. time,1.924269199371338,Elapsed time,1407.3577501773834
+[epoch: 0/1][iteration: 739/782][rank: 0] Loss_D: 0.3058, Loss_G: 4.3623, D(x): 0.7991, D(G(z)): 0.0557 / 0.0186, iteration time: 1.9156s
+Rank,0,Epoch,0,Iteration,739,It. time,1.9156382083892822,Elapsed time,1409.2751507759094
+[epoch: 0/1][iteration: 740/782][rank: 0] Loss_D: 0.3393, Loss_G: 2.4053, D(x): 0.7996, D(G(z)): 0.0876 / 0.1146, iteration time: 1.8906s
+Rank,0,Epoch,0,Iteration,740,It. time,1.8905556201934814,Elapsed time,1411.1674354076385
+[epoch: 0/1][iteration: 741/782][rank: 0] Loss_D: 0.4718, Loss_G: 3.6366, D(x): 0.9028, D(G(z)): 0.2856 / 0.0345, iteration time: 1.8932s
+Rank,0,Epoch,0,Iteration,741,It. time,1.8931739330291748,Elapsed time,1413.0622696876526
+[epoch: 0/1][iteration: 742/782][rank: 0] Loss_D: 0.6831, Loss_G: 3.0491, D(x): 0.6663, D(G(z)): 0.1953 / 0.0645, iteration time: 1.8874s
+Rank,0,Epoch,0,Iteration,742,It. time,1.8874263763427734,Elapsed time,1414.9514405727386
+[epoch: 0/1][iteration: 743/782][rank: 0] Loss_D: 0.6534, Loss_G: 4.8631, D(x): 0.9335, D(G(z)): 0.4022 / 0.0103, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,743,It. time,1.8841884136199951,Elapsed time,1416.8435788154602
+[epoch: 0/1][iteration: 744/782][rank: 0] Loss_D: 1.0492, Loss_G: 2.2120, D(x): 0.4751, D(G(z)): 0.1133 / 0.1536, iteration time: 1.9030s
+Rank,0,Epoch,0,Iteration,744,It. time,1.9029524326324463,Elapsed time,1418.7482061386108
+[epoch: 0/1][iteration: 745/782][rank: 0] Loss_D: 0.9587, Loss_G: 5.7247, D(x): 0.9092, D(G(z)): 0.5236 / 0.0042, iteration time: 1.8855s
+Rank,0,Epoch,0,Iteration,745,It. time,1.8854854106903076,Elapsed time,1420.635458946228
+[epoch: 0/1][iteration: 746/782][rank: 0] Loss_D: 0.8442, Loss_G: 2.6122, D(x): 0.5223, D(G(z)): 0.0424 / 0.1125, iteration time: 1.8865s
+Rank,0,Epoch,0,Iteration,746,It. time,1.886526107788086,Elapsed time,1422.5237245559692
+[epoch: 0/1][iteration: 747/782][rank: 0] Loss_D: 0.6376, Loss_G: 4.7173, D(x): 0.8823, D(G(z)): 0.3482 / 0.0141, iteration time: 1.9116s
+Rank,0,Epoch,0,Iteration,747,It. time,1.911611795425415,Elapsed time,1424.4371008872986
+[epoch: 0/1][iteration: 748/782][rank: 0] Loss_D: 0.3354, Loss_G: 3.9193, D(x): 0.8278, D(G(z)): 0.1065 / 0.0283, iteration time: 1.8962s
+Rank,0,Epoch,0,Iteration,748,It. time,1.8962349891662598,Elapsed time,1426.3350930213928
+[epoch: 0/1][iteration: 749/782][rank: 0] Loss_D: 0.4662, Loss_G: 2.6039, D(x): 0.7498, D(G(z)): 0.1234 / 0.0986, iteration time: 1.8787s
+Rank,0,Epoch,0,Iteration,749,It. time,1.878664493560791,Elapsed time,1428.215495109558
+[epoch: 0/1][iteration: 750/782][rank: 0] Loss_D: 0.4304, Loss_G: 4.1592, D(x): 0.9167, D(G(z)): 0.2489 / 0.0180, iteration time: 1.8775s
+Rank,0,Epoch,0,Iteration,750,It. time,1.8774511814117432,Elapsed time,1430.0946974754333
+[epoch: 0/1][iteration: 751/782][rank: 0] Loss_D: 0.3037, Loss_G: 3.8248, D(x): 0.8496, D(G(z)): 0.1193 / 0.0283, iteration time: 1.8830s
+Rank,0,Epoch,0,Iteration,751,It. time,1.882965326309204,Elapsed time,1431.984679698944
+[epoch: 0/1][iteration: 752/782][rank: 0] Loss_D: 0.2910, Loss_G: 4.0985, D(x): 0.8889, D(G(z)): 0.1479 / 0.0210, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,752,It. time,1.893531322479248,Elapsed time,1433.8849318027496
+[epoch: 0/1][iteration: 753/782][rank: 0] Loss_D: 0.3255, Loss_G: 3.7744, D(x): 0.8326, D(G(z)): 0.1164 / 0.0280, iteration time: 1.8788s
+Rank,0,Epoch,0,Iteration,753,It. time,1.8787972927093506,Elapsed time,1435.7701969146729
+[epoch: 0/1][iteration: 754/782][rank: 0] Loss_D: 0.5074, Loss_G: 3.1871, D(x): 0.7395, D(G(z)): 0.1600 / 0.0542, iteration time: 1.8935s
+Rank,0,Epoch,0,Iteration,754,It. time,1.8934571743011475,Elapsed time,1437.6656336784363
+[epoch: 0/1][iteration: 755/782][rank: 0] Loss_D: 0.4991, Loss_G: 3.5400, D(x): 0.7761, D(G(z)): 0.1910 / 0.0356, iteration time: 1.8880s
+Rank,0,Epoch,0,Iteration,755,It. time,1.888002634048462,Elapsed time,1439.5554251670837
+[epoch: 0/1][iteration: 756/782][rank: 0] Loss_D: 0.4060, Loss_G: 4.2627, D(x): 0.8687, D(G(z)): 0.2117 / 0.0175, iteration time: 1.8961s
+Rank,0,Epoch,0,Iteration,756,It. time,1.8960962295532227,Elapsed time,1441.4532415866852
+[epoch: 0/1][iteration: 757/782][rank: 0] Loss_D: 0.2633, Loss_G: 4.0298, D(x): 0.8709, D(G(z)): 0.1074 / 0.0261, iteration time: 1.8842s
+Rank,0,Epoch,0,Iteration,757,It. time,1.884167194366455,Elapsed time,1443.3391559123993
+[epoch: 0/1][iteration: 758/782][rank: 0] Loss_D: 0.2851, Loss_G: 2.9826, D(x): 0.8237, D(G(z)): 0.0679 / 0.0671, iteration time: 1.8837s
+Rank,0,Epoch,0,Iteration,758,It. time,1.883683204650879,Elapsed time,1445.2245559692383
+[epoch: 0/1][iteration: 759/782][rank: 0] Loss_D: 0.2243, Loss_G: 3.7315, D(x): 0.9348, D(G(z)): 0.1372 / 0.0313, iteration time: 1.8985s
+Rank,0,Epoch,0,Iteration,759,It. time,1.8984558582305908,Elapsed time,1447.12473487854
+[epoch: 0/1][iteration: 760/782][rank: 0] Loss_D: 0.2664, Loss_G: 4.8634, D(x): 0.9590, D(G(z)): 0.1940 / 0.0087, iteration time: 1.8929s
+Rank,0,Epoch,0,Iteration,760,It. time,1.8929343223571777,Elapsed time,1449.0194084644318
+[epoch: 0/1][iteration: 761/782][rank: 0] Loss_D: 0.1710, Loss_G: 3.9575, D(x): 0.8721, D(G(z)): 0.0263 / 0.0251, iteration time: 1.8858s
+Rank,0,Epoch,0,Iteration,761,It. time,1.8858492374420166,Elapsed time,1450.906921863556
+[epoch: 0/1][iteration: 762/782][rank: 0] Loss_D: 0.1283, Loss_G: 2.7497, D(x): 0.9322, D(G(z)): 0.0531 / 0.0762, iteration time: 1.8759s
+Rank,0,Epoch,0,Iteration,762,It. time,1.8758997917175293,Elapsed time,1452.7845478057861
+[epoch: 0/1][iteration: 763/782][rank: 0] Loss_D: 0.2258, Loss_G: 3.3081, D(x): 0.9429, D(G(z)): 0.1465 / 0.0412, iteration time: 1.8903s
+Rank,0,Epoch,0,Iteration,763,It. time,1.8903388977050781,Elapsed time,1454.6766092777252
+[epoch: 0/1][iteration: 764/782][rank: 0] Loss_D: 0.2238, Loss_G: 4.8397, D(x): 0.9518, D(G(z)): 0.1412 / 0.0100, iteration time: 1.8813s
+Rank,0,Epoch,0,Iteration,764,It. time,1.8813154697418213,Elapsed time,1456.5596680641174
+[epoch: 0/1][iteration: 765/782][rank: 0] Loss_D: 0.5561, Loss_G: 1.8461, D(x): 0.6906, D(G(z)): 0.0670 / 0.2079, iteration time: 1.8891s
+Rank,0,Epoch,0,Iteration,765,It. time,1.8890554904937744,Elapsed time,1458.4504647254944
+[epoch: 0/1][iteration: 766/782][rank: 0] Loss_D: 0.4316, Loss_G: 5.6693, D(x): 0.9650, D(G(z)): 0.3014 / 0.0051, iteration time: 1.8817s
+Rank,0,Epoch,0,Iteration,766,It. time,1.8817477226257324,Elapsed time,1460.3371498584747
+[epoch: 0/1][iteration: 767/782][rank: 0] Loss_D: 0.2924, Loss_G: 4.5791, D(x): 0.7737, D(G(z)): 0.0206 / 0.0140, iteration time: 1.8870s
+Rank,0,Epoch,0,Iteration,767,It. time,1.886958122253418,Elapsed time,1462.2258541584015
+[epoch: 0/1][iteration: 768/782][rank: 0] Loss_D: 0.1248, Loss_G: 3.5139, D(x): 0.9251, D(G(z)): 0.0404 / 0.0412, iteration time: 1.8855s
+Rank,0,Epoch,0,Iteration,768,It. time,1.8854753971099854,Elapsed time,1464.1168856620789
+[epoch: 0/1][iteration: 769/782][rank: 0] Loss_D: 0.1062, Loss_G: 3.7702, D(x): 0.9640, D(G(z)): 0.0649 / 0.0292, iteration time: 1.8867s
+Rank,0,Epoch,0,Iteration,769,It. time,1.8867473602294922,Elapsed time,1466.005330324173
+[epoch: 0/1][iteration: 770/782][rank: 0] Loss_D: 0.6394, Loss_G: 8.8268, D(x): 0.9266, D(G(z)): 0.4098 / 0.0002, iteration time: 1.8772s
+Rank,0,Epoch,0,Iteration,770,It. time,1.877166748046875,Elapsed time,1467.8843386173248
+[epoch: 0/1][iteration: 771/782][rank: 0] Loss_D: 2.0316, Loss_G: 1.9751, D(x): 0.2443, D(G(z)): 0.0010 / 0.1750, iteration time: 1.9076s
+Rank,0,Epoch,0,Iteration,771,It. time,1.9075703620910645,Elapsed time,1469.793648481369
+[epoch: 0/1][iteration: 772/782][rank: 0] Loss_D: 0.4553, Loss_G: 5.4013, D(x): 0.9917, D(G(z)): 0.3282 / 0.0061, iteration time: 1.8896s
+Rank,0,Epoch,0,Iteration,772,It. time,1.8895843029022217,Elapsed time,1471.6849489212036
+[epoch: 0/1][iteration: 773/782][rank: 0] Loss_D: 0.2752, Loss_G: 4.3575, D(x): 0.8195, D(G(z)): 0.0490 / 0.0193, iteration time: 1.8774s
+Rank,0,Epoch,0,Iteration,773,It. time,1.8773527145385742,Elapsed time,1473.5643689632416
+[epoch: 0/1][iteration: 774/782][rank: 0] Loss_D: 0.4047, Loss_G: 2.9645, D(x): 0.7944, D(G(z)): 0.1234 / 0.0627, iteration time: 1.8929s
+Rank,0,Epoch,0,Iteration,774,It. time,1.8928899765014648,Elapsed time,1475.4588418006897
+[epoch: 0/1][iteration: 775/782][rank: 0] Loss_D: 0.4487, Loss_G: 5.0780, D(x): 0.8923, D(G(z)): 0.2544 / 0.0084, iteration time: 1.8876s
+Rank,0,Epoch,0,Iteration,775,It. time,1.8875865936279297,Elapsed time,1477.3480987548828
+[epoch: 0/1][iteration: 776/782][rank: 0] Loss_D: 0.4266, Loss_G: 1.9562, D(x): 0.7052, D(G(z)): 0.0461 / 0.1795, iteration time: 1.8922s
+Rank,0,Epoch,0,Iteration,776,It. time,1.892162561416626,Elapsed time,1479.2419052124023
+[epoch: 0/1][iteration: 777/782][rank: 0] Loss_D: 0.5519, Loss_G: 7.2846, D(x): 0.9624, D(G(z)): 0.3788 / 0.0010, iteration time: 1.8882s
+Rank,0,Epoch,0,Iteration,777,It. time,1.888242244720459,Elapsed time,1481.131816625595
+[epoch: 0/1][iteration: 778/782][rank: 0] Loss_D: 0.7532, Loss_G: 2.0195, D(x): 0.5508, D(G(z)): 0.0191 / 0.1905, iteration time: 1.9048s
+Rank,0,Epoch,0,Iteration,778,It. time,1.9048004150390625,Elapsed time,1483.0382177829742
+[epoch: 0/1][iteration: 779/782][rank: 0] Loss_D: 0.5935, Loss_G: 6.3417, D(x): 0.9718, D(G(z)): 0.3993 / 0.0024, iteration time: 1.8655s
+Rank,0,Epoch,0,Iteration,779,It. time,1.8655388355255127,Elapsed time,1484.905429840088
+[epoch: 0/1][iteration: 780/782][rank: 0] Loss_D: 0.6017, Loss_G: 3.9640, D(x): 0.6178, D(G(z)): 0.0319 / 0.0378, iteration time: 1.8735s
+Rank,0,Epoch,0,Iteration,780,It. time,1.8734850883483887,Elapsed time,1486.7805488109589
+[epoch: 0/1][iteration: 781/782][rank: 0] Loss_D: 0.2649, Loss_G: 5.3984, D(x): 0.9785, D(G(z)): 0.1966 / 0.0058, iteration time: 0.6986s
+Rank,0,Epoch,0,Iteration,781,It. time,0.6985843181610107,Elapsed time,1487.480772972107
+[rank: 0] Epoch 0 took: 1487.4988 seconds
+Rank,0,Epoch,0,Epoch time,1487.498782634735,Elapsed time,1487.4988372325897
