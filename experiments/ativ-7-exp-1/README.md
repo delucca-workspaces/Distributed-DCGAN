@@ -11,7 +11,7 @@
 
 ## Objetivo
 
-Neste experimento iremos avaliar a relação custo-benefício entre diversas máquinas da AWS para nossa rede adversária. Com base nesta análise será possível tomarmos decisões mais assertivas em relação ao tipo de instância para nossa aplicação.
+Neste experimento iremos avaliar a relação custo-benefício entre diversas máquinas da AWS para nossa rede neural generativa adversária. Com base nesta análise será possível tomarmos decisões mais assertivas em relação ao tipo de instância para nossa aplicação.
 
 ## Metodologia
 
