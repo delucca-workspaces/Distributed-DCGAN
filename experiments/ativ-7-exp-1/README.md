@@ -100,9 +100,7 @@ Chegamos nos seguintes resultados por par de instâncias:
 
 Neste gráfico, confirmamos o resultado esperado de que a performance relativa é proporcional aos recursos das instâncias, mas há um padrão interessante. Com base no cálculo de performance relativa, vemos que as instâncias `c5.large`, `m4.large` e `m5.large` possuem uma performance muito similar. Há pouca diferença entre a performance destas instâncias.
 
-Por outro lado, *TODO*
-
-Tendo esses dados em mãos, conseguimos comparar e verificar o custo de inicialização de cada uma das instância, como vemos no gráfico abaixo:
+Por outro lado, ao comparar e verificar o custo de inicialização de cada uma das instância, temos o seguinte cenário:
 
 ![](./charts/initialization-cost.png)
 
