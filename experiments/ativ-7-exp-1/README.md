@@ -120,7 +120,9 @@ Porém, em todas as análises acimas, vemos o impacto apenas de uma única époc
 
 ## Conclusão
 
-*TODO*
+Com base nos resultados apresentados, fica evidente que a instância `c5.large` possui o melhor custo benefício em comparação com as demais instâncias avaliadas. Ela possui uma boa performance relativa quando comparada com as demais instâncias, e também apresenta o menor custo total. Esse resultado era esperado, pois as instâncias do tipo `c` são focadas em computação. Deste modo, já era esperado que ela fosse a melhor avaliada.
+
+Em virtude da limitação de nossa conta na AWS, não foi possível comparar com todos os tipos de instância. Deste modo, podemos utilizar uma conta sem essas restrições para fazermos uma análise mais detalhada.
 
 ## Referências
 
