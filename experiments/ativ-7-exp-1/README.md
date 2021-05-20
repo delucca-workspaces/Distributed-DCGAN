@@ -106,6 +106,10 @@ Por outro lado, ao comparar e verificar o custo de inicialização de cada uma d
 
 Curiosamente, a máquina com a melhor performance relativa, é também a com maior custo de inicializaçao, enquanto a com a pior performance relativa é a segunda com o maior custo de inicialização.
 
+Além do maior custo de inicialização, quando analisamos o custo de execução total para o treinamento em cada uma das instâncias, vemos claramente que embora a `m5.2xlarge` seja mais performática, sua diferençá de preço é tão expressiva que faz com que seu custo total seja superior.
+
+![](./charts/total-cost.png)
+
 ## Conclusão
 
 *TODO*
