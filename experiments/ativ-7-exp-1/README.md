@@ -90,9 +90,21 @@ Como era esperado, dentro das instâncias do mesmo time (`c` ou `m`), as médias
 
 Observamos que os tempos de inicialização decrescem de forma linear. Mesmo quando colocamos lado a lado instâncias do tipo `c` e `m`, que notoriamente possuem objetivos diferentes. Vemos também que as instâncias do tipo `m` possuem uma performance muito superior no tempo de inicialização.
 
+Com base em Borin et al. (2021), podemos descobrir a performance relativa entre duas instâncias através do tempo médio de suas iterações. Deste modo, aplicando a equação
+
+<img src="https://render.githubusercontent.com/render/math?math=RP(M_x, M_y) = \dfrac{T M_x S_avg}{T M_y S_avg}"/>
+
+Chegamos nos seguintes resultados por par de instâncias:
+
+![](./charts/relative-performance-per-instance.png)
+
+*TODO*
+
 Tendo esses dados em mãos, conseguimos comparar e verificar o custo de inicialização de cada uma das instância, como vemos no gráfico abaixo:
 
 ![](./charts/initialization-cost.png)
+
+Neste gráfico fica evidente que apenas da instância `m5.2xlarge` ter uma performance superior na inicialização, ela ainda assim possui um maior custo de inicialização, pois o seu custo por hora é muito superior as demais.
 
 ## Conclusão
 
