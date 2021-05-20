@@ -97,18 +97,21 @@ Com base em Borin et al. (2021), podemos descobrir a performance relativa entre 
 Chegamos nos seguintes resultados por par de instâncias:
 
 ![](./charts/relative-performance-per-instance.png)
+*Gráfico de análise de performance relativa por instância*
 
 Neste gráfico, confirmamos o resultado esperado de que a performance relativa é proporcional aos recursos das instâncias, mas há um padrão interessante. Com base no cálculo de performance relativa, vemos que as instâncias `c5.large`, `m4.large` e `m5.large` possuem uma performance muito similar. Há pouca diferença entre a performance destas instâncias.
 
 Por outro lado, ao comparar e verificar o custo de inicialização de cada uma das instância, temos o seguinte cenário:
 
 ![](./charts/initialization-cost.png)
+*Análise do custo de inicialização por instância. Por custo de inicialização consideramos o valor total gasto em dólares na etapa de inicialização do treinamento*
 
 Curiosamente, a máquina com a melhor performance relativa, é também a com maior custo de inicializaçao, enquanto a com a pior performance relativa é a segunda com o maior custo de inicialização.
 
 Além do maior custo de inicialização, quando analisamos o custo de execução total para o treinamento em cada uma das instâncias, vemos claramente que embora a `m5.2xlarge` seja mais performática, sua diferençá de preço é tão expressiva que faz com que seu custo total seja superior.
 
 ![](./charts/total-cost.png)
+*Análise do custo total do treinamento em dólares, para um experimento com apenas uma época*
 
 ## Conclusão
 
