@@ -113,6 +113,11 @@ Além do maior custo de inicialização, quando analisamos o custo de execução
 ![](./charts/total-cost.png)
 *Análise do custo total do treinamento em dólares, para um experimento com apenas uma época*
 
+Porém, em todas as análises acimas, vemos o impacto apenas de uma única época. Poderia se argumento que em um treinamento mais longo, essa relação poderia ser diferente, gerando uma economia em determinadas instâncias. No gráfico abaixo mostramos o custo por iteração, e vemos que a mesma relação de custo se mantém.
+
+![](./charts/iteration-cost.png)
+*Gráfico de análise do custo por iteração por instância, em dólares*
+
 ## Conclusão
 
 *TODO*
