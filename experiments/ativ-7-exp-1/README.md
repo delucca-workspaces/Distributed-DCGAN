@@ -104,7 +104,7 @@ Por outro lado, ao comparar e verificar o custo de inicialização de cada uma d
 
 ![](./charts/initialization-cost.png)
 
-Neste gráfico fica evidente que apenas da instância `m5.2xlarge` ter uma performance superior na inicialização, ela ainda assim possui um maior custo de inicialização, pois o seu custo por hora é muito superior as demais.
+Curiosamente, a máquina com a melhor performance relativa, é também a com maior custo de inicializaçao. A com a pior performance relativa, é a segunda com o maior custo de inicialização. Neste gráfico fica evidente que apesar da instância `m5.2xlarge` ter uma performance superior na inicialização, ela ainda assim possui um maior custo de inicialização, pois o seu custo por hora é muito superior as demais.
 
 ## Conclusão
 
