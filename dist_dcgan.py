@@ -189,6 +189,8 @@ def main():
         epoch_start_time = time.time()
         print(f"Rank: {rank}, Epoch: {epoch}, Training ...")
         for i, data in enumerate(train_loader):
+            if i > 20: break
+
             iteration_start_time = time.time()
             ############################
             # (1) Update D network: maximize log(D(x)) + log(1 - D(G(z)))
@@ -240,6 +242,8 @@ def main():
                 fake = netG(fixed_noise)
                 vutils.save_image(fake.detach(), f'{argv.out_folder}/fake_samples_rank_{rank}_epoch_{epoch}_iter_{i}.png', normalize=True)
                 torch.distributed.barrier()
+
+            print(f"Iteration time: {iteration_end_time}")
 
         epoch_end_time = time.time()-epoch_start_time
         print(f"[rank: {rank}] Epoch {epoch} took: {epoch_end_time:.4f} seconds")
