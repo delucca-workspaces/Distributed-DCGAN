@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
   - name: Ensure dependencies
-    become: no
+    become: yes
     package:
       name:
       - git
@@ -15,6 +15,7 @@
       state: directory
 
   - name: Clone remote repository
+    become: no
     git:
       repo: https://github.com/delucca-workspaces/Distributed-DCGAN.git
       dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN"

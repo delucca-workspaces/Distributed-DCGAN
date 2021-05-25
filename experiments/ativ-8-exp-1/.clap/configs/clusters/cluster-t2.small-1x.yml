@@ -1,0 +1,8 @@
+clusters:
+  cluster-t2.small-1x:
+    nodes:
+      main:
+        type: dcgan-type-a
+        count: 1
+        setups:
+        - dcgan-cluster

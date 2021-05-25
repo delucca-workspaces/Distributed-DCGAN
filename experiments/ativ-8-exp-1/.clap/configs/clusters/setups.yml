@@ -1,0 +1,13 @@
+setups:
+  dcgan-cluster:
+    roles:
+    - name: setup
+
+    actions:
+    - role: setup
+      action: clone-dcgan
+
+    - role: setup
+      action: fetch-dataset
+
+

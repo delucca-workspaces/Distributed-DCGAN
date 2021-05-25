@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Dependencies
+# -------------------------------------------------------------------------------------------------
+source <(curl -s "https://raw.githubusercontent.com/delucca/shell-functions/1.0.1/modules/feedback.sh")
+
+BIN_DIR_PATH=$(cd -- "$(dirname "$0")" >/dev/null 2>&1 || throw_error "It was not possible to find bin dir" ; pwd -P)
+EXPERIMENT_DIR_PATH=$(dirname "${BIN_DIR_PATH}")
+
+cp -R "${EXPERIMENT_DIR_PATH}/.clap/." "${HOME}/.clap"
+
+echo "CLAP configured with success"

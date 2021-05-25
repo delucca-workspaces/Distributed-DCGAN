@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+  - name: Ensure folder structure
+    become: no
+    file:
+      path: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/cifar10"
+      state: directory
+
+  - name: Download CIFAR10 dataset
+    become: no
+    get_url:
+      url: https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+      dest: /tmp/cifar10.tar.gz
+
+  - name: Extract CIFAR10 dataset
+    become: no
+    unarchive:
+      src: /tmp/cifar10.tar.gz
+      dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/cifar10"
+      remote_src: yes
