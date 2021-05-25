@@ -16,12 +16,8 @@ function start_dcgan {
   main_node_ip="${1}"
   num_nodes="${2}"
 
-  results_folder_path="${EXPERIMENT_DIR_PATH}/results"
-  instance_folder_path="${results_folder_path}/${INSTANCE_TYPE}"
-  result_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${OMPI_COMM_WORLD_RANK}.out"
-
-  mkdir -p "${results_folder_path}"
-  mkdir -p "${instance_folder_path}"
+  result_file_path="${EXPERIMENT_DIR_PATH}/GAN.out"
+  error_file_path="${EXPERIMENT_DIR_PATH}/GAN.err"
 
   cd "${ROOT_DIR_PATH}"
 
@@ -44,7 +40,7 @@ function start_dcgan {
           dist_dcgan.py \
             --dataset cifar10 \
             --dataroot ./cifar10 \
-            --num_epochs=1 &> "${result_file_path}"
+            --num_epochs=1 > "${result_file_path} 2> "${error_file_path"
 
   log_in_category "DCGAN" "Finished executing"
 }

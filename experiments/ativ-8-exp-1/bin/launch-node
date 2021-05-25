@@ -14,7 +14,6 @@ source "${EXPERIMENT_DIR_PATH}/scripts/node.sh"
 # Global variables
 # -------------------------------------------------------------------------------------------------
 
-INSTANCE_TYPE=$(curl -s http://169.254.169.254/latest/meta-data/instance-type || throw_error "Cannot fetch instance type")
 INSTANCE_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 || throw_error "Cannot fetch instance IP")
 MAIN_NODE_IP="${INSTANCE_IP}"
 
@@ -49,13 +48,8 @@ function parse_args {
 }
 
 function launch {
-  logs_folder_path="${EXPERIMENT_DIR_PATH}/logs"
-  instance_folder_path="${logs_folder_path}/${INSTANCE_TYPE}"
-  log_file_path="${instance_folder_path}/ip-${INSTANCE_IP//\./-}-rank${OMPI_COMM_WORLD_RANK}.log"
+  log_file_path="${EXPERIMENT_DIR_PATH}/GAN.log"
   num_nodes=$(echo "${MAIN_NODE_IP}" | tr -cd , | wc -c)
-
-  mkdir -p "${logs_folder_path}"
-  mkdir -p "${instance_folder_path}"
 
   launch_node "${MAIN_NODE_IP}" "${num_nodes}" &> "${log_file_path}"
 }
