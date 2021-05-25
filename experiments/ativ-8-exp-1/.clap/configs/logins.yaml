@@ -1,0 +1,8 @@
+ubuntu:
+    user: ubuntu
+    keypair_name: daniel-act-8
+    keypair_public_file: aws-login.pub
+    keypair_private_file: aws-login.pem
+    sudo: true
+    sudo_user: root
+

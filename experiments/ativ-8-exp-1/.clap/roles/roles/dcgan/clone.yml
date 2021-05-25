@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+  - name: Ensure dependencies
+    become: no
+    package:
+      name:
+      - git
+      state: present
+
+  - name: Ensure folder structure
+    become: no
+    file:
+      path: "{{ ansible_env.HOME }}/.local/src"
+      state: directory
+
+  - name: Clone remote repository
+    git:
+      repo: https://github.com/delucca-workspaces/Distributed-DCGAN.git
+      dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN"
+      version: ativ-8-exp-1

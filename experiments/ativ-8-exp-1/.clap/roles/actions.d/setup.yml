@@ -1,0 +1,5 @@
+---
+actions:
+  clone-dcgan:
+    playbook: roles/dcgan/clone.yml
+    description: Clone DCGAN from Github
