@@ -54,6 +54,9 @@ function parse_args {
 function launch {
   log_file_path="${EXPERIMENT_DIR_PATH}/GAN.log"
 
+  echo $MAIN_NODE_IP
+  echo $NUM_NODES
+
   launch_node "${MAIN_NODE_IP}" "${NUM_NODES}" &> "${log_file_path}"
 }
 
