@@ -24,6 +24,7 @@
       - gfortran
       - build-essential
       - git
+      - docker.io
       state: present
 
   - name: Ensure local folder structure
