@@ -7,3 +7,7 @@ actions:
   run-gan:
     playbook: playbooks/gan/run.yml
     description: Starts GAN trainning
+
+  fetch-result:
+    playbook: playbooks/gan/fetch-result.yml
+    description: Fetch result from nodes

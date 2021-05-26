@@ -57,6 +57,14 @@ clapp cluster list cluster-<o-ID-do-seu-cluster>
 clapp role action gan -a run-gan -n <o-ID-do-seu-nó-principal>
 ```
 
+### 5. Faça o download dos resultados
+
+```sh
+clapp cluster playbook -p "${HOME}/.clap/roles/playbooks/gan/fetch-result.yml" cluster-<ID-do-seu-cluster>
+```
+
+Após executar esse último comando, serão criados arquivos `.log` e `.out` com o sufixo sendo o hostname de cada nó dentro da home de seu usuário.
+
 ## Resultados obtidos
 
 _TODO_

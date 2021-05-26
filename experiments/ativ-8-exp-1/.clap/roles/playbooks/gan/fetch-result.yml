@@ -1,0 +1,16 @@
+---
+- name: Fetch result
+  hosts: all
+  gather_facts: yes
+  tasks:
+  - name: Fetch logs
+    fetch:
+      src: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/experiments/ativ-8-exp-1/GAN.log"
+      dest: "{{ lookup('env', 'HOME') }}/GAN-{{ inventory_hostname }}.log"
+      flat: yes
+
+  - name: Fetch output
+    fetch:
+      src: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/experiments/ativ-8-exp-1/GAN.out"
+      dest: "{{ lookup('env', 'HOME') }}/GAN-{{ inventory_hostname }}.out"
+      flat: yes
