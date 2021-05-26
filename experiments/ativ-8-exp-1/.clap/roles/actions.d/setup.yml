@@ -1,9 +1,9 @@
 ---
 actions:
+  install-dependencies:
+    playbook: roles/dcgan/dependencies.yml
+    description: Installs all rqeuired train dependencies
+
   clone-dcgan:
     playbook: roles/dcgan/clone.yml
     description: Clone DCGAN from Github
-
-  fetch-dataset:
-    playbook: roles/dcgan/fetch-dataset.yml
-    description: Fetches CIFAR10 dataset for trainning

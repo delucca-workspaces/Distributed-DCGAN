@@ -1,6 +1,30 @@
 ---
-- hosts: all
+- name: Dependencies
+  hosts: all
+  gather_facts: yes
   tasks:
+  - name: Update packages
+    become: yes
+    apt:
+      upgrade: yes
+      update_cache: yes
+
+  - name: Ensure dependencies
+    become: yes
+    package:
+      name:
+      - make
+      - gcc
+      - libgfortran5
+      - sysstat
+      - libibnetdisc-dev
+      - openmpi-bin
+      - libopenmpi-dev
+      - libhdf5-openmpi-dev
+      - gfortran
+      - build-essential
+      state: present
+
   - name: Ensure folder structure
     become: no
     file:

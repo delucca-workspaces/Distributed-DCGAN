@@ -1,0 +1,11 @@
+---
+- name: Train
+  hosts: all
+  gather_facts: yes
+  tasks:
+  - name: Debug
+    debug:
+      var: hostvars
+      #- name: Launches DCGAN trainning
+      #become: no
+      #command: mpirun -v -np <CHANGE> --host <CHANGE> ./experiments/ativ-8-exp-1/bin/launch-node "-m=<CHANGE> -n=<CHANGE>"

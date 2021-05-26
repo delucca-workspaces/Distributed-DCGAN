@@ -8,6 +8,12 @@ setups:
       action: clone-dcgan
 
     - role: setup
-      action: fetch-dataset
+      action: install-dependencies
 
+  main-node:
+    roles:
+    - name: run
 
+    actions:
+    - role: run
+      action: train-dcgan

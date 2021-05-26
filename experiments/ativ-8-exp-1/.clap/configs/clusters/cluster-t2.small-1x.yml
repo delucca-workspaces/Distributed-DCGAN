@@ -6,3 +6,4 @@ clusters:
         count: 1
         setups:
         - dcgan-cluster
+        - main-node

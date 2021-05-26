@@ -16,6 +16,7 @@ source "${EXPERIMENT_DIR_PATH}/scripts/node.sh"
 
 INSTANCE_IP=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4 || throw_error "Cannot fetch instance IP")
 MAIN_NODE_IP="${INSTANCE_IP}"
+NUM_NODES=1
 
 # Entrypoint
 # -------------------------------------------------------------------------------------------------
@@ -34,6 +35,9 @@ function parse_args {
       -m=*|--main-node-ip=*)
         MAIN_NODE_IP="${opt#*=}"
         shift ;;
+      -n=*|--num-nodes=*)
+        NUM_NODES="${opt#*=}"
+        shift ;;
       -h|--help)
         help
         exit 0
@@ -49,9 +53,8 @@ function parse_args {
 
 function launch {
   log_file_path="${EXPERIMENT_DIR_PATH}/GAN.log"
-  num_nodes=$(echo "${MAIN_NODE_IP}" | tr -cd , | wc -c)
 
-  launch_node "${MAIN_NODE_IP}" "${num_nodes}" &> "${log_file_path}"
+  launch_node "${MAIN_NODE_IP}" "${NUM_NODES}" &> "${log_file_path}"
 }
 
 # Helpers
@@ -63,6 +66,7 @@ Run a Distributed DCGAN experiment
 usage: $0 [OPTIONS]
     -h --help            Show this message
     -m --main-node-ip    Defines the main-node IP address
+    -n --num-nodes       Defines the number of nodes
 EOF
 }
 
