@@ -3,13 +3,14 @@
   hosts: all
   gather_facts: yes
   tasks:
-  - debug:
-      var: groups['all']
   - name: Copy SSH key
     copy:
       src: "{{ lookup('env', 'HOME') }}/.clap/private/aws-login.pem"
       dest: "{{ ansible_env.HOME }}/.ssh/id_rsa"
       mode: 0600
-      #- name: Launches DCGAN trainning
-      #become: no
-      #command: mpirun -v -np {{ worker_node_ips.split(".") | length }} --host {{ main_node_ip }} ./experiments/ativ-8-exp-1/bin/launch-node "-m={{ main_node_ip }} -n={{ worker_node_ips }}"
+
+  - name: Launches DCGAN trainning
+    become: no
+    command: mpirun -v -np {{ ansible_all_ipv4_addresses | length }} --host {{ ansible_default_ipv4.address }} launch-node "-m={{ ansible_default_ipv4.address }} -n={{ ansible_all_ipv4_addresses | join(',') }}"
+    args:
+      chdir: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/experiments/ativ-8-exp-1/bin"
