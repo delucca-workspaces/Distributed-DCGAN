@@ -2,9 +2,10 @@
 
 function launch_node {
   main_node_ip="${1}"
+  num_nodes="${2}"
 
   log_experiment_settings
-  start_dcgan "${main_node_ip}"
+  start_dcgan "${main_node_ip}" "${num_nodes}"
 }
 
 function log_experiment_settings {
