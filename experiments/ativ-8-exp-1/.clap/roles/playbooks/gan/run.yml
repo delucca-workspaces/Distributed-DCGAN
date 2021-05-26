@@ -11,6 +11,6 @@
 
   - name: Launches DCGAN trainning
     become: no
-    command: mpirun -v -np {{ ansible_all_ipv4_addresses | length }} --host {{ ansible_default_ipv4.address }} launch-node "-m={{ ansible_default_ipv4.address }} -n={{ ansible_all_ipv4_addresses | join(',') }}"
+    command: mpirun -v -np {{ [ansible_default_ipv4.address] | length }} --host {{ ansible_default_ipv4.address }} launch-node "-m={{ ansible_default_ipv4.address }} -n={{ [ansible_default_ipv4.address] | length }}"
     args:
       chdir: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/experiments/ativ-8-exp-1/bin"

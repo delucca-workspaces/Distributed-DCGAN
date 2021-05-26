@@ -25,7 +25,17 @@
       - build-essential
       - git
       - docker.io
+      - python3-pip
       state: present
+
+  - name: Allow user to docker
+    become: yes
+    command: usermod -aG docker ubuntu
+
+  - name: Ensure Python dependencies
+    pip:
+      name:
+      - docker
 
   - name: Ensure local folder structure
     become: no
@@ -58,3 +68,13 @@
       src: /tmp/cifar10.tar.gz
       dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/cifar10"
       remote_src: yes
+
+  - name: Build Docker image
+    become: no
+    docker_image:
+      name: dist_dcgan
+      source: build
+      state: present
+      build:
+        path: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN"
+
