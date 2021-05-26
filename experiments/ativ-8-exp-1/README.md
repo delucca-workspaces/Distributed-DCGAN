@@ -67,12 +67,21 @@ Após executar esse último comando, serão criados arquivos `.log` e `.out` com
 
 ## Resultados obtidos
 
-_TODO_
+Você pode analisar o resultado de cada um dos clusters nas seguintes pastas:
+
+* [cluster-t2.small-1x](./results/cluster-t2.small-1x)
+* [cluster-t2.small-2x](./results/cluster-t2.small-2x)
+* [cluster-t2.small-4x](./results/cluster-t2.small-4x)
 
 ### Análise dos resultados
 
-_TODO_
+O resultados obtidos são uma forma eficiente para decidirmos qual será a máquina mais adequada para nossa rede neural. O uso de paramont iterations é uma forma inteligente de reduzirmos o tempo necessário para essa avaliação. O intuito da atividade era para entender o uso do CLAP para automação do provisionamento e análise, e a execução do experimento, agora, ficou bastante simples e intuitiva.
+
+Utilizando o CLAP é possível estruturar um experimento completamente replicável, se baseando também no Ansible para executar as tarefas nos nós de nosso cluster.
 
 ## Conclusão
 
-_TODO_
+Durante o experimento, foi bastante complicado a automação da identificação dos IPs das máquinas. Em um determinado momento tentei utilizar a chave `vars_prompt` das plays do Ansible, mas o CLAP aparentemente não se integra bem a essa ação. Quando utilizei ela o CLAP simplesmente congelou, sem executar a play, e quando era enviado um SIGTERM (Ctrl+C) para ele aparecia o input mas o processo já havia sido cancelado.
+
+Sugiro que esse experimento seja feito novamente tentando explorar formas alternativas para identificar automaticamente os IPs dos nós.
+
