@@ -40,7 +40,7 @@ function start_dcgan {
           dist_dcgan.py \
             --dataset cifar10 \
             --dataroot ./cifar10 \
-            --num_epochs=1 > "${result_file_path} 2> "${error_file_path}"
+            --num_epochs=1 > "${result_file_path}" 2> "${error_file_path}"
 
   log_in_category "DCGAN" "Finished executing"
 }
