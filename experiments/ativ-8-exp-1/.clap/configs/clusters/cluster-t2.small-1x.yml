@@ -5,5 +5,4 @@ clusters:
         type: dcgan-type-a
         count: 1
         setups:
-        - dcgan-cluster
-        - main-node
+        - dcgan-node

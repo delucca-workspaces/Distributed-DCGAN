@@ -1,19 +1,8 @@
 setups:
-  dcgan-cluster:
+  dcgan-node:
     roles:
-    - name: setup
+    - name: gan
 
     actions:
-    - role: setup
-      action: clone-dcgan
-
-    - role: setup
-      action: install-dependencies
-
-  main-node:
-    roles:
-    - name: run
-
-    actions:
-    - role: run
-      action: train-dcgan
+    - role: gan
+      action: setup-gan

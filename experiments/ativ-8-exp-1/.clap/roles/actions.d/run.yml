@@ -1,5 +1,0 @@
----
-actions:
-  train-dcgan:
-    playbook: roles/dcgan/train.yml
-    description: Starts DCGAIN trainning

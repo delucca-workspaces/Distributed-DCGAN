@@ -27,10 +27,34 @@ Com o CLAP configurado, foi executado o experimento em três clusters diferentes
 * **cluster-t2.small-2x:** Um cluster com duas máquinas `t2.small`
 * **cluster-t2.small-4x:** Um cluster com quatro máquinas `t2.small`
 
-Dentro destes clusters, configuramos o CLAP para executar 20 paramount iterations do treinamento da rede neural. Em seguida, a última task do CLAP é responsável por coletar os resultados. Você pode reproduzir o experimento no cluster que você deseja com o seguinte comando:
+Dentro destes clusters, configuramos o CLAP para executar 20 paramount iterations do treinamento da rede neural. Em seguida, a última task do CLAP é responsável por coletar os resultados. Você pode reproduzir o experimento com os seguintes passos:
+
+### 1. Configure suas chaves
+
+Antes de executar o experimento, você precisa configurar 4 chaves dentro da pasta `~/.clap/private`, são elas:
+
+* `aws-mgmt.pem`: Um arquivo com sua secret access key da AWS
+* `aws-mgmt.pub`: Um arquivo com sua access key da AWS
+* `aws-login.pem`: A chave privada de login gerada no painel da AWS
+* `aws-login.pub`: A chave pública de login gerada no painel da AWS
+> **IMPORTANTE:** Não esqueça de colocar a permissão dos arquivos como 0400
+
+### 2. Crie um novo cluster
 
 ```sh
 clapp cluster start cluster-t2.small-<tamanho desejado do cluster>
+```
+
+### 3. Copie o ID do seu nó principal
+
+```sh
+clapp cluster list cluster-<o-ID-do-seu-cluster>
+```
+
+### 4. Execute o treinamento
+
+```sh
+clapp role action gan -a run-gan -n <o-ID-do-seu-nó-principal>
 ```
 
 ## Resultados obtidos

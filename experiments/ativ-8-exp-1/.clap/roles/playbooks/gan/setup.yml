@@ -1,5 +1,5 @@
 ---
-- name: Dependencies
+- name: Setup GAN
   hosts: all
   gather_facts: yes
   tasks:
@@ -23,9 +23,23 @@
       - libhdf5-openmpi-dev
       - gfortran
       - build-essential
+      - git
       state: present
 
-  - name: Ensure folder structure
+  - name: Ensure local folder structure
+    become: no
+    file:
+      path: "{{ ansible_env.HOME }}/.local/src"
+      state: directory
+
+  - name: Clone remote repository
+    become: no
+    git:
+      repo: https://github.com/delucca-workspaces/Distributed-DCGAN.git
+      dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN"
+      version: ativ-8-exp-1
+
+  - name: Ensure CIFAR10 temporary folder structure
     become: no
     file:
       path: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/cifar10"

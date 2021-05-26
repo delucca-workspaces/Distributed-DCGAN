@@ -1,9 +1,0 @@
----
-actions:
-  install-dependencies:
-    playbook: roles/dcgan/dependencies.yml
-    description: Installs all rqeuired train dependencies
-
-  clone-dcgan:
-    playbook: roles/dcgan/clone.yml
-    description: Clone DCGAN from Github

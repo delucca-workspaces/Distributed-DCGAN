@@ -1,0 +1,15 @@
+---
+- name: Run GAN
+  hosts: all
+  gather_facts: yes
+  tasks:
+  - debug:
+      var: groups['all']
+  - name: Copy SSH key
+    copy:
+      src: "{{ lookup('env', 'HOME') }}/.clap/private/aws-login.pem"
+      dest: "{{ ansible_env.HOME }}/.ssh/id_rsa"
+      mode: 0600
+      #- name: Launches DCGAN trainning
+      #become: no
+      #command: mpirun -v -np {{ worker_node_ips.split(".") | length }} --host {{ main_node_ip }} ./experiments/ativ-8-exp-1/bin/launch-node "-m={{ main_node_ip }} -n={{ worker_node_ips }}"

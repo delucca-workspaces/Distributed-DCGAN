@@ -1,0 +1,9 @@
+---
+actions:
+  setup-gan:
+    playbook: playbooks/gan/setup.yml
+    description: Installs all required train dependencies
+
+  run-gan:
+    playbook: playbooks/gan/run.yml
+    description: Starts GAN trainning
