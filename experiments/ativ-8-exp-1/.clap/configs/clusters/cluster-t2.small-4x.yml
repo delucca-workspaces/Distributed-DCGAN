@@ -1,0 +1,14 @@
+clusters:
+  cluster-t2.small-4x:
+    nodes:
+      main:
+        type: dcgan-type-a
+        count: 1
+        setups:
+        - dcgan-node
+
+      workers:
+        type: dcgan-type-a
+        count: 3
+        setups:
+        - dcgan-node
