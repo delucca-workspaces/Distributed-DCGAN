@@ -1,0 +1,49 @@
+Namespace(batch_size=32, beta1=0.5, cuda=False, dataroot='./cifar10', dataset='cifar10', image_size=64, learning_rate=0.0002, local_rank=0, max_workers=4, ndf=64, ngf=64, num_epochs=1, nz=100, out_folder='.', seed=0)
+Using seed: 0
+Using GPU: False
+Rank: 0. World Size: 2
+Dataset cifar10 loaded
+Rank: 0, Epoch: 0, Training ...
+[epoch: 0/1][iteration: 0/782][rank: 0] Loss_D: 1.4536, Loss_G: 4.1686, D(x): 0.5879, D(G(z)): 0.5917 / 0.0163, iteration time: 2.5410s
+Iteration time: 2.541010856628418
+[epoch: 0/1][iteration: 1/782][rank: 0] Loss_D: 0.9403, Loss_G: 3.3671, D(x): 0.5804, D(G(z)): 0.3053 / 0.0357, iteration time: 2.3803s
+Iteration time: 2.3803014755249023
+[epoch: 0/1][iteration: 2/782][rank: 0] Loss_D: 0.9239, Loss_G: 4.0483, D(x): 0.6769, D(G(z)): 0.3605 / 0.0179, iteration time: 2.3763s
+Iteration time: 2.376322031021118
+[epoch: 0/1][iteration: 3/782][rank: 0] Loss_D: 0.6367, Loss_G: 4.7326, D(x): 0.7844, D(G(z)): 0.3035 / 0.0092, iteration time: 2.3223s
+Iteration time: 2.32230544090271
+[epoch: 0/1][iteration: 4/782][rank: 0] Loss_D: 0.5888, Loss_G: 5.3106, D(x): 0.7767, D(G(z)): 0.2679 / 0.0052, iteration time: 2.2925s
+Iteration time: 2.292462110519409
+[epoch: 0/1][iteration: 5/782][rank: 0] Loss_D: 0.5496, Loss_G: 5.8033, D(x): 0.7946, D(G(z)): 0.2502 / 0.0031, iteration time: 2.3171s
+Iteration time: 2.3170931339263916
+[epoch: 0/1][iteration: 6/782][rank: 0] Loss_D: 0.6051, Loss_G: 6.5352, D(x): 0.7919, D(G(z)): 0.2601 / 0.0016, iteration time: 2.2878s
+Iteration time: 2.2878332138061523
+[epoch: 0/1][iteration: 7/782][rank: 0] Loss_D: 0.6945, Loss_G: 6.8199, D(x): 0.7320, D(G(z)): 0.2397 / 0.0012, iteration time: 2.3110s
+Iteration time: 2.3109869956970215
+[epoch: 0/1][iteration: 8/782][rank: 0] Loss_D: 0.5092, Loss_G: 7.8118, D(x): 0.8210, D(G(z)): 0.2400 / 0.0004, iteration time: 2.3166s
+Iteration time: 2.3165972232818604
+[epoch: 0/1][iteration: 9/782][rank: 0] Loss_D: 0.4180, Loss_G: 7.5806, D(x): 0.8072, D(G(z)): 0.1397 / 0.0005, iteration time: 2.2870s
+Iteration time: 2.2870070934295654
+[epoch: 0/1][iteration: 10/782][rank: 0] Loss_D: 0.3251, Loss_G: 8.5591, D(x): 0.8679, D(G(z)): 0.1544 / 0.0002, iteration time: 2.2933s
+Iteration time: 2.2932934761047363
+[epoch: 0/1][iteration: 11/782][rank: 0] Loss_D: 0.2484, Loss_G: 7.3392, D(x): 0.8545, D(G(z)): 0.0635 / 0.0007, iteration time: 2.2938s
+Iteration time: 2.2938334941864014
+[epoch: 0/1][iteration: 12/782][rank: 0] Loss_D: 0.8733, Loss_G: 12.1418, D(x): 0.9149, D(G(z)): 0.5322 / 0.0000, iteration time: 2.2835s
+Iteration time: 2.283529758453369
+[epoch: 0/1][iteration: 13/782][rank: 0] Loss_D: 0.1319, Loss_G: 11.9192, D(x): 0.8884, D(G(z)): 0.0004 / 0.0000, iteration time: 2.2811s
+Iteration time: 2.2811357975006104
+[epoch: 0/1][iteration: 14/782][rank: 0] Loss_D: 0.2085, Loss_G: 7.2695, D(x): 0.8393, D(G(z)): 0.0024 / 0.0008, iteration time: 2.2772s
+Iteration time: 2.2772419452667236
+[epoch: 0/1][iteration: 15/782][rank: 0] Loss_D: 1.6228, Loss_G: 12.7667, D(x): 0.9504, D(G(z)): 0.7825 / 0.0000, iteration time: 2.3103s
+Iteration time: 2.3103251457214355
+[epoch: 0/1][iteration: 16/782][rank: 0] Loss_D: 0.5396, Loss_G: 13.3188, D(x): 0.6502, D(G(z)): 0.0001 / 0.0000, iteration time: 2.2707s
+Iteration time: 2.27070951461792
+[epoch: 0/1][iteration: 17/782][rank: 0] Loss_D: 0.1260, Loss_G: 11.9486, D(x): 0.8968, D(G(z)): 0.0000 / 0.0000, iteration time: 2.3263s
+Iteration time: 2.3262622356414795
+[epoch: 0/1][iteration: 18/782][rank: 0] Loss_D: 0.0593, Loss_G: 7.4732, D(x): 0.9494, D(G(z)): 0.0011 / 0.0007, iteration time: 2.3155s
+Iteration time: 2.3154587745666504
+[epoch: 0/1][iteration: 19/782][rank: 0] Loss_D: 0.8323, Loss_G: 11.8693, D(x): 0.9710, D(G(z)): 0.5413 / 0.0000, iteration time: 3.6425s
+Iteration time: 3.6425366401672363
+[epoch: 0/1][iteration: 20/782][rank: 0] Loss_D: 0.0812, Loss_G: 12.4453, D(x): 0.9260, D(G(z)): 0.0002 / 0.0000, iteration time: 2.2865s
+Iteration time: 2.2865428924560547
+[rank: 0] Epoch 0 took: 50.7321 seconds

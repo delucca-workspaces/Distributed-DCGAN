@@ -7,6 +7,12 @@ actions:
   run-gan:
     playbook: playbooks/gan/run.yml
     description: Starts GAN trainning
+    vars:
+    - name: master_node_ip
+      description: The IP of your master node
+
+    - name: worker_node_ips
+      description: The IP of your worker nodes
 
   fetch-result:
     playbook: playbooks/gan/fetch-result.yml

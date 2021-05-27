@@ -69,8 +69,11 @@
       dest: "{{ ansible_env.HOME }}/.local/src/Distributed-DCGAN/cifar10"
       remote_src: yes
 
+  - name: Reset connection to allow Docker usage
+    meta: reset_connection
+
   - name: Build Docker image
-    become: yes
+    become: no
     docker_image:
       name: dist_dcgan
       source: build

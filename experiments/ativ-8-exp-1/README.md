@@ -54,7 +54,7 @@ clapp cluster list cluster-<o-ID-do-seu-cluster>
 ### 4. Execute o treinamento
 
 ```sh
-clapp role action gan -a run-gan -n <o-ID-do-seu-nó-principal>
+clapp role action gan -a run-gan -n <o-ID-do-seu-nó-principal> -e master_node_ip=<o-IP-do-seu-nó-principal> -e worker_node_ips=<uma-lista-separada-por-virgulas>
 ```
 
 ### 5. Faça o download dos resultados
